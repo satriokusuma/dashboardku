@@ -1,0 +1,1270 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <link rel="apple-touch-icon" sizes="76x76" href="../../assets/img/apple-icon.png" />
+    <link rel="icon" type="image/png" href="../../assets/img/favicon.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>ERP TECHNO GAME</title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/dashboardku.css" rel="stylesheet" />
+    <link href="assets/css/bootstrap-datepicker.css" rel="stylesheet" />
+    <link href="assets/css/google-roboto-300-700.css" rel="stylesheet" />
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    
+    
+    <style>
+        #scrolling-wrapper{
+            overflow: scroll;
+            background-color: #100e17;
+            position: relative;
+            white-space: nowrap;
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="sidebar" data-active-color="blue" data-background-color="black">
+            <div class="logo">
+                <a href="" class="simple-text">
+                    Dashboard Ku
+                </a>
+            </div>
+            <div class="logo logo-mini">
+                <a href="" class="simple-text">
+                    DK
+                </a>
+            </div>
+            <div class="sidebar-wrapper">
+                <div class="user">
+                    <div class="photo">
+                        <img src="assets/img/photo_1.png" />
+                    </div>
+                    <div class="primary">
+                        <a data-toggle="collapse" href="#collapseExample" class="collapsed">
+                          Administrator
+                            <b class="caret"></b>
+                        </a>
+                        <div class="collapse" id="collapseExample">
+                            <ul class="nav">
+                                <li>
+                                    <a href="#">My Profile</a>
+                                </li>
+                                <li>
+                                    <a href="#">Edit Profile</a>
+                                </li>
+                                <li>
+                                    <a href="#">Settings</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <ul class="nav">
+                    <li>
+                        <a href="dashboard.html">
+                            <i class="material-icons">dashboard</i>
+                            <p>Home</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="chart.html">
+                            <i class="material-icons">timeline</i>
+                            <p>Charts</p>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a data-toggle="collapse" href="#pagesExamples" aria-expanded="true">
+                            <i class="material-icons">business_center</i>
+                            <p>Business Ku
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+                        <div id="pagesExamples" class="collapse in">
+                            <ul class="nav">
+                                <li>
+                                    <a  href="/business-page.html">RMS & IFS</a>
+                                </li>
+                                <li >
+                                    <a href="/fnb.html">FNB</a>
+                                </li>
+                                <li class="active">
+                                    <a href="/machine.html">Machine</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" href="#componentsExamples">
+                            <i class="material-icons">house</i>
+                            <p>Outlets Ku
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+                        <div id="componentsExamples" class="collapse">
+                            <ul class="nav">
+                                <li>
+                                    <a href="/zone2000-outlet.html">Zone 2000</a>
+                                </li>
+                                <li>
+                                    <a href="/kiddieland-outlet.html">Kiddie Land</a>
+                                </li>
+                                
+                               
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" href="#formsExamples">
+                            <i class="material-icons">content_paste</i>
+                            <p>Forms
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+                        <div class="collapse" id="formsExamples">
+                            <ul class="nav">
+                                <li>
+                                    <a href="/permintanbarang.html">Permintaan Ku</a>
+                                </li>
+                                <li>
+                                    <a href="/permintanbarangMu.html">Permintaan Mu</a>
+                                </li>
+                                <li>
+                                    <a href="../forms/extended.html">Surat Jalan</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="telegram.html">
+                            <i class="material-icons">chat</i>
+                            <p>Chat Message</p>
+                        </a>
+                    </li>
+                   
+               
+                </ul>
+            </div>
+        </div>
+        <div class="main-panel">
+            <nav class="navbar navbar-transparent navbar-absolute">
+                <div class="container-fluid">
+                    <div class="navbar-minimize">
+                        <button id="minimizeSidebar" class="btn btn-round btn-white btn-fill btn-just-icon">
+                            <i class="material-icons visible-on-sidebar-regular">more_vert</i>
+                            <i class="material-icons visible-on-sidebar-mini">view_list</i>
+                        </button>
+                    </div>
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#" style="font-weight: 500;">Dashboard Ku</a>
+                        <img src="assets/img/logo/logo.svg" alt="logo" class="img-logo">
+                    </div>
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="#pablo" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="material-icons">dashboard</i>
+                                    <p class="hidden-lg hidden-md">Dashboard</p>
+                                </a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="material-icons">notifications</i>
+                                    <span class="notification">5</span>
+                                    <p class="hidden-lg hidden-md">
+                                        Notifications
+                                        <b class="caret"></b>
+                                    </p>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#">Mike John responded to your email</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">You have 5 new tasks</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">You're now friend with Andrew</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Another Notification</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Another One</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#pablo" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="material-icons">person</i>
+                                    <p class="hidden-lg hidden-md">Profile</p>
+                                </a>
+                            </li>
+                            <li class="separator hidden-lg hidden-md"></li>
+                        </ul>
+                        <form class="navbar-form navbar-right" role="search">
+                            <div class="form-group form-search is-empty">
+                                <input type="text" class="form-control" placeholder="Search">
+                                <span class="material-input"></span>
+                            </div>
+                            <button type="submit" class="btn btn-white btn-round btn-just-icon">
+                                <i class="material-icons">search</i>
+                                <div class="ripple-container"></div>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+            <div class="content">
+                <div class="container-fluid">
+                    <div class="row">
+                       
+                            <div class="col-md-4">
+                                <div class="scrolling-wrapper">
+                                    <div id="col">
+                                        <div class="card-charts-machine bg-primary">
+                                            <div class="card-header">
+                                                <h4 class="title-qoute">Machine - <small style="color: #fff;">Income Globally Years</small></h4>
+                                            </div>
+                                            <div id="chart-pie-fnb"></div>
+                                        </div>
+                                    </div>
+                                  <div id="col">
+                                    <div class="card-charts-machine bg-green">
+                                        <div class="card-header">
+                                            <h4 class="title-qoute">Machine - <small style="color: #fff;">Income Globally Months</small></h4>
+                                        </div>
+                                        <div id="chart-pie-fnb-month"></div>
+                                    </div>
+                                  </div>
+                               
+                                </div>
+                            </div>
+
+                            <div class="col-md-8 col-sm-8">
+                                <div class="card-list">
+                                   <div class="card-header">
+                                        <h4 class="title-qoute" style="color: #43425D;margin: 20px 0;">Machine - <small style="color: #9c27b0;font-weight: bold;font-size: 15px;">Top Globally Years</small></h4>
+                                        <button class="btn btn-fill btn-primary" data-toggle="tooltip" data-original-title="Download Data Ke Excel">
+                                            <i class="material-icons"style="font-size: 20px;margin-right: 5px;">cloud_download</i>
+                                        Download Data
+                                        </button>
+                                   </div>
+                                   <div class="row">
+                                        <div class="col-md-8">
+                                            <div class="form-group col-md-6" style="padding-left: 0;margin: 0;">
+                                                <select class="selectpicker" title="Pilih Tahun" data-style="btn-white" >
+                                                    <option>2009</option>
+                                                    <option>2010</option>
+                                                    <option>2011</option>
+                                                    <option>2012</option>
+                                                    <option>2013</option>
+                                                    <option>2014</option>
+                                                    <option>2015</option>
+                                                    <option>2016</option>
+                                                    <option>2017</option>
+                                                    <option>2018</option>
+                                                    <option>2019</option>
+                                                    <option>2020</option>
+                                                </select>
+                                            </div>
+                                            <button class="btn btn-fill btn-primary" data-toggle="tooltip" data-original-title="Cari" style="padding: 10px 30px;">
+                                                <i class="material-icons"style="font-size: 20px;margin-right: 5px;">search</i>
+                                                Cari
+                                            </button>
+                                        </div>
+                                   </div>
+                                  
+                                   <div class="card-content ">
+                                       <div class="fixHeader table-responsive">
+                                           <table class="table">
+                                               <thead class="tableHead">
+                                                   <tr>
+                                                       <th class="th-fnb" style="color:#fff;">No</th>
+                                                       <th class="th-fnb" style="color:#fff;">Name Machine</th>
+                                                       <th class="th-fnb" style="color:#fff;">Kategori Machine</th>
+                                                       <th class="th-fnb" style="color:#fff;">Pendapatan</th>
+                                                       <th class="th-fnb" style="color:#fff;">Bonus Digunakan</th>
+                                                       <th class="th-fnb" style="color:#fff;">Real Pendapatan</th>
+                                                   </tr>
+                                               </thead>
+                                               <tbody class="scroll">
+                                                     <tr>
+                                                       <td>1</td>
+                                                       <td class="thead-target th-1">DANZ BASE</td>
+                                                       <td class="nameOutlet">Large Game</td>
+                                                       <td class="nameOutlet">Rp.10,000,000</td>           
+                                                       <td class="thead-target th-1">Rp.5,000,000</td>
+                                                       <td class="thead-target th-1">Rp.5,000,000</td>
+                                                     </tr>
+                                                     <tr>
+                                                        <td>2</td>
+                                                        <td class="thead-target th-1">DANZ BASE</td>
+                                                        <td class="nameOutlet">Large Game</td>
+                                                        <td class="nameOutlet">Rp.10,000,000</td>           
+                                                        <td class="thead-target th-1">Rp.5,000,000</td>
+                                                        <td class="thead-target th-1">Rp.5,000,000</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td>3</td>
+                                                        <td class="thead-target th-1">DANZ BASE</td>
+                                                        <td class="nameOutlet">Large Game</td>
+                                                        <td class="nameOutlet">Rp.10,000,000</td>           
+                                                        <td class="thead-target th-1">Rp.5,000,000</td>
+                                                        <td class="thead-target th-1">Rp.5,000,000</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td>4</td>
+                                                        <td class="thead-target th-1">DANZ BASE</td>
+                                                        <td class="nameOutlet">Large Game</td>
+                                                        <td class="nameOutlet">Rp.10,000,000</td>           
+                                                        <td class="thead-target th-1">Rp.5,000,000</td>
+                                                        <td class="thead-target th-1">Rp.5,000,000</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td>5</td>
+                                                        <td class="thead-target th-1">DANZ BASE</td>
+                                                        <td class="nameOutlet">Large Game</td>
+                                                        <td class="nameOutlet">Rp.10,000,000</td>           
+                                                        <td class="thead-target th-1">Rp.5,000,000</td>
+                                                        <td class="thead-target th-1">Rp.5,000,000</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td>6</td>
+                                                        <td class="thead-target th-1">DANZ BASE</td>
+                                                        <td class="nameOutlet">Large Game</td>
+                                                        <td class="nameOutlet">Rp.10,000,000</td>           
+                                                        <td class="thead-target th-1">Rp.5,000,000</td>
+                                                        <td class="thead-target th-1">Rp.5,000,000</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td>7</td>
+                                                        <td class="thead-target th-1">DANZ BASE</td>
+                                                        <td class="nameOutlet">Large Game</td>
+                                                        <td class="nameOutlet">Rp.10,000,000</td>           
+                                                        <td class="thead-target th-1">Rp.5,000,000</td>
+                                                        <td class="thead-target th-1">Rp.5,000,000</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td>8</td>
+                                                        <td class="thead-target th-1">DANZ BASE</td>
+                                                        <td class="nameOutlet">Large Game</td>
+                                                        <td class="nameOutlet">Rp.10,000,000</td>           
+                                                        <td class="thead-target th-1">Rp.5,000,000</td>
+                                                        <td class="thead-target th-1">Rp.5,000,000</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td>9</td>
+                                                        <td class="thead-target th-1">DANZ BASE</td>
+                                                        <td class="nameOutlet">Large Game</td>
+                                                        <td class="nameOutlet">Rp.10,000,000</td>           
+                                                        <td class="thead-target th-1">Rp.5,000,000</td>
+                                                        <td class="thead-target th-1">Rp.5,000,000</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td>10</td>
+                                                        <td class="thead-target th-1">DANZ BASE</td>
+                                                       <td class="nameOutlet">Large Game</td>
+                                                       <td class="nameOutlet">Rp.10,000,000</td>           
+                                                       <td class="thead-target th-1">Rp.5,000,000</td>
+                                                       <td class="thead-target th-1">Rp.5,000,000</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td>11</td>
+                                                        <td class="thead-target th-1">DANZ BASE</td>
+                                                        <td class="nameOutlet">Large Game</td>
+                                                        <td class="nameOutlet">Rp.10,000,000</td>           
+                                                        <td class="thead-target th-1">Rp.5,000,000</td>
+                                                        <td class="thead-target th-1">Rp.5,000,000</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td>12</td>
+                                                        <td class="thead-target th-1">DANZ BASE</td>
+                                                        <td class="nameOutlet">Large Game</td>
+                                                        <td class="nameOutlet">Rp.10,000,000</td>           
+                                                        <td class="thead-target th-1">Rp.5,000,000</td>
+                                                        <td class="thead-target th-1">Rp.5,000,000</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td>13</td>
+                                                        <td class="thead-target th-1">DANZ BASE</td>
+                                                        <td class="nameOutlet">Large Game</td>
+                                                        <td class="nameOutlet">Rp.10,000,000</td>           
+                                                        <td class="thead-target th-1">Rp.5,000,000</td>
+                                                        <td class="thead-target th-1">Rp.5,000,000</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td>14</td>
+                                                        <td class="thead-target th-1">DANZ BASE</td>
+                                                        <td class="nameOutlet">Large Game</td>
+                                                        <td class="nameOutlet">Rp.10,000,000</td>           
+                                                        <td class="thead-target th-1">Rp.5,000,000</td>
+                                                        <td class="thead-target th-1">Rp.5,000,000</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td>15</td>
+                                                        <td class="thead-target th-1">DANZ BASE</td>
+                                                        <td class="nameOutlet">Large Game</td>
+                                                        <td class="nameOutlet">Rp.10,000,000</td>           
+                                                        <td class="thead-target th-1">Rp.5,000,000</td>
+                                                        <td class="thead-target th-1">Rp.5,000,000</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td>16</td>
+                                                        <td class="thead-target th-1">DANZ BASE</td>
+                                                        <td class="nameOutlet">Large Game</td>
+                                                        <td class="nameOutlet">Rp.10,000,000</td>           
+                                                        <td class="thead-target th-1">Rp.5,000,000</td>
+                                                        <td class="thead-target th-1">Rp.5,000,000</td>
+                                                      </tr>
+
+                                               </tbody>
+                                           </table>
+                                       </div>
+                                   </div>
+                                </div>
+                            </div>
+                       
+                    </div>
+                
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title" style="font-weight: bold;">Machine -  <small style="color: #9c27b0;font-weight: bold;font-size: 18px;">Pendapatan Details</small></h4>   
+                                </div>
+                                <div class="card-header-wrap">
+                                    <div class="card-header-left">
+                                        <button class="btn btn-fill btn-primary pencarianMachine" data-toggle="tooltip" data-original-title="Pencarian" id="btnClear">
+                                            <i class="material-icons" style="font-size: 20px;margin-right: 5px;">search</i>
+                                            Pencarian
+                                        </button> 
+                                        <button class="btn btn-fill btn-primary" data-toggle="tooltip" data-original-title="Download Data Ke Excel">
+                                            <i class="material-icons"style="font-size: 20px;margin-right: 5px;">cloud_download</i>
+                                           Download Data
+                                        </button>    
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <table id="datatables" class="table table-striped table-no-bordered table-hover responsive" width="100%">
+                                        <thead>
+                                            <tr style="background-color: #848ccf;">
+                                                <th style="color:#fff;">No</th>
+                                                <th style="color:#fff;">Outlet</th>
+                                                <th style="color:#fff;">Divisi</th>
+                                                <th style="color:#fff;">Product</th>
+                                                <th style="color:#fff;" data-priority="1">Nama</th>
+                                                <th style="color:#fff;">Kategori</th>
+                                                <th style="color:#fff;">Pendapatan</th>
+                                                <th style="color:#fff;">Bonus Digunakan</th>
+                                                <th style="color:#fff;">Pendapatan Bersih</th>
+                                                <th style="color:#fff;">Status</th>
+                                                <th style="color:#fff;">Ket</th>
+                                                <th style="color:#fff;" data-priority="3">Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td class="nameOutlet">ZD01 BLOK M</td>
+                                                <td class="rms">RMS</td>
+                                                <td class="playzone">PLAY ZONE</td>
+                                                <td class="nameOutlet">DANZ BASE</td>
+                                                <td class="nameOutlet">Large Game</td>
+                                                <td>Rp.10,000,000</td>
+                                                <td class="nameOutlet">Rp.5,000,000</td>
+                                                <td class="statusTercapai">Rp.5,000,000</td>
+                                                <td class="statusTercapai">Aktif</td>
+                                                <td></td>
+                                                <td>
+                                                    <a class="keterangan spesifikasi btn-warning btn btn-just-icon btn-round">
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="keterangan ">cached</i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td class="nameOutlet">R67 Karawang</td>
+                                                <td class="rms">RMS</td>
+                                                <td class="playzone">PLAY ZONE</td>
+                                                <td class="nameOutlet">DANZ BASE</td>
+                                                <td class="nameOutlet">Large Game</td>
+                                                <td>Rp.10,000,000</td>
+                                                <td class="nameOutlet">Rp.5,000,000</td>
+                                                <td class="statusTercapai">Rp.5,000,000</td>
+                                                <td class="statusGagal">Rusak</td>
+                                                <td>likuidasi</td>
+                                                <td>
+                                                    <a class="keterangan spesifikasi btn-warning btn btn-just-icon btn-round">
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="keterangan ">cached</i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td class="nameOutlet">R75 Serang</td>
+                                                <td class="rms">RMS</td>
+                                                <td class="zone2000">ZONE 2000</td>
+                                                <td class="nameOutlet">DANZ BASE</td>
+                                                <td class="nameOutlet">Large Game</td>
+                                                <td>Rp.10,000,000</td>
+                                                <td class="nameOutlet">Rp.5,000,000</td>
+                                                <td class="statusTercapai">Rp.5,000,000</td>
+                                                <td class="statusGagal">Rusak</td>
+                                                <td>likuidasi</td>
+                                                <td>
+                                                    <a class="keterangan spesifikasi btn-warning btn btn-just-icon btn-round">
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="keterangan ">cached</i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td class="nameOutlet">R35 Cilegon</td>
+                                                <td class="rms">RMS</td>
+                                                <td class="zone2000">ZONE 2000</td>
+                                                <td class="nameOutlet">DANZ BASE</td>
+                                                <td class="nameOutlet">Large Game</td>
+                                                <td>Rp.10,000,000</td>
+                                                <td class="nameOutlet">Rp.5,000,000</td>
+                                                <td class="statusTercapai">Rp.5,000,000</td>
+                                                <td class="statusGagal">Rusak</td>
+                                                <td>likuidasi</td>
+                                                <td>
+                                                    <a class="keterangan spesifikasi btn-warning btn btn-just-icon btn-round">
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="keterangan ">cached</i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td class="nameOutlet">R35 Cilegon Kiddie Land</td>
+                                                <td class="rms">RMS</td>
+                                                <td class="kiddie">KIDDIE LAND</td>
+                                                <td class="nameOutlet">Crazy Horse</td>
+                                                <td class="nameOutlet">Kiddie Ride</td>
+                                                <td>Rp.10,000,000</td>
+                                                <td class="nameOutlet">Rp.5,000,000</td>
+                                                <td class="statusTercapai">Rp.5,000,000</td>
+                                                <td class="statusTercapai">Aktif</td>
+                                                <td></td>
+                                                <td>
+                                                    <a class="keterangan spesifikasi btn-warning btn btn-just-icon btn-round">
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="keterangan ">cached</i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>6</td>
+                                                <td class="nameOutlet">R31 Tangerang</td>
+                                                <td class="rms">RMS</td>
+                                                <td class="playzone">PLAY ZONE</td>
+                                                <td class="nameOutlet">Crazy Horse</td>
+                                                <td class="nameOutlet">Kiddie Ride</td>
+                                                <td>Rp.10,000,000</td>
+                                                <td class="nameOutlet">Rp.5,000,000</td>
+                                                <td class="statusTercapai">Rp.5,000,000</td>
+                                                <td class="statusBelumAda">Per Baikan</td>
+                                                <td>Sedang di workshop perbaikan</td>
+                                                <td>
+                                                    <a class="keterangan spesifikasi btn-warning btn btn-just-icon btn-round">
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="keterangan ">cached</i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>7</td>
+                                                <td class="nameOutlet">R71 BTM</td>
+                                                <td class="ifs">IFS</td>
+                                                <td class="zone2000">ZONE 2000</td>
+                                                <td class="nameOutlet">DANZ BASE</td>
+                                                <td class="nameOutlet">Large Game</td>
+                                                <td>Rp.10,000,000</td>
+                                                <td class="nameOutlet">Rp.5,000,000</td>
+                                                <td class="statusTercapai">Rp.5,000,000</td>
+                                                <td class="statusTercapai">Aktif</td>
+                                                <td></td>
+                                                <td>
+                                                    <a class="keterangan spesifikasi btn-warning btn btn-just-icon btn-round">
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="keterangan ">cached</i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>8</td>
+                                                <td class="nameOutlet">R49 Cileduk</td>
+                                                <td class="rms">RMS</td>
+                                                <td class="zone2000">ZONE 2000</td>
+                                                <td class="nameOutlet">DANZ BASE</td>
+                                                <td class="nameOutlet">Large Game</td>
+                                                <td>Rp.10,000,000</td>
+                                                <td class="nameOutlet">Rp.5,000,000</td>
+                                                <td class="statusTercapai">Rp.5,000,000</td>
+                                                <td class="statusTercapai">Aktif</td>
+                                                <td></td>
+                                                <td>
+                                                    <a class="keterangan spesifikasi btn-warning btn btn-just-icon btn-round">
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="keterangan ">cached</i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>9</td>
+                                                <td class="nameOutlet">R67 KARAWANG Kiddie Land</td>
+                                                <td class="rms">RMS</td>
+                                                <td class="kiddie">KIDDIE LAND</td>
+                                                <td class="nameOutlet">DANZ BASE</td>
+                                                <td class="nameOutlet">Large Game</td>
+                                                <td>Rp.10,000,000</td>
+                                                <td class="nameOutlet">Rp.5,000,000</td>
+                                                <td class="statusTercapai">Rp.5,000,000</td>
+                                                <td class="statusTercapai">Aktif</td>
+                                                <td></td>
+                                                <td>
+                                                    <a class="keterangan spesifikasi btn-warning btn btn-just-icon btn-round">
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="keterangan ">cached</i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>10</td>
+                                                <td class="nameOutlet">R72 TMII</td>
+                                                <td class="rms">RMS</td>
+                                                <td class="zone2000">ZONE 2000</td>
+                                                <td class="nameOutlet">DANZ BASE</td>
+                                                <td class="nameOutlet">Large Game</td>
+                                                <td>Rp.10,000,000</td>
+                                                <td class="nameOutlet">Rp.5,000,000</td>
+                                                <td class="statusTercapai">Rp.5,000,000</td>
+                                                <td class="statusTercapai">Aktif</td>
+                                                <td></td>
+                                                <td>
+                                                    <a class="keterangan spesifikasi btn-warning btn btn-just-icon btn-round">
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="keterangan ">cached</i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>11</td>
+                                                <td class="nameOutlet">R99 Garut</td>
+                                                <td class="rms">RMS</td>
+                                                <td class="zone2000">ZONE 2000</td>
+                                                <td class="nameOutlet">DANZ BASE</td>
+                                                <td class="nameOutlet">Large Game</td>
+                                                <td>Rp.10,000,000</td>
+                                                <td class="nameOutlet">Rp.5,000,000</td>
+                                                <td class="statusTercapai">Rp.5,000,000</td>
+                                                <td class="statusTercapai">Aktif</td>
+                                                <td></td>
+                                                <td>
+                                                    <a class="keterangan spesifikasi btn-warning btn btn-just-icon btn-round">
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="keterangan ">cached</i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>12</td>
+                                                <td class="nameOutlet">R24 Pondok Gede</td>
+                                                <td class="rms">RMS</td>
+                                                <td class="zone2000">ZONE 2000</td>
+                                                <td class="nameOutlet">DANZ BASE</td>
+                                                <td class="nameOutlet">Large Game</td>
+                                                <td>Rp.10,000,000</td>
+                                                <td class="nameOutlet">Rp.5,000,000</td>
+                                                <td class="statusTercapai">Rp.5,000,000</td>
+                                                <td class="statusTercapai">Aktif</td>
+                                                <td></td>
+                                                <td>
+                                                    <a class="keterangan spesifikasi btn-warning btn btn-just-icon btn-round">
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="keterangan ">cached</i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>13</td>
+                                                <td class="nameOutlet">R11 Pasar Minggu</td>
+                                                <td class="rms">RMS</td>
+                                                <td class="zone2000">ZONE 2000</td>
+                                                <td class="nameOutlet">DANZ BASE</td>
+                                                <td class="nameOutlet">Large Game</td>
+                                                <td>Rp.10,000,000</td>
+                                                <td class="nameOutlet">Rp.5,000,000</td>
+                                                <td class="statusTercapai">Rp.5,000,000</td>
+                                                <td class="statusTercapai">Aktif</td>
+                                                <td></td>
+                                                <td>
+                                                    <a class="keterangan spesifikasi btn-warning btn btn-just-icon btn-round">
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="keterangan ">cached</i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>14</td>
+                                                <td class="nameOutlet">R02 Pulo Gadung</td>
+                                                <td class="rms">RMS</td>
+                                                <td class="zone2000">ZONE 2000</td>
+                                                <td class="nameOutlet">DANZ BASE</td>
+                                                <td class="nameOutlet">Large Game</td>
+                                                <td>Rp.10,000,000</td>
+                                                <td class="nameOutlet">Rp.5,000,000</td>
+                                                <td class="statusTercapai">Rp.5,000,000</td>
+                                                <td class="statusTercapai">Aktif</td>
+                                                <td></td>
+                                                <td>
+                                                    <a class="keterangan spesifikasi btn-warning btn btn-just-icon btn-round">
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="keterangan ">cached</i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>15</td>
+                                                <td class="nameOutlet">R11 Pasar Minggu Kiddie Land</td>
+                                                <td class="rms">RMS</td>
+                                                <td class="kiddie">KIDDIE LAND</td>
+                                                <td class="nameOutlet">DANZ BASE</td>
+                                                <td class="nameOutlet">Large Game</td>
+                                                <td>Rp.10,000,000</td>
+                                                <td class="nameOutlet">Rp.5,000,000</td>
+                                                <td class="statusTercapai">Rp.5,000,000</td>
+                                                <td class="statusTercapai">Aktif</td>
+                                                <td></td>
+                                                <td>
+                                                    <a class="keterangan spesifikasi btn-warning btn btn-just-icon btn-round">
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="keterangan ">cached</i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>16</td>
+                                                <td class="nameOutlet">R11 Pasar Minggu</td>
+                                                <td class="rms">RMS</td>
+                                                <td class="zone2000">ZONE 2000</td>
+                                                <td class="nameOutlet">DANZ BASE</td>
+                                                <td class="nameOutlet">Large Game</td>
+                                                <td>Rp.10,000,000</td>
+                                                <td class="nameOutlet">Rp.5,000,000</td>
+                                                <td class="statusTercapai">Rp.5,000,000</td>
+                                                <td class="statusTercapai">Aktif</td>
+                                                <td></td>
+                                                <td>
+                                                    <a class="keterangan spesifikasi btn-warning btn btn-just-icon btn-round">
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="keterangan ">cached</i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>17</td>
+                                                <td class="nameOutlet">R11 Pasar Minggu</td>
+                                                <td class="rms">RMS</td>
+                                                <td class="zone2000">ZONE 2000</td>
+                                                <td class="nameOutlet">DANZ BASE</td>
+                                                <td class="nameOutlet">Large Game</td>
+                                                <td>Rp.10,000,000</td>
+                                                <td class="nameOutlet">Rp.5,000,000</td>
+                                                <td class="statusTercapai">Rp.5,000,000</td>
+                                                <td class="statusTercapai">Aktif</td>
+                                                <td></td>
+                                                <td>
+                                                    <a class="keterangan spesifikasi btn-warning btn btn-just-icon btn-round">
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="keterangan ">cached</i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>18</td>
+                                                <td class="nameOutlet">R11 Pasar Minggu</td>
+                                                <td class="rms">RMS</td>
+                                                <td class="zone2000">ZONE 2000</td>
+                                                <td class="nameOutlet">DANZ BASE</td>
+                                                <td class="nameOutlet">Large Game</td>
+                                                <td>Rp.10,000,000</td>
+                                                <td class="nameOutlet">Rp.5,000,000</td>
+                                                <td class="statusTercapai">Rp.5,000,000</td>
+                                                <td class="statusTercapai">Aktif</td>
+                                                <td></td>
+                                                <td>
+                                                    <a class="keterangan spesifikasi btn-warning btn btn-just-icon btn-round">
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="keterangan ">cached</i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>19</td>
+                                                <td class="nameOutlet">R11 Pasar Minggu</td>
+                                                <td class="rms">RMS</td>
+                                                <td class="zone2000">ZONE 2000</td>
+                                                <td class="nameOutlet">DANZ BASE</td>
+                                                <td class="nameOutlet">Large Game</td>
+                                                <td>Rp.10,000,000</td>
+                                                <td class="nameOutlet">Rp.5,000,000</td>
+                                                <td class="statusTercapai">Rp.5,000,000</td>
+                                                <td class="statusTercapai">Aktif</td>
+                                                <td></td>
+                                                <td>
+                                                    <a class="keterangan spesifikasi btn-warning btn btn-just-icon btn-round">
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="keterangan ">cached</i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>20</td>
+                                                <td class="nameOutlet">R11 Pasar Minggu</td>
+                                                <td class="rms">RMS</td>
+                                                <td class="zone2000">ZONE 2000</td>
+                                                <td class="nameOutlet">DANZ BASE</td>
+                                                <td class="nameOutlet">Large Game</td>
+                                                <td>Rp.10,000,000</td>
+                                                <td class="nameOutlet">Rp.5,000,000</td>
+                                                <td class="statusTercapai">Rp.5,000,000</td>
+                                                <td class="statusTercapai">Aktif</td>
+                                                <td></td>
+                                                <td>
+                                                    <a class="keterangan spesifikasi btn-warning btn btn-just-icon btn-round">
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="keterangan ">cached</i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>21</td>
+                                                <td class="nameOutlet">R124 CIKUPA</td>
+                                                <td class="ifs">IFS</td>
+                                                <td class="zone2000">ZONE 2000</td>
+                                                <td class="nameOutlet">DANZ BASE</td>
+                                                <td class="nameOutlet">Large Game</td>
+                                                <td>Rp.10,000,000</td>
+                                                <td class="nameOutlet">Rp.5,000,000</td>
+                                                <td class="statusTercapai">Rp.5,000,000</td>
+                                                <td class="statusTercapai">Aktif</td>
+                                                <td></td>
+                                                <td>
+                                                    <a class="keterangan spesifikasi btn-warning btn btn-just-icon btn-round">
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="keterangan ">cached</i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>22</td>
+                                                <td class="nameOutlet">R105 Parung</td>
+                                                <td class="ifs">IFS</td>
+                                                <td class="zone2000">ZONE 2000</td>
+                                                <td class="nameOutlet">DANZ BASE</td>
+                                                <td class="nameOutlet">Large Game</td>
+                                                <td>Rp.10,000,000</td>
+                                                <td class="nameOutlet">Rp.5,000,000</td>
+                                                <td class="statusTercapai">Rp.5,000,000</td>
+                                                <td class="statusTercapai">Aktif</td>
+                                                <td></td>
+                                                <td>
+                                                    <a class="keterangan spesifikasi btn-warning btn btn-just-icon btn-round">
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="keterangan ">cached</i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>23</td>
+                                                <td class="nameOutlet">R15 Bogor</td>
+                                                <td class="ifs">IFS</td>
+                                                <td class="zone2000">ZONE 2000</td>
+                                                <td class="nameOutlet">DANZ BASE</td>
+                                                <td class="nameOutlet">Large Game</td>
+                                                <td>Rp.10,000,000</td>
+                                                <td class="nameOutlet">Rp.5,000,000</td>
+                                                <td class="statusTercapai">Rp.5,000,000</td>
+                                                <td class="statusTercapai">Aktif</td>
+                                                <td></td>
+                                                <td>
+                                                    <a class="keterangan spesifikasi btn-warning btn btn-just-icon btn-round">
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="keterangan ">cached</i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>24</td>
+                                                <td class="nameOutlet">R35 Cilegon KiddieLand</td>
+                                                <td class="ifs">IFS</td>
+                                                <td class="kiddie">KIDDIE LAND</td>
+                                                <td class="nameOutlet">DANZ BASE</td>
+                                                <td class="nameOutlet">Large Game</td>
+                                                <td>Rp.10,000,000</td>
+                                                <td class="nameOutlet">Rp.5,000,000</td>
+                                                <td class="statusTercapai">Rp.5,000,000</td>
+                                                <td class="statusTercapai">Aktif</td>
+                                                <td></td>
+                                                <td>
+                                                    <a class="keterangan spesifikasi btn-warning btn btn-just-icon btn-round">
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="keterangan ">cached</i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="container-fluid">
+                    <p class="copyright pull-right">
+                        &copy;
+                        <script>
+                            document.write(new Date().getFullYear())
+                        </script>
+                       <a href="">DashboardKu.id</a>, made with love for a better web
+                    </p>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+
+<!------------------------------------- MODAL PENCARIAN MACHINE----------------------------------------------------->
+
+<div class="modal fade" role="dialog" id="modal-pencarianMachine">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 style="font-weight: bold;color: #fff;">Pencarian</h4>
+            </div>
+           <div class="modal-body">  
+                <form action="" method="POST">
+
+                    <div class="row">
+                        <div class="form-group col-md-12">
+                            <label for="outlet" class="col-sm-2 col-form-label">Outlets</label>
+                            <div class="col-sm-10" style="padding-left: 10px;">
+                                <select class="selectpicker" title="Pilih Outlets" id="outlet">
+                                    <option>ZD01 BLOK M</option>
+                                    <option>R67 Karawang</option>
+                                    <option>R75 Serang</option>
+                                    <option>R35 Cilegon</option>
+                                    <option>R35 Cilegon Kiddie Land</option>
+                                    <option>R31 Tangerang</option>
+                                    <option>R71 BTM</option>
+                                    <option>R72 TMII</option>
+                                    <option>R99 Garut</option>
+                                    <option>R24 Pondok Gede</option>
+                                    <option>R11 Pasar Minggu</option>
+                                    <option>R02 Pulo Gadung</option>
+                                    <option>R124 CIKUPA</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                  
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <label for="divisi" class="col-sm-4 col-form-label">Divisi</label>
+                            <div class="col-sm-8">
+                                <select class="selectpicker" title="Pilih Divisi" id="divisi">
+                                    <option>RMS</option>
+                                    <option>IFS</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="product" class="col-sm-4 col-form-label">Product</label>
+                            <div class="col-sm-8">
+                                <select class="selectpicker" title="Pilih Product" id="product">
+                                    <option>PLAY ZONE</option>
+                                    <option>ZONE 2000</option>
+                                    <option>KIDDIE LAND</option>
+                                </select>
+                              
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <label for="kategorimachine" class="col-sm-4 col-form-label">Kategori Machine</label>
+                            <div class="col-sm-8">
+                                <select class="selectpicker" title="Pilih Kategori Machine" id="kategorimachine">
+                                    <option>LARGE GAME</option>
+                                    <option>REDEMPTION</option>
+                                    <option>KIDDIE RIDE</option>
+                                    <option>PRIZE GAME</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <label for="namamachine" class="col-sm-4 col-form-label">Nama Machine</label>
+                            <div class="col-sm-8">
+                                <select class="selectpicker" title="Pilih Nama Machine" id="namamachine">
+                                    <option>DANZ BASE</option>
+                                    <option>PUM IT UP</option>
+                                    <option>CRAZY HORSE</option>
+                                    <option>TERMINATOR</option>
+                                    <option>BABA CAR</option>
+                                    <option>HERO OF ROBOT</option>
+                                    <option>ANIMAL HORSE</option>
+                                    <option>KERETA</option>
+                                    <option>CRAZY FROG</option>
+                                    <option>RAINBOW</option>
+                                    <option>HAPPY COOKING</option>
+                                    <option>ANIMAL PARADISE</option>
+                                    <option>TOY BOX</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <label for="statusmachine" class="col-sm-4 col-form-label">Status Machine</label>
+                            <div class="col-sm-8">
+                                <select class="selectpicker" title="Pilih Status Machine" id="statusmachine">
+                                    <option>AKTIF</option>
+                                    <option>RUSAK</option>
+                                    <option>PERBAIKAN</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    
+                   <div class="row">
+                        <div class="form-group col-md-6">
+                            <label for="dateopening" class="col-sm-4 col-form-label">Dari Tanggal</label>
+                            <div class="col-sm-8">
+                                <div class="input-group">
+                                    <div class="input-group-addon">
+                                        <span class="material-icons" style="vertical-align: middle;color: #848ccf;">event</span>
+                                    </div>
+                                    <input placeholder="Dari Tanggal" type="text" class="form-control datepicker datepencarian" name="" autocomplete="off">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <label for="dateopening" class="col-sm-4 col-form-label">Sampai Tanggal</label>
+                            <div class="col-sm-8">
+                                <div class="input-group">
+                                    <div class="input-group-addon">
+                                        <span class="material-icons" style="vertical-align: middle;color: #848ccf;">event</span>
+                                    </div>
+                                    <input placeholder="Sampai Tanggal" type="text" class="form-control datepicker datepencarian"  name="" autocomplete="off">
+                                </div>
+                            </div>
+                        </div>
+                   </div>
+                 
+                    <div class="row">
+                        <div class="col-md-12" style="text-align: end;">
+                            <a href="#" type="button" class="btn btn-primary btn-fill"  data-dismiss="modal" style="padding: 5px 15px;" type="submit">
+                                <i class="material-icons" style="font-size: 24px;float: left;line-height: 30px;
+                                width: 30px;
+                                text-align: center;">search
+                                </i>
+                                <p class="textButton" style="padding: 0 5px;">Cari</p>
+                            </a>
+                            <a href="#" type="button" class="btn btn-secondary btn-fill"  data-dismiss="modal" style="padding: 5px 15px;" id="back">
+                                <i class="material-icons" style="font-size: 24px;margin-right: 5px;float: left;line-height: 30px;
+                                width: 30px;
+                                text-align: center;">replay
+                                </i>
+                                <p class="textButton">Kembali</p>
+                            </a>
+                        </div>
+                    </div>
+                </form>
+                
+           </div>
+        </div>
+     </div>
+</div>
+
+<!------------------------------------------------------------------------------------------------------------------>
+
+<!------------------------------------- MODAL keterangan  DESCRIPTION MACHINE --------------------------------------------->
+
+<div class="modal fade" role="dialog" id="modal-description-machine">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <!-- <button type="button" class="close btn btn-just-icon btn-round btn-danger" data-dismiss="modal" style="color: #fff;outline: none;opacity:1;padding: 10px 5px;">
+                    <i class="material-icons">close</i>
+                </button> -->
+                <h4 style="font-weight: bold;color: #fff;">keterangan  Outlet</h4>
+            </div>
+           <div class="modal-body">  
+                <form action="" method="POST">
+
+                    <div class="form-group row">
+                        <label for="namemachine" class="col-sm-2 col-form-label">Nama Machine</label>
+                        <div class="col-sm-10">
+                            <input type="text" readonly class="form-control-plaintext" id="namemachine" value="DANZ BASE">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="kategorimachine-2" class="col-sm-2 col-form-label">Kategori Machine</label>
+                        <div class="col-sm-10">
+                            <input type="text" readonly class="form-control-plaintext" id="kategorimachine-2" value="LARGE GAME">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="status keterangan" class="col-sm-2 col-form-label">Status Machine</label>
+                        <div class="col-sm-10">
+                            <select class="selectpicker" title="Pilih Status" id="status keterangan">
+                                <option>RUSAK</option>
+                                <option>PER BAIKAN</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="keterangan" class="form-label col-sm-2">Keterangan</label>
+                        <div class="col-sm-10">
+                            <textarea name="" id="" cols="30" rows="3" class="form-control" id="keterangan"></textarea>
+                            <p class="form-text text-muted">Berikan keterangan untuk status machine rusak maupun machine perbaikan</p>
+                        </div>
+                    </div>
+            
+                    <div class="row">
+                        <div class="col-md-12" style="text-align: end;">
+                            <a href="#" type="button" class="btn btn-primary btn-fill"  data-dismiss="modal" style="padding: 5px 15px;" type="submit">
+                                <i class="material-icons" style="font-size: 24px;margin-right: 5px;float: left;line-height: 30px;
+                                width: 30px;
+                                text-align: center;">cloud_done
+                                </i>
+                                <p class="textButton">Simpan</p>
+                            </a>
+                            <a href="#" type="button" class=" back btn btn-secondary btn-fill"  data-dismiss="modal" style="padding: 5px 15px;" id="back">
+                                <i class="material-icons" style="font-size: 24px;margin-right: 5px;float: left;line-height: 30px;
+                                width: 30px;
+                                text-align: center;">replay
+                                </i>
+                                <p class="textButton">Kembali</p>
+                            </a>
+                        </div>
+                    </div>
+                </form>
+                
+           </div>
+        </div>
+     </div>
+</div>
+
+<!------------------------------------------------------------------------------------------------------------------>
+</body>
+
+<script src="assets/js/jquery-3.1.1.min.js" type="text/javascript"></script>
+<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="assets/js/dashboardku.min.js" type="text/javascript"></script>
+<script src="assets/js/perfect-scrollbar.jquery.min.js" type="text/javascript"></script>
+<script src="assets/js/datatables/dataTables.min.js"></script>
+<script src="assets/js/bootstrap-datepicker.js"></script>
+<script src="assets/js/dashboardku.js"></script>
+<script src="assets/js/highchart/highcharts.js"></script>
+<script src="assets/js/highchart/highcharts-exporting.js"></script>
+<script src="assets/js/highchart/highcharts-export.js"></script>
+<script src="assets/js/highchart/highcharts-access.js"></script>
+<script src="assets/js/highchartscode/fnb.js"></script>
+<script src="assets/js/bootstrap-select.min.js"></script>
+
+
+<script>
+    $(document).ready(function() {
+
+        $('#datatables').DataTable({
+            pagingType: "full_numbers",
+            lengthMenu: [
+                [15, 30, 50, -1],
+                [15, 30, 50, "All"]
+            ],
+            language: {
+                search: "_INPUT_",
+                searchPlaceholder: "Search records",
+            },
+        });
+
+        $('#datetarget').datepicker({
+            format: "MM-yyyy",
+            startView: "months",  
+            minViewMode: "months",
+        });
+
+
+        $('#back').click(function() {
+            $('.form-control').val('');
+            $('.datepicker').datepicker('refresh');
+            $('.selectpicker').selectpicker('refresh');
+        });
+  
+
+        $('body').tooltip({
+            selector: '[data-toggle="tooltip"]',
+            placement:'top'
+        });
+    });
+ 
+
+
+ //========================================== MODAL PENCARIAN MACHINE ======================================== // 
+
+        $('.pencarianMachine').on('click', function () {
+        // event.preventDefault();
+        // const modalNamaPerusahaan   = $(this).parents('.singleSpesifikasi').find('.namaperusahaan').text();
+        // const modalWilayahKerja     = $(this).parents('.singleSpesifikasi').find('.wilayahkerja').text();
+        // const modalLokasi           = $(this).parents('.singleSpesifikasi').find('.lokasi').text();
+        // const modalSpefikasi        = $(this).parents('.singleSpesifikasi').find('.spesifikasi').html();
+
+        // $('#modal-spesifikasi .modal-body>h4>.card-namaperusahaan').text(modalNamaPerusahaan);
+        // $('#modal-spesifikasi .modal-body>.card-wilayahkerja').text(modalWilayahKerja);
+        // $('#modal-spesifikasi .modal-body>.card-lokasi').text(modalLokasi);
+        // $('#modal-spesifikasi .modal-body>.textarea>.card-desc').html(modalSpefikasi);
+
+        $('.datepencarian').datepicker({
+            format: "dd-MM-yyyy",
+            startView: "months"
+        });
+
+
+        $('.form-control').val('');
+        $('.datepencarian').datepicker('refresh');
+        $('.selectpicker').selectpicker('refresh');
+        $("#modal-pencarianMachine").scrollTop(0);
+        $('#modal-pencarianMachine').modal();
+        });
+
+//======================================================================================================== // 
+    
+
+
+ //========================================== MODAL BERI KETERANGAN MACHINE ======================================== // 
+
+        $('.keterangan').on('click', function (event) {
+        // event.preventDefault();
+        // const modalNamaPerusahaan   = $(this).parents('.singleSpesifikasi').find('.namaperusahaan').text();
+        // const modalWilayahKerja     = $(this).parents('.singleSpesifikasi').find('.wilayahkerja').text();
+        // const modalLokasi           = $(this).parents('.singleSpesifikasi').find('.lokasi').text();
+        // const modalSpefikasi        = $(this).parents('.singleSpesifikasi').find('.spesifikasi').html();
+
+        // $('#modal-description-outlet .modal-body>h4>.card-namaperusahaan').text(modalNamaPerusahaan);
+        // $('#modal-description-outlet .modal-body>.card-wilayahkerja').text(modalWilayahKerja);
+        // $('#modal-description-outlet .modal-body>.card-lokasi').text(modalLokasi);
+        // $('#modal-description-outlet .modal-body>.textarea>.card-desc').html(modalSpefikasi);
+        $('.form-control').val('');
+        $('.selectpicker').selectpicker('refresh');
+        $("#modal-description-machine").scrollTop(0);
+        $('#modal-description-machine').modal();
+        });
+
+//======================================================================================================== // 
+
+</script>
+
+</html>

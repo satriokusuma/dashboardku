@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <link rel="apple-touch-icon" sizes="76x76" href="../../assets/img/apple-icon.png" />
+    <link rel="icon" type="image/png" href="../../assets/img/favicon.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>ERP TECHNO GAME</title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />    
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/dashboardku.css" rel="stylesheet" />
+    <link href="assets/css/bootstrap-datepicker.css" rel="stylesheet" />
+    <link href="assets/css/google-roboto-300-700.css" rel="stylesheet" />
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <style>
+        #scrolling-wrapper{
+            overflow: scroll;
+            background-color: #100 / Pcse17;
+            position: relative;
+            white-space: nowrap;
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="sidebar" data-active-color="blue" data-background-color="black">
+            <div class="logo">
+                <a href="" class="simple-text">
+                    Dashboard Ku
+                </a>
+            </div>
+            <div class="logo logo-mini">
+                <a href="" class="simple-text">
+                    DK
+                </a>
+            </div>
+            <div class="sidebar-wrapper">
+                <div class="user">
+                    <div class="photo">
+                        <img src="assets/img/photo_1.png" />
+                    </div>
+                    <div class="primary">
+                        <a data-toggle="collapse" href="#collapseExample" class="collapsed">
+                          Administrator
+                            <b class="caret"></b>
+                        </a>
+                        <div class="collapse" id="collapseExample">
+                            <ul class="nav">
+                                <li>
+                                    <a href="#">My Profile</a>
+                                </li>
+                                <li>
+                                    <a href="#">Edit Profile</a>
+                                </li>
+                                <li>
+                                    <a href="#">Settings</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <ul class="nav">
+                    <li>
+                        <a href="dashboard.html">
+                            <i class="material-icons">dashboard</i>
+                            <p>Home</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="chart.html">
+                            <i class="material-icons">timeline</i>
+                            <p>Charts</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" href="#pagesExamples">
+                            <i class="material-icons">business_center</i>
+                            <p>Business Ku
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+                        <div id="pagesExamples" class="collapse">
+                            <ul class="nav">
+                                <li>
+                                    <a href="/business-page.html">RMS & IFS</a>
+                                </li>
+                                <li>
+                                    <a href="/fnb.html">FNB</a>
+                                </li>
+                                <li>
+                                    <a href="/machine.html">Machine</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" href="#componentsExamples" aria-expanded="true">
+                            <i class="material-icons">house</i>
+                            <p>Outlets Ku
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+                        <div id="componentsExamples" class="collapse">
+                            <ul class="nav">
+                                <li>
+                                    <a href="/zone2000-outlet.html">Zone 2000</a>
+                                </li>
+                                <li>
+                                    <a href="/kiddieland-outlet.html">Kiddie Land</a>
+                                </li>
+                                
+                               
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="active">
+                        <a data-toggle="collapse" href="#formsExamples">
+                            <i class="material-icons">content_paste</i>
+                            <p>Forms
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+                        <div class="collapse in" id="formsExamples">
+                            <ul class="nav">
+                                <li class="active">
+                                    <a href="/permintanbarang.html">Permintaan Ku</a>
+                                </li>
+                                <li>
+                                    <a href="/permintanbarangMu.html">Permintaan Mu</a>
+                                </li>
+                                <li>
+                                    <a href="/permintanbarang.html">Terima Barang</a>
+                                </li>
+                                <li>
+                                    <a href="../forms/extended.html">Surat Jalan</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="telegram.html">
+                            <i class="material-icons">chat</i>
+                            <p>Chat Message</p>
+                        </a>
+                    </li>
+                   
+                   
+                  
+                </ul>
+            </div>
+        </div>
+        <div class="main-panel">
+            <nav class="navbar navbar-transparent navbar-absolute">
+                <div class="container-fluid">
+                    <div class="navbar-minimize">
+                        <button id="minimizeSidebar" class="btn btn-round btn-white btn-fill btn-just-icon">
+                            <i class="material-icons visible-on-sidebar-regular">more_vert</i>
+                            <i class="material-icons visible-on-sidebar-mini">view_list</i>
+                        </button>
+                    </div>
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#" style="font-weight: 500;">Dashboard Ku</a>
+                        <img src="assets/img/logo/logo.svg" alt="logo" class="img-logo">
+                    </div>
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="#pablo" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="material-icons">dashboard</i>
+                                    <p class="hidden-lg hidden-md">Dashboard</p>
+                                </a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="material-icons">notifications</i>
+                                    <span class="notification">5</span>
+                                    <p class="hidden-lg hidden-md">
+                                        Notifications
+                                        <b class="caret"></b>
+                                    </p>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#">Mike John responded to your email</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">You have 5 new tasks</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">You're now friend with Andrew</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Another Notification</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Another One</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#pablo" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="material-icons">person</i>
+                                    <p class="hidden-lg hidden-md">Profile</p>
+                                </a>
+                            </li>
+                            <li class="separator hidden-lg hidden-md"></li>
+                        </ul>
+                        <form class="navbar-form navbar-right" role="search">
+                            <div class="form-group form-search is-empty">
+                                <input type="text" class="form-control" placeholder="Search">
+                                <span class="material-input"></span>
+                            </div>
+                            <button type="submit" class="btn btn-white btn-round btn-just-icon">
+                                <i class="material-icons">search</i>
+                                <div class="ripple-container"></div>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+            <div class="content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="scrolling-wrapper">
+                            <div class="col-md-4" id="col">
+                            <div class="card-outlet-kiddie bg-primary">
+                                <div class="card-header">
+                                    <h4 class="title-qoute" style="color: #fff;">ZD01 BLOK M - <small style="color: #fdb827;">KIDDIE LAND</small></h4>
+                                </div>
+                                <div class="card-content">
+                                    <ul class="ul-content">
+                                        <li class="list-item">
+                                            <i class="material-icons">business_center</i>
+                                            <p>RMS</p>
+                                        </li>
+                                        <li class="list-item">
+                                            <i class="material-icons">attach_money</i>
+                                            <p>Rp.500,000,000</p>
+                                        </li>
+                                        <li class="list-item">
+                                            <i class="material-icons">pie_chart</i>
+                                            <p>Rp.600,000,000</p>
+                                        </li>
+                                        <li class="list-item">
+                                            <i class="material-icons">query_stats</i>
+                                            <p>80%</p>
+                                        </li>
+                                       
+                                    </ul>
+                                </div>
+                               
+                            </div>
+                            </div>
+
+                            <div class="col-md-4" id="col">
+                                <div class="card-outlet--2"  style="background-color: #f64e60;">
+                                    <div class="card-header">
+                                        <h4 class="title-qoute" style="color: #fff;">ZD01 BLOK M - <small style="color: #fdb827;">KIDDIE LAND</small></h4>
+                                    </div>
+                                    <div class="card-content">
+                                        <ul class="ul-content">
+                                            <li class="list-item">
+                                                <i class="material-icons">place</i>
+                                                <p>Lt 5 Blok M Square  Jakarta Selatan </p>
+                                            </li>
+                                            <li class="list-item">
+                                                <i class="material-icons">face</i>
+                                                <p>Mr.Regional A</p>
+                                            </li>
+                                            <li class="list-item">
+                                                <i class="material-icons">sentiment_satisfied_alt</i>
+                                                <p>Mr.Supervisor A</p>
+                                            </li>
+                                            <li class="list-item">
+                                                <i class="material-icons">people_alt</i>
+                                                <p>3 karyawan</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title" style="font-weight: bold;">Permintaan Ku - <small style="color: #9c27b0;font-weight: bold;font-size: 18px;">Barang Etc</small></h4>
+                                  
+                                </div>
+                                <div class="card-header-wrap">
+                                    <div class="card-header-left">
+                                        <button class="btn btn-fill btn-primary pencarian" data-toggle="tooltip" data-original-title="Pencarian" id="btnClear">
+                                            <i class="material-icons" style="font-size: 20px;margin-right: 5px;">search</i>
+                                            Pencarian
+                                        </button> 
+                                        <button class="btn btn-fill btn-primary" data-toggle="tooltip" data-original-title="Download Data Ke Excel">
+                                            <i class="material-icons"style="font-size: 20px;margin-right: 5px;">cloud_download</i>
+                                           Download Data
+                                        </button>
+                                    </div>
+                                    <div class="card-header-right">
+                                        <button class="btn btn-fill btn-primary" data-toggle="tooltip" data-original-title="Buat Permintaan Barang">
+                                            <i class="material-icons"style="font-size: 20px;margin-right: 5px;">list_alt</i>
+                                          Buat Permintaan Barang
+                                        </button>
+                                    </div>
+
+                                   
+                                </div>
+                                <div class="card-content">
+                                    <table id="datatables"  class="table table-striped table-no-bordered table-hover responsive" width="100%" >
+                                        <thead>
+                                            <tr style="background-color: #848ccf;">
+                                                <th style="color:#fff;">No</th>
+                                                <th style="color:#fff;">Nama Outlet</th>
+                                                <th style="color:#fff;">Divisi</th>
+                                                <th style="color:#fff;">Product</th>
+                                                <th style="color:#fff;">No PP</th>
+                                                <th style="color:#fff;">Nama Barang</th>
+                                                <th style="color:#fff;">Divisi Barang</th>
+                                                <th style="color:#fff;">Qty</th>
+                                                <th style="color:#fff;">NO SJ</th>
+                                                <th style="color:#fff;">Ket PP</th>
+                                                <th style="color:#fff;">Status</th>
+                                                <th style="color:#fff;" data-priority="2">Action</th>
+                                                <th style="color:#fff;">Detail PP</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td class="nameOutlet">ZD01 BLOKM</td>
+                                                <td class="nameOutlet">RMS</td>
+                                                <td class="playzone">PLAY ZONE</td>
+                                                <td class="nameOutlet">00015</td>
+                                                <td class="statusSale">PC KASIR</td>
+                                                <td class="nameOutlet">IT</td>
+                                                <td class="nameOutlet">1</td>
+                                                <td style="font-weight: bold;">-</td>
+                                                <td>-</td>
+                                                <td class="statusTercapai">PP Diterima</td>
+                                                <td>
+                                                    <a class="disabled btn-success btn btn-just-icon btn-round  terimabarang">
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Terima Barang PP">assignment_turned_in</i>
+                                                    </a>
+                                                    <a class="disabled btn-warning btn btn-just-icon btn-round  buatulang">
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Buat Ulang PP">create</i>
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <a class="btn btn-sm btn-primary detailpp" data-toggle="tooltip" data-original-title="Detail Permintaan">Details</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td class="nameOutlet">ZD01 BLOKM</td>
+                                                <td class="nameOutlet">RMS</td>
+                                                <td class="playzone">PLAY ZONE</td>
+                                                <td class="nameOutlet">22145</td>
+                                                <td class="statusSale">KARTU ZONE</td>
+                                                <td class="nameOutlet">IT</td>
+                                                <td class="nameOutlet">5000</td>
+                                                <td style="font-weight: bold;">-</td>
+                                                <td>Kartu stock sedang habis di gudang</td>
+                                                <td class="statusGagal">PP Ditolak</td>
+                                                <td>
+                                                    <a class="disabled btn-success btn btn-just-icon btn-round  terimabarang">
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Terima Barang PP">assignment_turned_in</i>
+                                                    </a>
+                                                    <a class="btn-warning btn btn-just-icon btn-round  buatulang">
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Buat Ulang PP">create</i>
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <a class="btn btn-sm btn-primary detailpp" data-toggle="tooltip" data-original-title="Detail Permintaan">Details</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td class="nameOutlet">ZD01 BLOKM</td>
+                                                <td class="nameOutlet">RMS</td>
+                                                <td class="playzone">PLAY ZONE</td>
+                                                <td class="nameOutlet">12335</td>
+                                                <td class="statusSale">Keyboard</td>
+                                                <td class="nameOutlet">IT</td>
+                                                <td class="nameOutlet">1</td>
+                                                <td style="font-weight: bold;">55125</td>
+                                                <td>-</td>
+                                                <td class="statusTercapai">Barang diterima</td>
+                                                <td>
+                                                    <a class="disabled btn-success btn btn-just-icon btn-round  terimabarang">
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Terima Barang PP">assignment_turned_in</i>
+                                                    </a>
+                                                    <a class="disabled btn-warning btn btn-just-icon btn-round  buatulang">
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Buat Ulang PP">create</i>
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <a class="btn btn-sm btn-primary detailpp" data-toggle="tooltip" data-original-title="Detail Permintaan">Details</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td class="nameOutlet">ZD01 BLOKM KIDDIELAND</td>
+                                                <td class="nameOutlet">RMS</td>
+                                                <td class="kiddie">KIDDIE LAND</td>
+                                                <td class="nameOutlet">12152</td>
+                                                <td class="statusSale">Kaos Kaki</td>
+                                                <td class="nameOutlet">MD</td>
+                                                <td class="nameOutlet">2000</td>
+                                                <td style="font-weight: bold;">55121</td>
+                                                <td>-</td>
+                                                <td class="statusBelumAda">Proses Pengiriman</td>
+                                                <td>
+                                                    <a class="btn-success btn btn-just-icon btn-round  terimabarang">
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Terima Barang PP">assignment_turned_in</i>
+                                                    </a>
+                                                    <a class="disabled btn-warning btn btn-just-icon btn-round  buatulang">
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Buat Ulang PP">create</i>
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <a class="btn btn-sm btn-primary detailpp" data-toggle="tooltip" data-original-title="Detail Permintaan">Details</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td class="nameOutlet">R79 MAKASAR</td>
+                                                <td class="nameOutlet">RMS</td>
+                                                <td class="playzone">PLAY ZONE</td>
+                                                <td class="nameOutlet">15502</td>
+                                                <td class="statusSale">Lampu CH</td>
+                                                <td class="nameOutlet">Proyek</td>
+                                                <td class="nameOutlet">10</td>
+                                                <td style="font-weight: bold;">-</td>
+                                                <td>-</td>
+                                                <td class="statusTercapai">PP Diterima</td>
+                                                <td>
+                                                    <a class="disabled btn-success btn btn-just-icon btn-round  terimabarang">
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Terima Barang PP">assignment_turned_in</i>
+                                                    </a>
+                                                    <a class="disabled btn-warning btn btn-just-icon btn-round  buatulang">
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Buat Ulang PP">create</i>
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <a class="btn btn-sm btn-primary detailpp" data-toggle="tooltip" data-original-title="Detail Permintaan">Details</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>6</td>
+                                                <td class="nameOutlet">R37 Cibitung</td>
+                                                <td class="nameOutlet">RMS</td>
+                                                <td class="playzone">PLAY ZONE</td>
+                                                <td class="nameOutlet">25020</td>
+                                                <td class="statusSale">Bungkus Pop Corn</td>
+                                                <td class="nameOutlet">MD</td>
+                                                <td class="nameOutlet">1000</td>
+                                                <td style="font-weight: bold;">-</td>
+                                                <td>No permintan salah dengan photo ppan</td>
+                                                <td class="statusGagal">PP Ditolak</td>
+                                                <td>
+                                                    <a class="disabled btn-success btn btn-just-icon btn-round  terimabarang">
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Terima Barang PP">assignment_turned_in</i>
+                                                    </a>
+                                                    <a class="btn-warning btn btn-just-icon btn-round  buatulang">
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Buat Ulang PP">create</i>
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <a class="btn btn-sm btn-primary detailpp" data-toggle="tooltip" data-original-title="Detail Permintaan">Details</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>7</td>
+                                                <td class="nameOutlet">R74 Makasar KIDDIELAND</td>
+                                                <td class="nameOutlet">RMS</td>
+                                                <td class="kiddie">KIDDIE LAND</td>
+                                                <td class="nameOutlet">25020</td>
+                                                <td class="statusSale">GELANG KIDDIELAND</td>
+                                                <td class="nameOutlet">MD</td>
+                                                <td class="nameOutlet">1000</td>
+                                                <td style="font-weight: bold;">21252</td>
+                                                <td>-</td>
+                                                <td class="statusBelumAda">Proses Pengiriman</td>
+                                                <td>
+                                                    <a class="btn-success btn btn-just-icon btn-round  terimabarang">
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Terima Barang PP">assignment_turned_in</i>
+                                                    </a>
+                                                    <a class="disabled btn-warning btn btn-just-icon btn-round  buatulang">
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Buat Ulang PP">create</i>
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <a class="btn btn-sm btn-primary detailpp" data-toggle="tooltip" data-original-title="Detail Permintaan">Details</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>8</td>
+                                                <td class="nameOutlet">R66 Padang</td>
+                                                <td class="nameOutlet">RMS</td>
+                                                <td class="zone2000">ZONE 2000</td>
+                                                <td class="nameOutlet">25020</td>
+                                                <td class="statusSale">Uang</td>
+                                                <td class="nameOutlet">Operasional</td>
+                                                <td class="nameOutlet">1000000</td>
+                                                <td style="font-weight: bold;">-</td>
+                                                <td>Pengajuan terlalu banyak</td>
+                                                <td class="statusGagal">PP Ditolak</td>
+                                                <td>
+                                                    <a class="disabled btn-success btn btn-just-icon btn-round  terimabarang">
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Terima Barang PP">assignment_turned_in</i>
+                                                    </a>
+                                                    <a class="btn-warning btn btn-just-icon btn-round  buatulang">
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Buat Ulang PP">create</i>
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <a class="btn btn-sm btn-primary detailpp" data-toggle="tooltip" data-original-title="Detail Permintaan">Details</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>9</td>
+                                                <td class="nameOutlet">R48 Lampung</td>
+                                                <td class="nameOutlet">RMS</td>
+                                                <td class="zone2000">ZONE 2000</td>
+                                                <td class="nameOutlet">25021</td>
+                                                <td class="statusSale">Uang</td>
+                                                <td class="nameOutlet">Operasional</td>
+                                                <td class="nameOutlet">500000</td>
+                                                <td style="font-weight: bold;">25220</td>
+                                                <td>-</td>
+                                                <td class="statusTercapai">Barang diterima</td>
+                                                <td>
+                                                    <a class="disabled btn-success btn btn-just-icon btn-round  terimabarang">
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Terima Barang PP">assignment_turned_in</i>
+                                                    </a>
+                                                    <a class="disabled btn-warning btn btn-just-icon btn-round  buatulang">
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Buat Ulang PP">create</i>
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <a class="btn btn-sm btn-primary detailpp" data-toggle="tooltip" data-original-title="Detail Permintaan">Details</a>
+                                                </td>
+                                            </tr>
+                                           
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                  
+                  
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="container-fluid">
+                    <p class="copyright pull-right">
+                        &copy;
+                        <script>
+                            document.write(new Date().getFullYear())
+                        </script>
+                       <a href="">DashboardKu.id</a>, made with love for a better web
+                    </p>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+
+<!------------------------------------- MODAL TERIMA PP----------------------------------------------------->
+
+    <div class="modal fade" role="dialog" id="modal-terima-barangpp">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 style="font-weight: bold;color: #fff;">Pencarian</h4>
+                </div>
+               <div class="modal-body">  
+                    <form action="" method="POST" enctype="multipart/form-data">
+
+                        <div class="row">
+                            <div class="form-group col-md-12">
+                                <label for="namaoutlet" class="col-sm-2 col-form-label">Nama Outlet</label>
+                                <div class="col-sm-10">
+                                    <input type="text" readonly class="form-control-plaintext" id="namaoutlet" value="ZD01 BLOK M">
+                                </div>
+                            </div>
+                        </div>
+                       
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <label for="divisi" class="col-sm-4 col-form-label">Divisi</label>
+                                <div class="col-sm-8">
+                                    <input type="text" readonly class="form-control-plaintext" id="divisi" value="RMS">
+                                </div>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="product" class="col-sm-4 col-form-label">Product</label>
+                                <div class="col-sm-8">
+                                    <input type="text" readonly class="form-control-plaintext" id="product" value="PLAY ZONE">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <label for="namabarang" class="col-sm-4 col-form-label">Nama Barang</label>
+                                <div class="col-sm-8">
+                                    <input type="text" readonly class="form-control-plaintext" id="namabarang" value="KEYBOARD">
+                                </div>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="divisibarang" class="col-sm-4 col-form-label">DIVISI BARANG</label>
+                                <div class="col-sm-8">
+                                    <input type="text" readonly class="form-control-plaintext" id="divisibarang" value="IT">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <label for="photopp" class="col-sm-4 col-form-label">Photo Surat Permintaan</label>
+                                <div class="col-sm-8">
+                                    <img src="assets/img/image_placeholder.jpg" alt="" class="photopp">
+                                </div>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="nopp" class="col-sm-4 col-form-label">No Permintaan</label>
+                                <div class="col-sm-8">
+                                    <input type="text" readonly class="form-control-plaintext" id="nopp" value="12152">
+                                </div>
+                                <label for="qtypp" class="col-sm-4 col-form-label">QTY</label>
+                                <div class="col-sm-8">
+                                    <input type="text" readonly class="form-control-plaintext" id="qtypp" value="1">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <label for="photopp" class="col-sm-4 col-form-label">Photo Surat Masuk Barang</label>
+                                <div class="col-sm-8">
+                                    <img src="assets/img/image_placeholder.jpg" alt="" class="photopp">
+                                </div>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="nopp" class="col-sm-4 col-form-label">No SJ Masuk</label>
+                                <div class="col-sm-8">
+                                    <input type="text" readonly class="form-control-plaintext" id="nopp" value="55121">
+                                </div>
+                                <label for="qtysjmasuk" class="col-sm-4 col-form-label">QTY</label>
+                                <div class="col-sm-8">
+                                    <input type="text" readonly class="form-control-plaintext" id="qtysjmasuk" value="1">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="from-group" style="margin-top: 20px;">
+                                <label for="photopp" class="col-sm-2 col-form-label" style="padding-left: 30px;">Upload SJ Masuk Barang</label>
+                                <div class="col-sm-10">
+                                    <div class="fileinput text-center fileinput-new" data-provides="fileinput">
+                                        <div class="fileinput-new thumbnail">
+                                          <img src="assets/img/image_placeholder.jpg" alt="...">
+                                        </div>
+                                        <div class="fileinput-preview fileinput-exists thumbnail"></div>
+                                        <p id="" class="form-text text-muted">Upload Photo SJ Masuk Barang dengan TTD / Cap</p>
+                                        <div>
+                                            <span class="btn btn-primary btn-sm btn-file">
+                                                <span class="fileinput-new">Pilih Photo</span>
+                                                <span class="fileinput-exists">Change</span>
+                                                <input type="file" name="..." />
+                                            </span>
+                                            <a class="btn btn-danger btn-sm fileinput-exists" data-dismiss="fileinput">Delete</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="row">
+                            <div class="col-md-12" style="text-align: end;">
+                                <a href="#" type="button" class="btn btn-primary btn-fill"  data-dismiss="modal" style="padding: 5px 15px;" type="submit">
+                                    <i class="material-icons" style="font-size: 24px;float: left;line-height: 30px;
+                                    width: 30px;
+                                    text-align: center;">done
+                                    </i>
+                                    <p class="textButton" style="padding: 0 5px;">Terima Barang PP</p>
+                                </a>
+                                <a href="#" type="button" class="btn btn-secondary btn-fill"  data-dismiss="modal" style="padding: 5px 15px;" id="back">
+                                    <i class="material-icons" style="font-size: 24px;margin-right: 5px;float: left;line-height: 30px;
+                                    width: 30px;
+                                    text-align: center;">replay
+                                    </i>
+                                    <p class="textButton">Kembali</p>
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                    
+               </div>
+            </div>
+         </div>
+    </div>
+<!------------------------------------------------------------------------------------------------------------->
+
+<!------------------------------------- MODAL BUAT ULANG PP---------------------------------------------->
+
+<div class="modal fade" role="dialog" id="modal-buatulang">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <!-- <button type="button" class="close btn btn-just-icon btn-round btn-danger" data-dismiss="modal" style="color: #fff;outline: none;opacity:1;padding: 10px 5px;">
+                    <i class="material-icons">close</i>
+                </button> -->
+                <h4 style="font-weight: bold;color: #fff;">Buat Ulang Permintaan</h4>
+            </div>
+           <div class="modal-body">
+            <form action="" method="POST" enctype="multipart/form-data">
+
+                <div class="row">
+                    <div class="form-group col-md-12">
+                        <label for="keterangantolak" class="col-sm-2 col-form-label">Keterangan Ditolak</label>
+                        <div class="col-sm-10">
+                            <input type="text" readonly class="form-control-plaintext" id="keterangantolak" value="No permintaan salah dengan photo ppan" style="color: red;font-weight: 300;">
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="row">
+                    <div class="form-group col-md-6">
+                        <label for="divisibarang" class="col-sm-4 col-form-label">Divisi Barang</label>
+                        <div class="col-sm-8">
+                            <input type="text" readonly class="form-control-plaintext" id="divisibarang" value="IT">
+                        </div>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="namabarang" class="col-sm-4 col-form-label">Nama Barang</label>
+                        <div class="col-sm-8">
+                            <input type="text" readonly class="form-control-plaintext" id="namabarang" value="PC KASIR">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+
+                    <div class="form-group col-md-6">
+                        <label for="photopp" class="col-sm-4 col-form-label">Surat Permintaan Sebelumnya</label>
+                        <div class="col-sm-8">
+                            <img src="assets/img/image_placeholder.jpg" alt="" class="photopp">
+                        </div>
+                    </div>
+
+                    <div class="form-group col-md-6">
+                        <div class="col-sm-12" style="padding-left: 0;">
+                            <label for="nopp" class="col-sm-4 col-form-label">No PP sebelumnya</label>
+                            <div class="col-sm-8">
+                                <input type="text" readonly class="form-control-plaintext" id="nopp" value="00015">
+                            </div>
+                        </div>
+                        <div class="col-sm-12" style="padding-left: 0;">
+                            <label for="qtypp" class="col-sm-4 col-form-label">QTY</label>
+                            <div class="col-sm-8">
+                                <input type="text" readonly class="form-control-plaintext" id="qtypp" value="1">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">                  
+                    <div class="form-group col-md-6">
+                        <label for="NoPP" class="col-sm-4 col-form-label">No Permintaan</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="NoPP">
+                            <p id="" class="form-text text-muted">No Permintaan tidak boleh sama kembali</p>
+                        </div>
+                    </div>  
+
+                    <div class="form-group col-md-6">
+                        <label for="qtyPP" class="col-sm-4 col-form-label">Jumlah Permintaan</label>
+                        <div class="col-sm-8">
+                            <input type="number" class="form-control" id="qtyPP">
+                        </div>
+                    </div>
+                            
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="divisibarangulang" class="col-sm-4 col-form-label">Divisi Barang</label>
+                            <div class="col-sm-8">
+                                <select class="selectpicker" title="Pilih Divisi Barang">
+                                    <option>IT</option>
+                                    <option>KIDDIE LAND</option>
+                                    <option>MD</option>
+                                    <option>OPERASIONAL</option>
+                                    <option>PROYEK</option>
+                                    <option>SDM</option>
+                                </select>
+                                <p class="form-text text-muted">Pastikan Pilih sesuai dengan Divisi Permintaan Barang</p>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="tanggalpp" class="col-sm-4 col-form-label">Tanggal Permintaan</label>
+                            <div class="col-sm-8">
+                                <div class="input-group">
+                                    <div class="input-group-addon">
+                                        <span class="material-icons" style="vertical-align: middle;color: #848ccf;">event</span>
+                                    </div>
+                                    <input placeholder="Tanggal Permintaan" type="text" class="form-control datepicker datepermintaan" name="" autocomplete="off">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="row">
+                    <div class="from-group" style="margin-top: 20px;">
+                        <label for="photopp" class="col-sm-2 col-form-label" style="padding-left: 30px;">Upload Photo PP</label>
+                        <div class="col-sm-10">
+                            <div class="fileinput text-center fileinput-new" data-provides="fileinput">
+                                <div class="fileinput-new thumbnail">
+                                  <img src="assets/img/image_placeholder.jpg" alt="...">
+                                </div>
+                                <div class="fileinput-preview fileinput-exists thumbnail"></div>
+                                <p id="" class="form-text text-muted">Pastikan Photo PP sama dengan No Permintaan </p>
+                                <div>
+                                    <span class="btn btn-primary btn-sm btn-file">
+                                        <span class="fileinput-new">Pilih Photo</span>
+                                        <span class="fileinput-exists">Change</span>
+                                        <input type="file" name="..." />
+                                    </span>
+                                    <a class="btn btn-danger btn-sm fileinput-exists" data-dismiss="fileinput">Delete</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+                
+                <div class="row">
+                    <div class="col-md-12" style="text-align: end;">
+                        <a href="#" type="button" class="btn btn-primary btn-fill"  data-dismiss="modal" style="padding: 5px 15px;" type="submit">
+                            <i class="material-icons" style="font-size: 24px;float: left;line-height: 30px;
+                            width: 30px;
+                            text-align: center;">done
+                            </i>
+                            <p class="textButton" style="padding: 0 5px;">Kirim Ulang</p>
+                        </a>
+                        <a href="#" type="button" class="btn btn-secondary btn-fill"  data-dismiss="modal" style="padding: 5px 15px;" id="back">
+                            <i class="material-icons" style="font-size: 24px;margin-right: 5px;float: left;line-height: 30px;
+                            width: 30px;
+                            text-align: center;">replay
+                            </i>
+                            <p class="textButton">Kembali</p>
+                        </a>
+                    </div>
+                </div>
+            </form>
+                
+           </div>
+        </div>
+     </div>
+</div>
+<!------------------------------------------------------------------------------------------------------------>
+
+<!------------------------------------- MODAL PENCARIAN ASSET ----------------------------------------------------->
+
+<div class="modal fade" role="dialog" id="modal-pencarianAsset">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 style="font-weight: bold;color: #fff;">Pencarian Asset</h4>
+            </div>
+           <div class="modal-body">  
+                <form action="" method="POST">
+
+                    <div class="form-group row">
+                        <label for="StatusOmset" class="col-sm-2 col-form-label">Divisi Barang</label>
+                        <div class="col-sm-10">
+                            <select class="selectpicker" title="Pilih Divisi Barang" id="StatusOmset">
+                                <option>IT</option>
+                                <option>PROYEK</option>
+                                <option>OPERASIONAL</option>
+                                <option>KIDDIELAND</option>
+                            </select>
+                        </div>
+                    </div>
+
+
+                    <div class="form-group row">
+                        <label for="namabarang" class="col-sm-2 col-form-label">Nama Barang</label>
+                        <div class="col-sm-10">
+                            <select class="selectpicker" title="Pilih Nama Barang" id="namabarang">
+                                <option>PC SERVER</option>
+                                <option>PC OFFICE</option>
+                                <option>PC KASIR</option>
+                                <option>PRINTER SERVER</option>
+                                <option>MONITOR KASIR</option>
+                                <option>PC POLLING</option>
+                            </select>
+                        </div>
+                    </div>
+ 
+                    <div class="form-group row">
+                        <label for="kondisi" class="col-sm-2 col-form-label">Kondisi Barang</label>
+                        <div class="col-sm-10">
+                            <select class="selectpicker" title="Pilih Kondisi Barang" id="kondisi">
+                                <option>BAIK</option>
+                                <option>RUSAK</option>
+                            </select>
+                        </div>
+                    </div>
+                 
+                    <div class="row">
+                        <div class="col-md-12" style="text-align: end;">
+                            <a href="#" type="button" class="btn btn-primary btn-fill"  data-dismiss="modal" style="padding: 5px 15px;" type="submit">
+                                <i class="material-icons" style="font-size: 24px;float: left;line-height: 30px;
+                                width: 30px;
+                                text-align: center;">search
+                                </i>
+                                <p class="textButton" style="padding: 0 5px;">Cari</p>
+                            </a>
+                            <a href="#" type="button" class="btn btn-success btn-fill"  data-dismiss="modal" style="padding: 5px 15px;" id="back">
+                                <i class="material-icons" style="font-size: 24px;margin-right: 5px;float: left;line-height: 30px;
+                                width: 30px;
+                                text-align: center;">replay
+                                </i>
+                                <p class="textButton">Kembali</p>
+                            </a>
+                        </div>
+                    </div>
+
+                </form>
+                
+           </div>
+        </div>
+     </div>
+</div>
+<!------------------------------------------------------------------------------------------------------------->
+</body>
+
+<script src="assets/js/jquery-3.1.1.min.js" type="text/javascript"></script>
+<script src="assets/js/datatables/dataTables.min.js"></script>
+<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="assets/js/dashboardku.min.js" type="text/javascript"></script>
+<script src="assets/js/perfect-scrollbar.jquery.min.js" type="text/javascript"></script>
+<script src="assets/js/dashboardku.js"></script>
+<script src="assets/js/bootstrap-datepicker.js"></script>
+<script src="assets/js/bootstrap-select.min.js"></script>
+<script src="assets/js/jasny-bootstrap.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+          $('#datatables').DataTable({
+              "pagingType": "full_numbers",
+              "lengthMenu": [
+                  [12, 30, 50, -1],
+                  [12, 30, 50, "All"]
+              ],
+              "language": {
+                  search: "_INPUT_",
+                  searchPlaceholder: "Search records",
+              }
+          });
+
+          $('#datatablesAsset').DataTable({
+              "pagingType": "full_numbers",
+              "lengthMenu": [
+                  [30, 50, 100, -1],
+                  [30, 50, 100, "All"]
+              ],
+              "language": {
+                  search: "_INPUT_",
+                  searchPlaceholder: "Search records",
+              }
+          });
+  
+  
+          $('#back').click(function() {
+              $('.form-control').val('');
+              $('.datepicker').datepicker('refresh');
+          });
+  
+          $('body').tooltip({
+              selector: '[data-toggle="tooltip"]',
+              placement:'top'
+          });
+  
+          $('.tolak').on('click', function (event) {
+          event.preventDefault();
+  
+          const modalNamaPerusahaan   = $(this).parents('.singleSpesifikasi').find('.namaperusahaan').text();
+          const modalWilayahKerja     = $(this).parents('.singleSpesifikasi').find('.wilayahkerja').text();
+          const modalLokasi           = $(this).parents('.singleSpesifikasi').find('.lokasi').text();
+          const modalSpefikasi        = $(this).parents('.singleSpesifikasi').find('.spesifikasi').html();
+          
+          $('.datepencarian').datepicker({
+            format: "dd-MM-yyyy",
+           
+            orientation: "bottom"
+            });
+  
+          $('#modal-tolak-pp .modal-body>h4>.card-namaperusahaan').text(modalNamaPerusahaan);
+          $('#modal-tolak-pp .modal-body>.card-wilayahkerja').text(modalWilayahKerja);
+          $('#modal-tolak-pp .modal-body>.card-lokasi').text(modalLokasi);
+          $('#modal-tolak-pp .modal-body>.textarea>.card-desc').html(modalSpefikasi);
+  
+          $('.form-control').val('');
+          $('.datepencarian').datepicker('refresh');
+          $('#modal-tolak-pp').modal();
+   
+          });
+//========================================== MODAL TERIMA BARANG PP ======================================== // 
+
+        $('.terimabarang').on('click', function (event) {
+        // event.preventDefault();
+        // const modalNamaPerusahaan   = $(this).parents('.singleSpesifikasi').find('.namaperusahaan').text();
+        // const modalWilayahKerja     = $(this).parents('.singleSpesifikasi').find('.wilayahkerja').text();
+        // const modalLokasi           = $(this).parents('.singleSpesifikasi').find('.lokasi').text();
+        // const modalSpefikasi        = $(this).parents('.singleSpesifikasi').find('.spesifikasi').html();
+
+        // $('#modal-spesifikasi .modal-body>h4>.card-namaperusahaan').text(modalNamaPerusahaan);
+        // $('#modal-spesifikasi .modal-body>.card-wilayahkerja').text(modalWilayahKerja);
+        // $('#modal-spesifikasi .modal-body>.card-lokasi').text(modalLokasi);
+        // $('#modal-spesifikasi .modal-body>.textarea>.card-desc').html(modalSpefikasi);
+
+        $('.datekirim').datepicker({
+            format: "dd-MM-yyyy",
+            orientation: "bottom"
+            });
+    
+        $('.form-control').val('');
+        $('.datekirim').datepicker('refresh');
+        $("#modal-terima-barangpp").scrollTop(0);
+        $('#modal-terima-barangpp').modal();
+        });
+//======================================================================================================== // 
+
+        $('.pencarianAsset').on('click', function (event) {
+            event.preventDefault();
+  
+          const modalNamaPerusahaan   = $(this).parents('.singleSpesifikasi').find('.namaperusahaan').text();
+          const modalWilayahKerja     = $(this).parents('.singleSpesifikasi').find('.wilayahkerja').text();
+          const modalLokasi           = $(this).parents('.singleSpesifikasi').find('.lokasi').text();
+          const modalSpefikasi        = $(this).parents('.singleSpesifikasi').find('.spesifikasi').html();
+          
+          
+  
+          $('#modal-pencarianAsset .modal-body>h4>.card-namaperusahaan').text(modalNamaPerusahaan);
+          $('#modal-pencarianAsset .modal-body>.card-wilayahkerja').text(modalWilayahKerja);
+          $('#modal-pencarianAsset .modal-body>.card-lokasi').text(modalLokasi);
+          $('#modal-pencarianAsset .modal-body>.textarea>.card-desc').html(modalSpefikasi);
+
+          $('.datepencarian').datepicker({
+            format: "dd-MM-yyyy",
+            orientation: "bottom"
+            });
+            
+          $('.form-control').val('');
+          $('.datepencarian').datepicker('refresh');
+          $('#modal-pencarianAsset').modal();
+   
+          });
+
+//======================================================================================================== //
+
+          $('.buatulang').on('click', function (event) {
+            event.preventDefault();
+  
+          const modalNamaPerusahaan   = $(this).parents('.singleSpesifikasi').find('.namaperusahaan').text();
+          const modalWilayahKerja     = $(this).parents('.singleSpesifikasi').find('.wilayahkerja').text();
+          const modalLokasi           = $(this).parents('.singleSpesifikasi').find('.lokasi').text();
+          const modalSpefikasi        = $(this).parents('.singleSpesifikasi').find('.spesifikasi').html();
+          
+         
+          $('#modal-buatulang .modal-body>h4>.card-namaperusahaan').text(modalNamaPerusahaan);
+          $('#modal-buatulang .modal-body>.card-wilayahkerja').text(modalWilayahKerja);
+          $('#modal-buatulang .modal-body>.card-lokasi').text(modalLokasi);
+          $('#modal-buatulang .modal-body>.textarea>.card-desc').html(modalSpefikasi);
+
+          $('.datepermintaan').datepicker({
+            format: "dd-MM-yyyy",
+            startView: "months",  
+            orientation: "bottom"
+            });
+  
+          $('.form-control').val('');
+          $('.datepencarian').datepicker('refresh');
+          $('#modal-buatulang').modal();
+   
+          });
+  
+      });
+  </script>
+  
+</html>
