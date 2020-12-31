@@ -79,7 +79,7 @@
   margin: 25px 0;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 6px;
-  background-image: url(/assets/img/human/human.svg);
+  background-image: url(../img/human/human.svg);
   background-position: calc(100% + 0.5rem) bottom;
   background-repeat: no-repeat;
   background-size: auto 70%;
@@ -94,7 +94,7 @@
   margin: 25px 0;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 6px;
-  background-image: url(/assets/img/human/human-5.svg);
+  background-image: url(../img/human/human-5.svg);
   background-position: calc(100% + 0.5rem) bottom;
   background-repeat: no-repeat;
   background-size: auto 70%;
@@ -109,7 +109,7 @@
   margin: 25px 0;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 6px;
-  background-image: url(/assets/img/human/human-6.svg);
+  background-image: url(../img/human/human-6.svg);
   background-position: calc(100% + 0.5rem) bottom;
   background-repeat: no-repeat;
   background-size: auto 70%;
@@ -124,7 +124,7 @@
   margin: 25px 0;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 6px;
-  background-image: url(/assets/img/human/human-7.svg);
+  background-image: url(../img/human/human-7.svg);
   background-position: calc(100% + 0.5rem) bottom;
   background-repeat: no-repeat;
   background-size: auto 80%;
@@ -139,7 +139,7 @@
   margin: 25px 0;
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
   border-radius: 6px;
-  background-image: url(/assets/img/human/leaf.svg);
+  background-image: url(../img/human/leaf.svg);
   background-position: calc(100% + 0.5rem) bottom;
   background-repeat: no-repeat;
   background-size: auto 50%;
@@ -152,7 +152,7 @@
   margin: 25px 0;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 10px;
-  background-image: url(/assets/img/human/human-3.svg);
+  background-image: url(../img/human/human-3.svg);
   background-position: calc(100% + 10rem) bottom;
   background-repeat: no-repeat;
   background-size: auto 82%;
@@ -167,7 +167,7 @@
   margin: 25px 0;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 10px;
-  background-image: url(/assets/img/human/human-4.svg);
+  background-image: url(../img/human/human-4.svg);
   background-position: calc(100% + 4.5rem) bottom;
   background-repeat: no-repeat;
   background-size: auto 82%;
@@ -182,7 +182,7 @@
   margin: 25px 0;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 10px;
-  background-image: url(/assets/img/human/human-2.svg);
+  background-image: url(../img/human/human-2.svg);
   background-position: calc(100% + 8.5rem) bottom;
   background-repeat: no-repeat;
   background-size: auto 82%;
@@ -198,7 +198,7 @@
   margin: 25px 0;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 10px;
-  background-image: url(/assets/img/human/human-8.svg);
+  background-image: url(../img/human/human-8.svg);
   background-position: calc(100% + 3rem) bottom;
   background-repeat: no-repeat;
   background-size: auto 90%;
@@ -213,7 +213,7 @@
   margin: 25px 0;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 10px;
-  background-image: url(/assets/img/human/arcade-2.svg);
+  background-image: url(../img/human/arcade-2.svg);
   background-position: calc(100% + 5rem) bottom;
   background-repeat: no-repeat;
   background-size: auto 70%;
@@ -228,7 +228,7 @@
   margin: 25px 0;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 10px;
-  background-image: url(/assets/img/human/fastfood.svg);
+  background-image: url(../img/human/fastfood.svg);
   background-position: calc(100% + 5rem) bottom;
   background-repeat: no-repeat;
   background-size: auto 45%;
@@ -245,7 +245,7 @@
   margin: 25px 0;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 10px;
-  background-image: url(/assets/img/human/human-3.svg);
+  background-image: url(../img/human/human-3.svg);
   background-position: calc(100% + 11.5rem) bottom;
   background-repeat: no-repeat;
   background-size: auto 100%;
@@ -261,7 +261,7 @@
   margin: 25px 0;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 10px;
-  background-image: url(/assets/img/human/human-2.svg);
+  background-image: url(../img/human/human-2.svg);
   background-position: calc(100% + 8.5rem) bottom;
   background-repeat: no-repeat;
   background-size: auto 100%;
@@ -277,7 +277,7 @@
   margin: 25px 0;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 10px;
-  background-image: url(/assets/img/human/kid.svg);
+  background-image: url(../img/human/kid.svg);
   background-position: calc(100% + 10rem) bottom;
   background-repeat: no-repeat;
   background-size: auto 85%;
@@ -294,7 +294,7 @@
   border-radius: 10px;
   padding: 2px 15px;
   cursor: pointer;
-  background-image: url(/assets/img/human/leaf.svg);
+  background-image: url(../img/human/leaf.svg);
   background-position: calc(100% + 7.5rem) bottom;
   background-repeat: no-repeat;
   background-size: auto 40%;
@@ -308,7 +308,7 @@
   border-radius: 10px;
   padding: 2px 15px;
   cursor: pointer;
-  background-image: url(/assets/img/human/leaf.svg);
+  background-image: url(../img/human/leaf.svg);
   background-position: calc(100% + 2.5rem) bottom;
   background-repeat: no-repeat;
   background-size: auto 40%;
@@ -324,7 +324,7 @@
   margin: 25px 0;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 10px;
-  background-image: url(/assets/img/human/human-3.svg);
+  background-image: url(../img/human/human-3.svg);
   background-position: calc(100% + 11.5rem) bottom;
   background-repeat: no-repeat;
   background-size: auto 82%;
