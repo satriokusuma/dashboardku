@@ -16,7 +16,18 @@ const addMaximumScaleToMetaViewport = () => {
   };
   
   const disableIosTextFieldZoom = addMaximumScaleToMetaViewport;
-  
+  function iOS() {
+    return [
+      'iPad Simulator',
+      'iPhone Simulator',
+      'iPod Simulator',
+      'iPad',
+      'iPhone',
+      'iPod'
+    ].includes(navigator.platform)
+    // iPad on iOS 13 detection
+    || (navigator.userAgent.includes("Mac") && "ontouchend" in document)
+  }
   // https://stackoverflow.com/questions/9038625/detect-if-device-is-ios/9039885#9039885
   const checkIsIOS = () =>
     /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
