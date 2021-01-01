@@ -96,6 +96,33 @@
                         </div>
                     </li>
                     <li>
+                        <a data-toggle="collapse" href="#pagesBagian" aria-expanded="true">
+                            <i class="material-icons">extension</i>
+                            <p>Bagian
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+                        <div id="pagesBagian" class="collapse">
+                            <ul class="nav">
+                                <li>
+                                    <a  href="">IT</a>
+                                </li>
+                                <li>
+                                    <a href="">PROYEK</a>
+                                </li>
+                                <li>
+                                    <a href="">KIDDIE LAND</a>
+                                </li>
+                                <li>
+                                    <a href="">MD</a>
+                                </li>
+                                <li>
+                                    <a href="">SDM</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
                         <a data-toggle="collapse" href="#componentsExamples" aria-expanded="true">
                             <i class="material-icons">house</i>
                             <p>Outlets Ku
@@ -130,12 +157,12 @@
                                 <li class="active">
                                     <a href="./permintanbarangMu.html">Permintaan Mu</a>
                                 </li>
-                                <li>
+                                <!-- <li>
                                     <a href="./permintanbarang.html">Terima Barang</a>
                                 </li>
                                 <li>
                                     <a href="./forms/extended.html">Surat Jalan</a>
-                                </li>
+                                </li> -->
                               
                             </ul>
                         </div>
@@ -310,18 +337,18 @@
                                         <thead>
                                             <tr style="background-color: #848ccf;">
                                                 <th style="color:#fff;">No</th>
-                                                <th style="color:#fff;">Nama Outlet</th>
-                                                <th style="color:#fff;">Divisi</th>
+                                                <th style="color:#fff;">Outlet</th>
+                                                <th style="color:#fff;" >Divisi</th>
                                                 <th style="color:#fff;">Product</th>
                                                 <th style="color:#fff;">No PP</th>
                                                 <th style="color:#fff;">Nama Barang</th>
-                                                <th style="color:#fff;">Divisi Barang</th>
+                                                <th style="color:#fff;">Divisi</th>
                                                 <th style="color:#fff;">Qty</th>
                                                 <th style="color:#fff;">NO SJ</th>
                                                 <th style="color:#fff;">Ket PP</th>
                                                 <th style="color:#fff;">Status</th>
+                                                <th style="color:#fff;">No Barang</th>
                                                 <th style="color:#fff;" data-priority="2">Action</th>
-                                                <th style="color:#fff;">Detail PP</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -337,6 +364,7 @@
                                                 <td style="font-weight: bold;">-</td>
                                                 <td>-</td>
                                                 <td class="statusTercapai">PP Diterima</td>
+                                                <td class="statusTercapai">-</td>
                                                 <td>
                                                     <a class="disabled btn-success btn btn-just-icon btn-round  terima">
                                                         <i class="material-icons" data-toggle="tooltip" data-original-title="Terima PP">done</i>
@@ -348,9 +376,6 @@
                                                     <a class="disabled btn-danger btn btn-just-icon btn-round tolak" id="tolak">
                                                         <i class="material-icons" data-toggle="tooltip" data-original-title="Tolak PP">clear</i>
                                                     </a>
-                                                </td>
-                                                <td>
-                                                    <a class="btn btn-sm btn-primary detailpp" data-toggle="tooltip" data-original-title="Detail Permintaan">Details</a>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -365,6 +390,7 @@
                                                 <td style="font-weight: bold;">-</td>
                                                 <td>-</td>
                                                 <td> - </td>
+                                                <td> - </td>
                                                 <td>
                                                    
                                                     <a class="btn-success btn btn-just-icon btn-round  terima">
@@ -378,9 +404,7 @@
                                                         <i class="material-icons" data-toggle="tooltip" data-original-title="Tolak PP">clear</i>
                                                     </a>
                                                 </td>
-                                                <td>
-                                                    <a class="btn btn-sm btn-primary detailpp" data-toggle="tooltip" data-original-title="Detail Permintaan">Details</a>
-                                                </td>
+                                               
                                             </tr>
                                             <tr>
                                                 <td>3</td>
@@ -394,6 +418,7 @@
                                                 <td style="font-weight: bold;">55125</td>
                                                 <td>-</td>
                                                 <td class="statusTercapai">Barang diterima</td>
+                                                <td class="statusTercapai">20122254555</td>
                                                 <td>
                                                    
                                                     <a class="disabled btn-success btn btn-just-icon btn-round  terima">
@@ -407,9 +432,7 @@
                                                         <i class="material-icons" data-toggle="tooltip" data-original-title="Tolak PP">clear</i>
                                                     </a>
                                                 </td>
-                                                <td>
-                                                    <a class="btn btn-sm btn-primary detailpp" data-toggle="tooltip" data-original-title="Detail Permintaan">Details</a>
-                                                </td>
+                                               
                                             </tr>
                                             <tr>
                                                 <td>4</td>
@@ -423,6 +446,7 @@
                                                 <td style="font-weight: bold;">55121</td>
                                                 <td>-</td>
                                                 <td class="statusBelumAda">Proses Pengiriman</td>
+                                                <td class="statusTercapai">20122254555</td>
                                                 <td>
                                                    
                                                     <a class="disabled btn-success btn btn-just-icon btn-round  terima">
@@ -436,9 +460,7 @@
                                                         <i class="material-icons" data-toggle="tooltip" data-original-title="Tolak PP">clear</i>
                                                     </a>
                                                 </td>
-                                                <td>
-                                                    <a class="btn btn-sm btn-primary detailpp" data-toggle="tooltip" data-original-title="Detail Permintaan">Details</a>
-                                                </td>
+                                               
                                             </tr>
                                             <tr>
                                                 <td>5</td>
@@ -452,6 +474,7 @@
                                                 <td style="font-weight: bold;">-</td>
                                                 <td>-</td>
                                                 <td class="statusTercapai">PP Diterima</td>
+                                                <td class="statusTercapai">-</td>
                                                 <td>
                                                    
                                                     <a class="disabled btn-success btn btn-just-icon btn-round  terima">
@@ -465,9 +488,7 @@
                                                         <i class="material-icons" data-toggle="tooltip" data-original-title="Tolak PP">clear</i>
                                                     </a>
                                                 </td>
-                                                <td>
-                                                    <a class="btn btn-sm btn-primary detailpp" data-toggle="tooltip" data-original-title="Detail Permintaan">Details</a>
-                                                </td>
+                                               
                                             </tr>
                                             <tr>
                                                 <td>6</td>
@@ -481,6 +502,7 @@
                                                 <td style="font-weight: bold;">-</td>
                                                 <td>No permintan salah dengan photo ppan</td>
                                                 <td class="statusGagal">PP Ditolak</td>
+                                                <td class="statusTercapai">-</td>
                                                 <td>
                                                     <a class="disabled btn-success btn btn-just-icon btn-round  terima">
                                                         <i class="material-icons" data-toggle="tooltip" data-original-title="Terima PP">done</i>
@@ -492,9 +514,7 @@
                                                         <i class="material-icons" data-toggle="tooltip" data-original-title="Tolak PP">clear</i>
                                                     </a>
                                                 </td>
-                                                <td>
-                                                    <a class="btn btn-sm btn-primary detailpp" data-toggle="tooltip" data-original-title="Detail Permintaan">Details</a>
-                                                </td>
+                                               
                                             </tr>
                                             <tr>
                                                 <td>7</td>
@@ -508,6 +528,7 @@
                                                 <td style="font-weight: bold;">21252</td>
                                                 <td>-</td>
                                                 <td class="statusBelumAda">-</td>
+                                                <td class="statusTercapai">-</td>
                                                 <td>
                                                    
                                                     <a class="btn-success btn btn-just-icon btn-round  terima">
@@ -521,9 +542,7 @@
                                                         <i class="material-icons" data-toggle="tooltip" data-original-title="Tolak PP">clear</i>
                                                     </a>
                                                 </td>
-                                                <td>
-                                                    <a class="btn btn-sm btn-primary detailpp" data-toggle="tooltip" data-original-title="Detail Permintaan">Details</a>
-                                                </td>
+                                               
                                             </tr>
                                             <tr>
                                                 <td>8</td>
@@ -537,6 +556,7 @@
                                                 <td style="font-weight: bold;">-</td>
                                                 <td>Pengajuan terlalu banyak</td>
                                                 <td class="statusGagal">PP Ditolak</td>
+                                                <td class="statusTercapai">-</td>
                                                 <td>
                                                    
                                                     <a class="disabled btn-success btn btn-just-icon btn-round  terima">
@@ -550,9 +570,7 @@
                                                         <i class="material-icons" data-toggle="tooltip" data-original-title="Tolak PP">clear</i>
                                                     </a>
                                                 </td>
-                                                <td>
-                                                    <a class="btn btn-sm btn-primary detailpp" data-toggle="tooltip" data-original-title="Detail Permintaan">Details</a>
-                                                </td>
+                                               
                                             </tr>
                                             <tr>
                                                 <td>9</td>
@@ -566,6 +584,7 @@
                                                 <td style="font-weight: bold;">-</td>
                                                 <td>-</td>
                                                 <td class="statusTercapai">PP Diterima</td>
+                                                <td class="statusTercapai">-</td>
                                                 <td>
                                                    
                                                     <a class="disabled btn-success btn btn-just-icon btn-round  terima">
@@ -579,9 +598,7 @@
                                                         <i class="material-icons" data-toggle="tooltip" data-original-title="Tolak PP">clear</i>
                                                     </a>
                                                 </td>
-                                                <td>
-                                                    <a class="btn btn-sm btn-primary detailpp" data-toggle="tooltip" data-original-title="Detail Permintaan">Details</a>
-                                                </td>
+                                               
                                             </tr>
                                            
                                         </tbody>
@@ -785,27 +802,37 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-12">
                             <div class="form-group">
-                                <label for="nosj" class="col-sm-4 col-form-label">No Surat Jalan</label>
-                                <div class="col-sm-8">
-                                  <input type="number" name="" id="" class="form-control">
+                                <label for="nosj" class="col-sm-2 col-form-label">No Surat Jalan</label>
+                                <div class="col-sm-10">
+                                  <input type="number" name="" id="nosj" class="form-control">
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="tanggalkirimBarangPP" class="col-sm-4 col-form-label">Tanggal Kirim</label>
-                                <div class="col-sm-8">
-                                    <div class="input-group">
-                                        <div class="input-group-addon">
-                                            <span class="material-icons" style="vertical-align: middle;color: #848ccf;">event</span>
-                                        </div>
-                                        <input placeholder="Tanggal Kirim" type="text" class="form-control datepicker datekirimppbarang" name="" autocomplete="off">
-                                    </div>
-                                </div>
-                            </div>  
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group col-md-12">
+                            <label for="snbarang" class="col-sm-2 col-form-label">No / SN Barang</label>
+                            <div class="col-sm-10">
+                              <input type="text" name="" id="snbarang" class="form-control">
+                            </div>
                         </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group col-md-12">
+                            <label for="tanggalkirimBarangPP" class="col-sm-2 col-form-label">Tanggal Kirim</label>
+                            <div class="col-sm-10">
+                                <div class="input-group">
+                                    <div class="input-group-addon">
+                                        <span class="material-icons" style="vertical-align: middle;color: #848ccf;">event</span>
+                                    </div>
+                                    <input placeholder="Tanggal Kirim" type="text" class="form-control datepicker datekirimppbarang" name="" autocomplete="off">
+                                </div>
+                            </div>
+                        </div> 
                     </div>
 
                     <div class="row">
@@ -817,7 +844,7 @@
                                       <img src="assets/img/image_placeholder.jpg" alt="...">
                                     </div>
                                     <div class="fileinput-preview fileinput-exists thumbnail"></div>
-                                    <p id="" class="form-text text-muted">Pastikan Upload Photo SJ sama dengan Inputan No SJ</p>
+                                    <p id="" class="form-text text-muted">Pastikan Upload Photo SJ sama dengan Inputan No SJ & Cap TTD</p>
                                     <div>
                                         <span class="btn btn-primary btn-sm btn-file">
                                             <span class="fileinput-new">Pilih Photo</span>
