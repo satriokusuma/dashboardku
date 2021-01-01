@@ -337,12 +337,12 @@
                                         <thead>
                                             <tr style="background-color: #848ccf;">
                                                 <th style="color:#fff;">No</th>
-                                                <th style="color:#fff;">Outlet</th>
+                                                <th style="color:#fff;">Outlet / Bagian</th>
                                                 <th style="color:#fff;" >Divisi</th>
                                                 <th style="color:#fff;">Product</th>
                                                 <th style="color:#fff;">No PP</th>
                                                 <th style="color:#fff;">Nama Barang</th>
-                                                <th style="color:#fff;">Divisi</th>
+                                                <th style="color:#fff;">Bagian Barang</th>
                                                 <th style="color:#fff;">Qty</th>
                                                 <th style="color:#fff;">NO SJ</th>
                                                 <th style="color:#fff;">Ket PP</th>
@@ -600,6 +600,35 @@
                                                 </td>
                                                
                                             </tr>
+
+                                            <tr>
+                                                <td>10</td>
+                                                <td class="nameOutlet">MD</td>
+                                                <td class="nameOutlet">RMS</td>
+                                                <td class="zone2000">ZONE 2000</td>
+                                                <td class="nameOutlet">25021</td>
+                                                <td class="statusSale">PC OFFICE</td>
+                                                <td class="nameOutlet">IT</td>
+                                                <td class="nameOutlet">1</td>
+                                                <td style="font-weight: bold;">-</td>
+                                                <td>-</td>
+                                                <td class="statusTercapai">PP Diterima</td>
+                                                <td class="statusTercapai">-</td>
+                                                <td>
+                                                   
+                                                    <a class="disabled btn-success btn btn-just-icon btn-round  terima">
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Terima PP">done</i>
+                                                    </a>
+                                                    <a class="btn-info btn btn-just-icon btn-round  kirimpp">
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Kirim Barang PP">local_shipping</i>
+                                                    </a>
+                                                 
+                                                    <a class="disabled btn-danger btn btn-just-icon btn-round  tolak" id="tolak">
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Tolak PP">clear</i>
+                                                    </a>
+                                                </td>
+                                               
+                                            </tr>
                                            
                                         </tbody>
                                     </table>
@@ -678,9 +707,9 @@
                                 <div class="col-sm-8">
                                     <input type="text" readonly class="form-control-plaintext" id="namabarang" value="PC KASIR">
                                 </div>
-                                <label for="divisibarang" class="col-sm-4 col-form-label">DIVISI BARANG</label>
+                                <label for="bagianbarang" class="col-sm-4 col-form-label">BAGIAN BARANG</label>
                                 <div class="col-sm-8">
-                                    <input type="text" readonly class="form-control-plaintext" id="divisibarang" value="IT">
+                                    <input type="text" readonly class="form-control-plaintext" id="bagianbarang" value="IT">
                                 </div>
                                 <label for="qtypp" class="col-sm-4 col-form-label">QTY</label>
                                 <div class="col-sm-8">
@@ -790,9 +819,9 @@
                             <div class="col-sm-8">
                                 <input type="text" readonly class="form-control-plaintext" id="namabarang" value="PC KASIR">
                             </div>
-                            <label for="divisibarang" class="col-sm-4 col-form-label">DIVISI BARANG</label>
+                            <label for="bagianbarang" class="col-sm-4 col-form-label">BAGIAN BARANG</label>
                             <div class="col-sm-8">
-                                <input type="text" readonly class="form-control-plaintext" id="divisibarang" value="IT">
+                                <input type="text" readonly class="form-control-plaintext" id="bagianbarang" value="IT">
                             </div>
                             <label for="qtypp" class="col-sm-4 col-form-label">QTY</label>
                             <div class="col-sm-8">
@@ -930,9 +959,9 @@
                             </div>
                         </div>
                         <div class="form-group col-md-6">
-                            <label for="divisibarang" class="col-sm-4 col-form-label">DIVISI BARANG</label>
+                            <label for="bagianbarang" class="col-sm-4 col-form-label">BAGIAN BARANG</label>
                             <div class="col-sm-8">
-                                <input type="text" readonly class="form-control-plaintext" id="divisibarang" value="IT">
+                                <input type="text" readonly class="form-control-plaintext" id="bagianbarang" value="IT">
                             </div>
                         </div>
                     </div>
@@ -1000,9 +1029,9 @@
                 <form action="" method="POST">
 
                     <div class="form-group row">
-                        <label for="StatusOmset" class="col-sm-2 col-form-label">Divisi Barang</label>
+                        <label for="StatusOmset" class="col-sm-2 col-form-label">BAGIAN Barang</label>
                         <div class="col-sm-10">
-                            <select class="selectpicker" title="Pilih Divisi Barang" id="StatusOmset">
+                            <select class="selectpicker" title="Pilih BAGIAN Barang" id="StatusOmset">
                                 <option>IT</option>
                                 <option>PROYEK</option>
                                 <option>OPERASIONAL</option>
