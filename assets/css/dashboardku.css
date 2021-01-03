@@ -53,7 +53,6 @@
 .card-header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 10px 0;
 
 }
@@ -67,9 +66,6 @@
     margin-left: 0;
   }
 }
-
-
-
 
 
 .card-user {
@@ -6034,7 +6030,7 @@ select.selectpicker {
 
 .bootstrap-select>.dropdown-toggle {
   width: 100%;
-  padding-right: 25px;
+  /* padding: 5px 10px; */
   z-index: 1;
 }
 

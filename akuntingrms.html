@@ -13,6 +13,7 @@
     <link href="assets/css/bootstrap-datepicker.css" rel="stylesheet" />
     <link href="assets/css/google-roboto-300-700.css" rel="stylesheet" />
     <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+   
     
     
     <style>
@@ -77,16 +78,16 @@
                             <p>Charts</p>
                         </a>
                     </li>
-                    <li class="active">
+                    <li>
                         <a data-toggle="collapse" href="#pagesExamples" aria-expanded="true">
                             <i class="material-icons">work</i>
                             <p>Bisnis Ku
                                 <b class="caret"></b>
                             </p>
                         </a>
-                        <div id="pagesExamples" class="collapse in">
+                        <div id="pagesExamples" class="collapse">
                             <ul class="nav">
-                                <li class="active">
+                                <li>
                                     <a  href="./business-page.html">RMS & IFS</a>
                                 </li>
                                 <li>
@@ -98,20 +99,20 @@
                             </ul>
                         </div>
                     </li>
-                    <li>
+                    <li  class="active">
                         <a data-toggle="collapse" href="#pagesAkunting" aria-expanded="true">
                             <i class="material-icons">account_balance</i>
                             <p>Accounting
                                 <b class="caret"></b>
                             </p>
                         </a>
-                        <div id="pagesAkunting" class="collapse">
+                        <div id="pagesAkunting" class="collapse in">
                             <ul class="nav">
-                                <li>
-                                    <a  href="./akuntingrms.html">RMS</a>
+                                <li  class="active">
+                                    <a  href="./business-page.html">RMS</a>
                                 </li>
                                 <li>
-                                    <a href="./akuntingifs.html">IFS</a>
+                                    <a href="./fnb.html">IFS</a>
                                 </li>
                             </ul>
                         </div>
@@ -264,63 +265,55 @@
             <div class="content">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="scrolling-wrapper">
-                            <div class="col-md-4" id="col">
-                            <div class="card-charts bg-primary">
-                                <div class="card-header">
-                                    <div class="col-md-8" style="padding-left: 10px;">
-                                        <h4 class="title-qoute" style="color: #fff;">RMS - <small style="font-weight: 300;color: #fff;">Products Omzet</small></h4>
-                                    </div>
-
-                                    <div class="col-md-4">
-                                        <button class="cariprofitrms btn btn-fill btn-info " data-toggle="tooltip" data-original-title="Cari" type="submit" style="padding: 5px 15px;"> 
-                                            <i class="material-icons"style="font-size: 20px;margin-right: 5px;">search</i>
-                                            Cari
-                                        </button>
-                                    </div>
-                                </div>
-                                <div id="chart-pie-rms"></div>
-                            </div>
-                            </div>
-                            <div class="col-md-4" id="col">
-                                <div class="card-charts--2" style="background-color: #fff5c0;">
+                        
+                            <div class="col-md-4">
+                                <div class="card-charts bg-primary">
                                     <div class="card-header">
                                         <div class="col-md-8" style="padding-left: 10px;">
-                                            <h4 class="title-qoute" style="color: #43425D;">IFS - <small style="font-weight: bold;">Products Omzet</small></h4>
+                                            <h4 class="title-qoute" style="color: #fff;">RMS - <small style="font-weight: 300;color: #fff;">Profit & Loss</small></h4>
                                         </div>
 
                                         <div class="col-md-4">
-                                            <button class="cariprofitifs btn btn-fill btn-info " data-toggle="tooltip" data-original-title="Cari" type="submit" style="padding: 5px 15px;"> 
+                                            <button class="cariprofitrms btn btn-fill btn-info " data-toggle="tooltip" data-original-title="Cari" type="submit" style="padding: 5px 15px;"> 
                                                 <i class="material-icons"style="font-size: 20px;margin-right: 5px;">search</i>
                                                 Cari
                                             </button>
                                         </div>
                                     </div>
-                                    <div id="chart-pie-ifs"></div>
+                                    <div id="chart-pie-akuntingrms"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card" style="background-color: #fbf6f0;">
+                                    <div class="card-header">
+                                        <h4 class="card-title" style="font-weight: bold;">RMS - Profit & Loss</h4>
+                                    </div>
+                                    <div id="area-akuntingRMS"></div>
                                 </div>
                             </div>
                            
-                        </div>
+                           
+                        
                     </div>
                     <div class="row">
                         <div class="col-md-12">
                             <div class="card">
                                 <div class="card-header">
-                                    <h4 class="card-title" style="font-weight: bold;">RMS & IFS -  <small style="color: #9c27b0;font-weight: bold;font-size: 18px;">Outlets & Products Profit</small></h4>   
+                                    <h4 class="card-title" style="font-weight: bold;">RMS - <small style="color: #9c27b0;font-weight: bold;font-size: 18px;">Products Profit & Loss</small></h4>   
                                 </div>
                                 <div class="card-header-wrap">
                                     <div class="card-header-left">
-                                        <button class="btn btn-fill btn-primary pencarian" data-toggle="tooltip" data-original-title="Pencarian" id="btnClear">
+                                        <button class="btn btn-fill btn-primary pencarianAkuntingRms" data-toggle="tooltip" data-original-title="Pencarian" id="btnClear">
                                             <i class="material-icons" style="font-size: 20px;margin-right: 5px;">search</i>
                                             Pencarian
                                         </button> 
                                     </div>
 
                                     <div class="card-header-right">
-                                        <button class="btn btn-fill btn-primary createOutlet" data-toggle="tooltip" data-original-title="Buat Outlet Baru" id="btnClear">
+                                        <!-- <button class="btn btn-fill btn-primary createOutlet" data-toggle="tooltip" data-original-title="Buat Outlet Baru" id="btnClear">
                                             <i class="material-icons"style="font-size: 20px;margin-right: 5px;">house</i>
                                             Buat Outlet
-                                        </button>
+                                        </button> -->
 
                                         <button class="btn btn-fill btn-primary" data-toggle="tooltip" data-original-title="Download Data Ke Excel">
                                             <i class="material-icons"style="font-size: 20px;margin-right: 5px;">cloud_download</i>
@@ -334,16 +327,13 @@
                                             <tr style="background-color: #848ccf;">
                                                 <th style="color:#fff;">No</th>
                                                 <th style="color:#fff;">Nama</th>
-                                                <th style="color:#fff;">Divisi</th>
                                                 <th style="color:#fff;">Products</th>
-                                                <th style="color:#fff;">Luas Area</th>
-                                                <th style="color:#fff;">Omzet Tahun</th>
-                                                <th style="color:#fff;">Profit Tahun</th>
-                                                <th style="color:#fff;">Sale Bulan</th>
-                                                <th style="color:#fff;">Profit Bulan</th>
-                                                <th style="color:#fff;">Sale Hari</th>
-                                                <th style="color:#fff;">Target Bulan</th>
-                                                <th style="color:#fff;">Percen</th>
+                                                <th style="color:#fff;">Omzet</th>
+                                                <th style="color:#fff;">Total Beban Penjualan</th>
+                                                <th style="color:#fff;">Total B. Umum & Administrasi</th>
+                                                <th style="color:#fff;">Penghasilan (BEBAN) Lain lain</th>
+                                                <th style="color:#fff;">Total Loss</th>
+                                                <th style="color:#fff;">Laba Bersih Setelah Pajak</th>
                                                 <th style="color:#fff;" data-priority="2">Action</th>
                                             </tr>
                                         </thead>
@@ -351,23 +341,20 @@
                                             <tr>
                                                 <td>1</td>
                                                 <td class="nameOutlet">ZD01 BLOK M</td>
-                                                <td class="rms">RMS</td>
                                                 <td class="playzone">PLAY ZONE</td>
-                                                <td>1000 m2</td>
-                                                <td>Rp.500,000,000</td>
-                                                <td>Rp.200,000,000</td>
-                                                <td>Rp.5,000,000</td>
+                                                <td class="nameOutlet">Rp.500,000,000</td>
                                                 <td>-</td>
-                                                <td>Rp.1,000,000</td>
-                                                <td>Rp.9,000,000</td>
-                                                <td>80 %</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td class="nameOutlet">-</td>
+                                                <td class="statusTercapai">-</td>
                                                 <td>
                                                     <span class="statusDataTable">Belum Update</span>
-                                                    <a class="showspesifikasi btn-primary btn btn-just-icon btn-round">
-                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Buat Target">create</i>
+                                                    <a class="btn-primary btn btn-just-icon btn-round createProfit">
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Create">create</i>
                                                     </a>
                                                     <a class="ubahspesifikasi btn-warning btn btn-just-icon btn-round" id="clearspesifikasi">
-                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Ubah">cached</i>
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Edit">cached</i>
                                                     </a>
                                                 </td>
                                                
@@ -375,23 +362,20 @@
                                             <tr>
                                                 <td>2</td>
                                                 <td class="nameOutlet">R67 Karawang</td>
-                                                <td class="rms">RMS</td>
                                                 <td class="playzone">PLAY ZONE</td>
-                                                <td>1000 m2</td>
-                                                <td>Rp.500,000,000</td>
-                                                <td>Rp.200,000,000</td>
-                                                <td>Rp.5,000,000</td>
+                                                <td class="nameOutlet">Rp.500,000,000</td>
                                                 <td>-</td>
-                                                <td>Rp.1,000,000</td>
-                                                <td>Rp.9,000,000</td>
-                                                <td>80 %</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td class="nameOutlet">-</td>
+                                                <td class="statusTercapai">-</td>
                                                 <td>
                                                     <span class="statusDataTable">Belum Update</span>
-                                                    <a class="btn-primary btn btn-just-icon btn-round  showspesifikasi">
-                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Buat Target">create</i>
+                                                    <a class="btn-primary btn btn-just-icon btn-round  createProfit">
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Create">create</i>
                                                     </a>
                                                     <a class="ubahspesifikasi btn-warning btn btn-just-icon btn-round" id="clearspesifikasi">
-                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Ubah">cached</i>
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Edit">cached</i>
                                                     </a>
                                                 </td>
                                                 
@@ -399,23 +383,21 @@
                                             <tr>
                                                 <td>3</td>
                                                 <td class="nameOutlet">R75 Serang</td>
-                                                <td class="rms">RMS</td>
                                                 <td class="zone2000">ZONE 2000</td>
-                                                <td>1000 m2</td>
-                                                <td>Rp.500,000,000</td>
-                                                <td>Rp.200,000,000</td>
-                                                <td>Rp.5,000,000</td>
-                                                <td>-</td>
-                                                <td>Rp.1,000,000</td>
-                                                <td>Rp.9,000,000</td>
-                                                <td>80 %</td>
+                                                <td class="nameOutlet">Rp.500,000,000</td>
+                                                <td>Rp.50,000,000</td>
+                                                <td>Rp.50,000,000</td>
+                                                <td>Rp.50,000,000</td>
+                                                <td class="nameOutlet">Rp.100,000,000</td>
+                                                <td class="statusTercapai">Rp.450,000,000</td>
+                                              
                                                 <td>
-                                                    <span class="statusDataTable">Belum Update</span>
-                                                    <a class="btn-primary btn btn-just-icon btn-round  showspesifikasi">
-                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Buat Target">create</i>
+                                                    <span class="statusDataTable">Update</span>
+                                                    <a class="disabled  btn-success btn btn-just-icon btn-round createProfit">
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Create">create</i>
                                                     </a>
                                                     <a class="ubahspesifikasi btn-warning btn btn-just-icon btn-round" id="clearspesifikasi">
-                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Ubah">cached</i>
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Edit">cached</i>
                                                     </a>
                                                 </td>
                                                 
@@ -423,23 +405,20 @@
                                             <tr>
                                                 <td>4</td>
                                                 <td class="nameOutlet">R35 Cilegon</td>
-                                                <td class="rms">RMS</td>
                                                 <td class="zone2000">ZONE 2000</td>
-                                                <td>1000 m2</td>
-                                                <td>Rp.500,000,000</td>
-                                                <td>Rp.200,000,000</td>
-                                                <td>Rp.5,000,000</td>
-                                                <td>-</td>
-                                                <td>Rp.1,000,000</td>
-                                                <td>Rp.9,000,000</td>
-                                                <td>80 %</td>
+                                                <td class="nameOutlet">Rp.500,000,000</td>
+                                                <td>Rp.50,000,000</td>
+                                                <td>Rp.50,000,000</td>
+                                                <td>Rp.50,000,000</td>
+                                                <td class="nameOutlet">Rp.100,000,000</td>
+                                                <td class="statusTercapai">Rp.450,000,000</td>
                                                 <td>
                                                     <span class="statusDataTable">Update</span>
-                                                    <a class="btn-success btn btn-just-icon btn-round showspesifikasi">
-                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Buat Target">create</i>
+                                                    <a class="disabled btn-success btn btn-just-icon btn-round createProfit">
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Create">create</i>
                                                     </a>
                                                     <a class="ubahspesifikasi btn-warning btn btn-just-icon btn-round" id="clearspesifikasi">
-                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Ubah">cached</i>
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Edit">cached</i>
                                                     </a>
                                                 </td>
                                                 
@@ -447,23 +426,20 @@
                                             <tr>
                                                 <td>5</td>
                                                 <td class="nameOutlet">R35 Cilegon Kiddie Land</td>
-                                                <td class="rms">RMS</td>
                                                 <td class="kiddie">KIDDIE LAND</td>
-                                                <td>1000 m2</td>
-                                                <td>Rp.500,000,000</td>
-                                                <td>Rp.200,000,000</td>
-                                                <td>Rp.5,000,000</td>
-                                                <td>-</td>
-                                                <td>Rp.1,000,000</td>
-                                                <td>Rp.9,000,000</td>
-                                                <td>80 %</td>
+                                                <td class="nameOutlet">Rp.500,000,000</td>
+                                                <td>Rp.50,000,000</td>
+                                                <td>Rp.50,000,000</td>
+                                                <td>Rp.50,000,000</td>
+                                                <td class="nameOutlet">Rp.100,000,000</td>
+                                                <td class="statusTercapai">Rp.450,000,000</td>
                                                 <td>
-                                                    <span class="statusDataTable">Belum Update</span>
-                                                    <a class="btn-primary btn btn-just-icon btn-round showspesifikasi">
-                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Buat Target">create</i>
+                                                    <span class="statusDataTable">Update</span>
+                                                    <a class="disabled btn-success btn btn-just-icon btn-round createProfit">
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Create">create</i>
                                                     </a>
                                                     <a class="ubahspesifikasi btn-warning btn btn-just-icon btn-round" id="clearspesifikasi">
-                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Ubah">cached</i>
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Edit">cached</i>
                                                     </a>
                                                 </td>
                                                 
@@ -471,23 +447,20 @@
                                             <tr>
                                                 <td>6</td>
                                                 <td class="nameOutlet">R31 Tangerang</td>
-                                                <td class="rms">RMS</td>
                                                 <td class="playzone">PLAY ZONE</td>
-                                                <td>1000 m2</td>
-                                                <td>Rp.500,000,000</td>
-                                                <td>Rp.200,000,000</td>
-                                                <td>Rp.5,000,000</td>
-                                                <td>-</td>
-                                                <td>Rp.1,000,000</td>
-                                                <td>Rp.9,000,000</td>
-                                                <td>80 %</td>
+                                                <td class="nameOutlet">Rp.500,000,000</td>
+                                                <td>Rp.50,000,000</td>
+                                                <td>Rp.50,000,000</td>
+                                                <td>Rp.50,000,000</td>
+                                                <td class="nameOutlet">Rp.100,000,000</td>
+                                                <td class="statusTercapai">Rp.450,000,000</td>
                                                 <td>
                                                     <span class="statusDataTable">Update</span>
-                                                    <a class="btn-success btn btn-just-icon btn-round  showspesifikasi">
-                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Buat Target">create</i>
+                                                    <a class="disabled btn-success btn btn-just-icon btn-round  createProfit">
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Create">create</i>
                                                     </a>
                                                     <a class="ubahspesifikasi btn-warning btn btn-just-icon btn-round" id="clearspesifikasi">
-                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Ubah">cached</i>
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Edit">cached</i>
                                                     </a>
                                                 </td>
                                                 
@@ -495,23 +468,20 @@
                                             <tr>
                                                 <td>7</td>
                                                 <td class="nameOutlet">R71 BTM</td>
-                                                <td class="ifs">IFS</td>
                                                 <td class="zone2000">ZONE 2000</td>
-                                                <td>1000 m2</td>
-                                                <td>Rp.500,000,000</td>
-                                                <td>Rp.200,000,000</td>
-                                                <td>Rp.5,000,000</td>
-                                                <td>-</td>
-                                                <td>Rp.1,000,000</td>
-                                                <td>Rp.9,000,000</td>
-                                                <td>80 %</td>
+                                                <td class="nameOutlet">Rp.500,000,000</td>
+                                                <td>Rp.50,000,000</td>
+                                                <td>Rp.50,000,000</td>
+                                                <td>Rp.50,000,000</td>
+                                                <td class="nameOutlet">Rp.100,000,000</td>
+                                                <td class="statusTercapai">Rp.450,000,000</td>
                                                 <td>
                                                     <span class="statusDataTable">Update</span>
-                                                    <a class="btn-success btn btn-just-icon btn-round showspesifikasi">
-                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Buat Target">create</i>
+                                                    <a class="disabled btn-success btn btn-just-icon btn-round createProfit">
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Create">create</i>
                                                     </a>
                                                     <a class="ubahspesifikasi btn-warning btn btn-just-icon btn-round" id="clearspesifikasi">
-                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Ubah">cached</i>
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Edit">cached</i>
                                                     </a>
                                                 </td>
                                                 
@@ -519,23 +489,20 @@
                                             <tr>
                                                 <td>8</td>
                                                 <td class="nameOutlet">R49 Cileduk</td>
-                                                <td class="rms">RMS</td>
                                                 <td class="zone2000">ZONE 2000</td>
-                                                <td>1000 m2</td>
-                                                <td>Rp.500,000,000</td>
-                                                <td>Rp.200,000,000</td>
-                                                <td>Rp.5,000,000</td>
-                                                <td>-</td>
-                                                <td>Rp.1,000,000</td>
-                                                <td>Rp.9,000,000</td>
-                                                <td>80 %</td>
+                                                <td class="nameOutlet">Rp.500,000,000</td>
+                                                <td>Rp.50,000,000</td>
+                                                <td>Rp.50,000,000</td>
+                                                <td>Rp.50,000,000</td>
+                                                <td class="nameOutlet">Rp.100,000,000</td>
+                                                <td class="statusTercapai">Rp.450,000,000</td>
                                                 <td>
                                                     <span class="statusDataTable">Update</span>
-                                                    <a class="btn-success btn btn-just-icon btn-round showspesifikasi">
-                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Buat Target">create</i>
+                                                    <a class="disabled btn-success btn btn-just-icon btn-round createProfit">
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Create">create</i>
                                                     </a>
                                                     <a class="ubahspesifikasi btn-warning btn btn-just-icon btn-round" id="clearspesifikasi">
-                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Ubah">cached</i>
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Edit">cached</i>
                                                     </a>
                                                 </td>
                                                 
@@ -543,47 +510,41 @@
                                             <tr>
                                                 <td>9</td>
                                                 <td class="nameOutlet">R67 KARAWANG Kiddie Land</td>
-                                                <td class="rms">RMS</td>
                                                 <td class="kiddie">KIDDIE LAND</td>
-                                                <td>1000 m2</td>
-                                                <td>Rp.500,000,000</td>
-                                                <td>Rp.200,000,000</td>
-                                                <td>Rp.5,000,000</td>
-                                                <td>-</td>
-                                                <td>Rp.1,000,000</td>
-                                                <td>Rp.9,000,000</td>
-                                                <td>80 %</td>
+                                                <td class="nameOutlet">Rp.500,000,000</td>
+                                                <td>Rp.50,000,000</td>
+                                                <td>Rp.50,000,000</td>
+                                                <td>Rp.50,000,000</td>
+                                                <td class="nameOutlet">Rp.100,000,000</td>
+                                                <td class="statusTercapai">Rp.450,000,000</td>
                                                 <td>
                                                     <span class="statusDataTable">Update</span>
-                                                    <a class="btn-success btn btn-just-icon btn-round showspesifikasi">
-                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Buat Target">create</i>
+                                                    <a class="disabled btn-success btn btn-just-icon btn-round createProfit">
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Create">create</i>
                                                     </a>
                                                     <a class="ubahspesifikasi btn-warning btn btn-just-icon btn-round" id="clearspesifikasi">
-                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Ubah">cached</i>
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Edit">cached</i>
                                                     </a>
                                                 </td>
                                                 
                                             </tr>
                                             <tr>
                                                 <td>10</td>
-                                                <td class="nameOutlet">R72 TMII</td>
-                                                <td class="rms">RMS</td>
+                                                <td class="nameOutlet">R72 TMII</td>  
                                                 <td class="zone2000">ZONE 2000</td>
-                                                <td>1000 m2</td>
-                                                <td>Rp.500,000,000</td>
-                                                <td>Rp.200,000,000</td>
-                                                <td>Rp.5,000,000</td>
-                                                <td>-</td>
-                                                <td>Rp.1,000,000</td>
-                                                <td>Rp.9,000,000</td>
-                                                <td>80 %</td>
+                                                <td class="nameOutlet">Rp.500,000,000</td>
+                                                <td>Rp.50,000,000</td>
+                                                <td>Rp.50,000,000</td>
+                                                <td>Rp.50,000,000</td>
+                                                <td class="nameOutlet">Rp.100,000,000</td>
+                                                <td class="statusTercapai">Rp.450,000,000</td>
                                                 <td>
-                                                    <span class="statusDataTable">Belum Update</span>
-                                                    <a class="btn-primary btn btn-just-icon btn-round showspesifikasi">
-                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Buat Target">create</i>
+                                                    <span class="statusDataTable">Update</span>
+                                                    <a class="disabled btn-success btn btn-just-icon btn-round createProfit">
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Create">create</i>
                                                     </a>
                                                     <a class="ubahspesifikasi btn-warning btn btn-just-icon btn-round" id="clearspesifikasi">
-                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Ubah">cached</i>
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Edit">cached</i>
                                                     </a>
                                                 </td>
                                                 
@@ -591,23 +552,20 @@
                                             <tr>
                                                 <td>11</td>
                                                 <td class="nameOutlet">R99 Garut</td>
-                                                <td class="rms">RMS</td>
                                                 <td class="zone2000">ZONE 2000</td>
-                                                <td>1000 m2</td>
-                                                <td>Rp.500,000,000</td>
-                                                <td>Rp.200,000,000</td>
-                                                <td>Rp.5,000,000</td>
-                                                <td>-</td>
-                                                <td>Rp.1,000,000</td>
-                                                <td>Rp.9,000,000</td>
-                                                <td>80 %</td>
+                                                <td class="nameOutlet">Rp.500,000,000</td>
+                                                <td>Rp.50,000,000</td>
+                                                <td>Rp.50,000,000</td>
+                                                <td>Rp.50,000,000</td>
+                                                <td class="nameOutlet">Rp.100,000,000</td>
+                                                <td class="statusTercapai">Rp.450,000,000</td>
                                                 <td>
-                                                    <span class="statusDataTable">Belum Update</span>
-                                                    <a class="btn-primary btn btn-just-icon btn-round showspesifikasi">
-                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Buat Target">create</i>
+                                                    <span class="statusDataTable">Update</span>
+                                                    <a class="disabled btn-success btn btn-just-icon btn-round createProfit">
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Create">create</i>
                                                     </a>
                                                     <a class="ubahspesifikasi btn-warning btn btn-just-icon btn-round" id="clearspesifikasi">
-                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Ubah">cached</i>
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Edit">cached</i>
                                                     </a>
                                                 </td>
                                                 
@@ -615,23 +573,20 @@
                                             <tr>
                                                 <td>12</td>
                                                 <td class="nameOutlet">R24 Pondok Gede</td>
-                                                <td class="rms">RMS</td>
                                                 <td class="zone2000">ZONE 2000</td>
-                                                <td>1000 m2</td>
-                                                <td>Rp.500,000,000</td>
-                                                <td>Rp.200,000,000</td>
-                                                <td>Rp.5,000,000</td>
-                                                <td>-</td>
-                                                <td>Rp.1,000,000</td>
-                                                <td>Rp.9,000,000</td>
-                                                <td>80 %</td>
+                                                <td class="nameOutlet">Rp.500,000,000</td>
+                                                <td>Rp.50,000,000</td>
+                                                <td>Rp.50,000,000</td>
+                                                <td>Rp.50,000,000</td>
+                                                <td class="nameOutlet">Rp.100,000,000</td>
+                                                <td class="statusTercapai">Rp.450,000,000</td>
                                                 <td>
-                                                    <span class="statusDataTable">Belum Update</span>
-                                                    <a class="btn-primary btn btn-just-icon btn-round showspesifikasi">
-                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Buat Target">create</i>
+                                                    <span class="statusDataTable">Update</span>
+                                                    <a class="disabled btn-success btn btn-just-icon btn-round createProfit">
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Create">create</i>
                                                     </a>
                                                     <a class="ubahspesifikasi btn-warning btn btn-just-icon btn-round" id="clearspesifikasi">
-                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Ubah">cached</i>
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Edit">cached</i>
                                                     </a>
                                                 </td>
                                                 
@@ -639,47 +594,41 @@
                                             <tr>
                                                 <td>13</td>
                                                 <td class="nameOutlet">R11 Pasar Minggu</td>
-                                                <td class="rms">RMS</td>
                                                 <td class="zone2000">ZONE 2000</td>
-                                                <td>1000 m2</td>
-                                                <td>Rp.500,000,000</td>
-                                                <td>Rp.200,000,000</td>
-                                                <td>Rp.5,000,000</td>
-                                                <td>-</td>
-                                                <td>Rp.1,000,000</td>
-                                                <td>Rp.9,000,000</td>
-                                                <td>80 %</td>
+                                                <td class="nameOutlet">Rp.500,000,000</td>
+                                                <td>Rp.50,000,000</td>
+                                                <td>Rp.50,000,000</td>
+                                                <td>Rp.50,000,000</td>
+                                                <td class="nameOutlet">Rp.100,000,000</td>
+                                                <td class="statusTercapai">Rp.450,000,000</td>
                                                 <td>
                                                     <span class="statusDataTable">Update</span>
-                                                    <a class="btn-success btn btn-just-icon btn-round showspesifikasi">
-                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Buat Target">create</i>
+                                                    <a class="disabled btn-success btn btn-just-icon btn-round createProfit">
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Create">create</i>
                                                     </a>
                                                     <a class="ubahspesifikasi btn-warning btn btn-just-icon btn-round" id="clearspesifikasi">
-                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Ubah">cached</i>
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Edit">cached</i>
                                                     </a>
                                                 </td>
                                                 
                                             </tr>
                                             <tr>
                                                 <td>14</td>
-                                                <td class="nameOutlet">R02 Pulo Gadung</td>
-                                                <td class="rms">RMS</td>
+                                                <td class="nameOutlet">R02 Pulo Gadung</td>  
                                                 <td class="zone2000">ZONE 2000</td>
-                                                <td>1000 m2</td>
-                                                <td>Rp.500,000,000</td>
-                                                <td>Rp.200,000,000</td>
-                                                <td>Rp.5,000,000</td>
-                                                <td>-</td>
-                                                <td>Rp.1,000,000</td>
-                                                <td>Rp.9,000,000</td>
-                                                <td>80 %</td>
+                                                <td class="nameOutlet">Rp.500,000,000</td>
+                                                <td>Rp.50,000,000</td>
+                                                <td>Rp.50,000,000</td>
+                                                <td>Rp.50,000,000</td>
+                                                <td class="nameOutlet">Rp.100,000,000</td>
+                                                <td class="statusTercapai">Rp.450,000,000</td>
                                                 <td>
                                                     <span class="statusDataTable">Update</span>
-                                                    <a class="btn-success btn btn-just-icon btn-round showspesifikasi">
-                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Buat Target">create</i>
+                                                    <a class="disabled btn-success btn btn-just-icon btn-round createProfit">
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Create">create</i>
                                                     </a>
                                                     <a class="ubahspesifikasi btn-warning btn btn-just-icon btn-round" id="clearspesifikasi">
-                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Ubah">cached</i>
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Edit">cached</i>
                                                     </a>
                                                 </td>
                                                 
@@ -687,23 +636,20 @@
                                             <tr>
                                                 <td>15</td>
                                                 <td class="nameOutlet">R11 Pasar Minggu Kiddie Land</td>
-                                                <td class="rms">RMS</td>
                                                 <td class="kiddie">KIDDIE LAND</td>
-                                                <td>1000 m2</td>
-                                                <td>Rp.500,000,000</td>
-                                                <td>Rp.200,000,000</td>
-                                                <td>Rp.5,000,000</td>
-                                                <td>-</td>
-                                                <td>Rp.1,000,000</td>
-                                                <td>Rp.9,000,000</td>
-                                                <td>80 %</td>
+                                                <td class="nameOutlet">Rp.500,000,000</td>
+                                                <td>Rp.50,000,000</td>
+                                                <td>Rp.50,000,000</td>
+                                                <td>Rp.50,000,000</td>
+                                                <td class="nameOutlet">Rp.100,000,000</td>
+                                                <td class="statusTercapai">Rp.450,000,000</td>
                                                 <td>
                                                     <span class="statusDataTable">Update</span>
-                                                    <a class="btn-success btn btn-just-icon btn-round showspesifikasi">
-                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Buat Target">create</i>
+                                                    <a class="disabled btn-success btn btn-just-icon btn-round createProfit">
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Create">create</i>
                                                     </a>
                                                     <a class="ubahspesifikasi btn-warning btn btn-just-icon btn-round" id="clearspesifikasi">
-                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Ubah">cached</i>
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Edit">cached</i>
                                                     </a>
                                                 </td>
                                                 
@@ -711,23 +657,20 @@
                                             <tr>
                                                 <td>16</td>
                                                 <td class="nameOutlet">R11 Pasar Minggu</td>
-                                                <td class="rms">RMS</td>
                                                 <td class="zone2000">ZONE 2000</td>
-                                                <td>1000 m2</td>
-                                                <td>Rp.500,000,000</td>
-                                                <td>Rp.200,000,000</td>
-                                                <td>Rp.5,000,000</td>
+                                                <td class="nameOutlet">Rp.500,000,000</td>
                                                 <td>-</td>
-                                                <td>Rp.1,000,000</td>
-                                                <td>Rp.9,000,000</td>
-                                                <td>80 %</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td class="nameOutlet">-</td>
+                                                <td class="statusTercapai">-</td>
                                                 <td>
                                                     <span class="statusDataTable">Belum Update</span>
-                                                    <a class="btn-primary btn btn-just-icon btn-round showspesifikasi">
-                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Buat Target">create</i>
+                                                    <a class="btn-primary btn btn-just-icon btn-round createProfit">
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Create">create</i>
                                                     </a>
                                                     <a class="ubahspesifikasi btn-warning btn btn-just-icon btn-round" id="clearspesifikasi">
-                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Ubah">cached</i>
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Edit">cached</i>
                                                     </a>
                                                 </td>
                                                 
@@ -735,23 +678,20 @@
                                             <tr>
                                                 <td>17</td>
                                                 <td class="nameOutlet">R11 Pasar Minggu</td>
-                                                <td class="rms">RMS</td>
                                                 <td class="zone2000">ZONE 2000</td>
-                                                <td>1000 m2</td>
-                                                <td>Rp.500,000,000</td>
-                                                <td>Rp.200,000,000</td>
-                                                <td>Rp.5,000,000</td>
+                                                <td class="nameOutlet">Rp.500,000,000</td>
                                                 <td>-</td>
-                                                <td>Rp.1,000,000</td>
-                                                <td>Rp.9,000,000</td>
-                                                <td>80 %</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td class="nameOutlet">-</td>
+                                                <td class="statusTercapai">-</td>
                                                 <td>
                                                     <span class="statusDataTable">Belum Update</span>
-                                                    <a class="btn-primary btn btn-just-icon btn-round showspesifikasi">
-                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Buat Target">create</i>
+                                                    <a class="btn-primary btn btn-just-icon btn-round createProfit">
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Create">create</i>
                                                     </a>
                                                     <a class="ubahspesifikasi btn-warning btn btn-just-icon btn-round" id="clearspesifikasi">
-                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Ubah">cached</i>
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Edit">cached</i>
                                                     </a>
                                                 </td>
                                                 
@@ -759,23 +699,20 @@
                                             <tr>
                                                 <td>18</td>
                                                 <td class="nameOutlet">R11 Pasar Minggu</td>
-                                                <td class="rms">RMS</td>
                                                 <td class="zone2000">ZONE 2000</td>
-                                                <td>1000 m2</td>
-                                                <td>Rp.500,000,000</td>
-                                                <td>Rp.200,000,000</td>
-                                                <td>Rp.5,000,000</td>
+                                                <td class="nameOutlet">Rp.500,000,000</td>
                                                 <td>-</td>
-                                                <td>Rp.1,000,000</td>
-                                                <td>Rp.9,000,000</td>
-                                                <td>80 %</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td class="nameOutlet">-</td>
+                                                <td class="statusTercapai">-</td>
                                                 <td>
                                                     <span class="statusDataTable">Belum Update</span>
-                                                    <a class="btn-primary btn btn-just-icon btn-round showspesifikasi">
-                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Buat Target">create</i>
+                                                    <a class="btn-primary btn btn-just-icon btn-round createProfit">
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Create">create</i>
                                                     </a>
                                                     <a class="ubahspesifikasi btn-warning btn btn-just-icon btn-round" id="clearspesifikasi">
-                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Ubah">cached</i>
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Edit">cached</i>
                                                     </a>
                                                 </td>
                                                 
@@ -783,150 +720,43 @@
                                             <tr>
                                                 <td>19</td>
                                                 <td class="nameOutlet">R11 Pasar Minggu</td>
-                                                <td class="rms">RMS</td>
                                                 <td class="zone2000">ZONE 2000</td>
-                                                <td>1000 m2</td>
-                                                <td>Rp.500,000,000</td>
-                                                <td>Rp.200,000,000</td>
-                                                <td>Rp.5,000,000</td>
+                                                <td class="nameOutlet">Rp.500,000,000</td>
                                                 <td>-</td>
-                                                <td>Rp.1,000,000</td>
-                                                <td>Rp.9,000,000</td>
-                                                <td>80 %</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td class="nameOutlet">-</td>
+                                                <td class="statusTercapai">-</td>
                                                 <td>
                                                     <span class="statusDataTable">Belum Update</span>
-                                                    <a class="btn-primary btn btn-just-icon btn-round showspesifikasi">
-                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Buat Target">create</i>
+                                                    <a class="btn-primary btn btn-just-icon btn-round createProfit">
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Create">create</i>
                                                     </a>
                                                     <a class="ubahspesifikasi btn-warning btn btn-just-icon btn-round" id="clearspesifikasi">
-                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Ubah">cached</i>
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Edit">cached</i>
                                                     </a>
                                                 </td>
-                                                
                                             </tr>
                                             <tr>
                                                 <td>20</td>
                                                 <td class="nameOutlet">R11 Pasar Minggu</td>
-                                                <td class="rms">RMS</td>
                                                 <td class="zone2000">ZONE 2000</td>
-                                                <td>1000 m2</td>
-                                                <td>Rp.500,000,000</td>
-                                                <td>Rp.200,000,000</td>
-                                                <td>Rp.5,000,000</td>
+                                                <td class="nameOutlet">Rp.500,000,000</td>
                                                 <td>-</td>
-                                                <td>Rp.1,000,000</td>
-                                                <td>Rp.9,000,000</td>
-                                                <td>80 %</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td class="nameOutlet">-</td>
+                                                <td class="statusTercapai">-</td>
                                                 <td>
                                                     <span class="statusDataTable">Belum Update</span>
-                                                    <a class="btn-primary btn btn-just-icon btn-round showspesifikasi">
-                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Buat Target">create</i>
+                                                    <a class="btn-primary btn btn-just-icon btn-round createProfit">
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Create">create</i>
                                                     </a>
                                                     <a class="ubahspesifikasi btn-warning btn btn-just-icon btn-round" id="clearspesifikasi">
-                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Ubah">cached</i>
+                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Edit">cached</i>
                                                     </a>
                                                 </td>
-                                                
                                             </tr>
-                                            <tr>
-                                                <td>21</td>
-                                                <td class="nameOutlet">R124 CIKUPA</td>
-                                                <td class="ifs">IFS</td>
-                                                <td class="zone2000">ZONE 2000</td>
-                                                <td>1000 m2</td>
-                                                <td>Rp.500,000,000</td>
-                                                <td>Rp.200,000,000</td>
-                                                <td>Rp.5,000,000</td>
-                                                <td>-</td>
-                                                <td>Rp.1,000,000</td>
-                                                <td>Rp.9,000,000</td>
-                                                <td>80 %</td>
-                                                <td>
-                                                    <span class="statusDataTable">Belum Update</span>
-                                                    <a class="btn-primary btn btn-just-icon btn-round showspesifikasi">
-                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Buat Target">create</i>
-                                                    </a>
-                                                    <a class="ubahspesifikasi btn-warning btn btn-just-icon btn-round" id="clearspesifikasi">
-                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Ubah">cached</i>
-                                                    </a>
-                                                </td>
-                                                
-                                            </tr>
-                                            <tr>
-                                                <td>22</td>
-                                                <td class="nameOutlet">R105 Parung</td>
-                                                <td class="ifs">IFS</td>
-                                                <td class="zone2000">ZONE 2000</td>
-                                                <td>1000 m2</td>
-                                                <td>Rp.500,000,000</td>
-                                                <td>Rp.200,000,000</td>
-                                                <td>Rp.5,000,000</td>
-                                                <td>-</td>
-                                                <td>Rp.1,000,000</td>
-                                                <td>Rp.9,000,000</td>
-                                                <td>80 %</td>
-                                                <td>
-                                                    <span class="statusDataTable">Belum Update</span>
-                                                    <a class="btn-primary btn btn-just-icon btn-round showspesifikasi">
-                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Buat Target">create</i>
-                                                    </a>
-                                                    <a class="ubahspesifikasi btn-warning btn btn-just-icon btn-round" id="clearspesifikasi">
-                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Ubah">cached</i>
-                                                    </a>
-                                                </td>
-                                                
-                                            </tr>
-                                            <tr>
-                                                <td>23</td>
-                                                <td class="nameOutlet">R15 Bogor</td>
-                                                <td class="ifs">IFS</td>
-                                                <td class="zone2000">ZONE 2000</td>
-                                                <td>1000 m2</td>
-                                                <td>Rp.500,000,000</td>
-                                                <td>Rp.200,000,000</td>
-                                                <td>Rp.5,000,000</td>
-                                                <td>-</td>
-                                                <td>Rp.1,000,000</td>
-                                                <td>Rp.9,000,000</td>
-                                                <td>80 %</td>
-                                                <td>
-                                                    <span class="statusDataTable">Belum Update</span>
-                                                    <a class="btn-primary btn btn-just-icon btn-round showspesifikasi">
-                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Buat Target">create</i>
-                                                    </a>
-                                                    <a class="ubahspesifikasi btn-warning btn btn-just-icon btn-round" id="clearspesifikasi">
-                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Ubah">cached</i>
-                                                    </a>
-                                                </td>
-                                                
-                                            </tr>
-                                            <tr>
-                                                <td>24</td>
-                                                <td class="nameOutlet">R35 Cilegon KiddieLand</td>
-                                                <td class="ifs">IFS</td>
-                                                <td class="kiddie">KIDDIE LAND</td>
-                                                <td>1000 m2</td>
-                                                <td>Rp.500,000,000</td>
-                                                <td>Rp.200,000,000</td>
-                                                <td>Rp.5,000,000</td>
-                                                <td>-</td>
-                                                <td>Rp.1,000,000</td>
-                                                <td>Rp.9,000,000</td>
-                                                <td>80 %</td>
-                                                <td>
-                                                    <span class="statusDataTable">Belum Update</span>
-                                                    <a class="btn-primary btn btn-just-icon btn-round showspesifikasi">
-                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Buat Target">create</i>
-                                                    </a>
-                                                    <a class="ubahspesifikasi btn-warning btn btn-just-icon btn-round" id="clearspesifikasi">
-                                                        <i class="material-icons" data-toggle="tooltip" data-original-title="Ubah">cached</i>
-                                                    </a>
-                                                </td>
-                                                
-                                            </tr>
-
-
-
                                         </tbody>
                                     </table>
                                 </div>
@@ -1014,148 +844,66 @@
 
 <!------------------------------------------------------------------------------------------------------------>
 
-<!------------------------------------- MODAL CARI PROFIT IFS ---------------------------------------------->
-<div class="modal fade" role="dialog" id="modal-cariprofitIFS">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 style="font-weight: bold;color: #fff;">Profit IFS</h4>
-            </div>
-           <div class="modal-body">  
-                <form action="" method="POST">
-                     
-                   <div class="form-group row">                  
-                        <label for="dateopening" class="col-sm-2 col-form-label">Tahun</label>
-                        <div class="col-sm-10">
-                            <div class="input-group">
-                                <div class="input-group-addon">
-                                    <span class="material-icons" style="vertical-align: middle;color: #848ccf;">event</span>
-                                </div>
-                                <input placeholder="Tahun" type="text" class="form-control datepicker dateprofitrmstahun" name="" autocomplete="off">
 
-                            </div>
-                            <p id="" class="form-text text-muted">Harap Pilih Tahun Terlebih dahulu</p>
-                        </div>
-                   </div>
 
-                   <div class="form-group row">
-                        <label for="dateopening" class="col-sm-2 col-form-label">Bulan</label>
-                        <div class="col-sm-10">
-                            <div class="input-group">
-                                <div class="input-group-addon">
-                                    <span class="material-icons" style="vertical-align: middle;color: #848ccf;">event</span>
-                                </div>
-                                <input placeholder="Bulan" type="text" class="form-control datepicker dateprofitrmsbulan"  name="" autocomplete="off">
-                            </div>
-                        </div>
-                   </div>
-                 
-                    <div class="row">
-                        <div class="col-md-12" style="text-align: end;">
-                            <a href="#" class="btn btn-primary btn-fill"  data-dismiss="modal" style="padding: 5px 15px;" type="submit">
-                                <i class="material-icons" style="font-size: 24px;float: left;line-height: 30px;
-                                width: 30px;
-                                text-align: center;">search
-                                </i>
-                                <p class="textButton" style="padding: 0 5px;">Cari</p>
-                            </a>
-                            <a href="#" type="button" class="btn btn-secondary btn-fill"  data-dismiss="modal" style="padding: 5px 15px;" id="back">
-                                <i class="material-icons" style="font-size: 24px;margin-right: 5px;float: left;line-height: 30px;
-                                width: 30px;
-                                text-align: center;">replay
-                                </i>
-                                <p class="textButton">Kembali</p>
-                            </a>
-                        </div>
-                    </div>
-                </form>
-                
-           </div>
-        </div>
-     </div>
-</div>
+<!------------------------------------- MODAL CREATE - PROFIT RMS ---------------------------------------------->
 
-<!------------------------------------------------------------------------------------------------------------>
-
-<!------------------------------------- MODAL BUAT TARGET OMSET ---------------------------------------------->
-
-    <div class="modal fade" role="dialog" id="modal-spesifikasi">
+    <div class="modal fade" role="dialog" id="modal-createProfit">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <!-- <button type="button" class="close btn btn-just-icon btn-round btn-danger" data-dismiss="modal" style="color: #fff;outline: none;opacity:1;padding: 10px 5px;">
                         <i class="material-icons">close</i>
                     </button> -->
-                    <h4 style="font-weight: bold;color: #fff;">Buat Target</h4>
+                    <h4 style="font-weight: bold;color: #fff;">Buat Profit</h4>
                 </div>
                <div class="modal-body">
-                   <div class="table-responsive">
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th>Nama Outlet</th>
-                                <th>Division</th>
-                                <th>Product</th>
-                                <th>Sale Bulan Lalu</th>
-                                <th>Target Bulan Lalu</th>
-                                <th>Percentase Target</th>
-                                <th class="text-right">Status</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="nameOutlet">ZD01 BLOK M</td>
-                                <td class="rms">RMS</td>
-                                <td class="playzone">PLAY ZONE</td>
-                                <td>Rp.500,000,000</td>
-                                <td>Rp.400,000,000</td>
-                                <td class="nameOutlet">110%</td>
-                                <td class="statusTercapai text-right">Tercapai</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                   </div>
-                     
-                   <div class="table-responsive">
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th>Target Bulan</th>
-                                <th>Target Sekarang</th>
-                                <th class="text-right">Status</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="nameOutlet">Januari 2020</td>
-                                <td class="nameOutlet">-</td>
-                                <td class="statusBelumAda text-right">Belum ada Target</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                   </div>
-                      
-                    
-                   
                     <form action="" method="POST">
-                        <div class="row">
-                            <div class="form-group col-md-4">
-                                <label for="datetarget" style="font-weight: 500;">Target Bulan</label>
-                                <div class="input-group date">
-                                    <div class="input-group-addon">
-                                        <span class="material-icons" style="vertical-align: middle;color: #848ccf;">event</span>
-                                    </div>
-                                    <input placeholder="Bulan" type="text" class="form-control datepicker" id="datetarget" name="" autocomplete="off">
-                                </div>
-                            </div>
-                            <div class="form-group col-md-8">
-                                <label for="target" style="font-weight: 500;">Nominal Target</label>
-                                <div class="input-group">
-                                    <span class="input-group-addon" id="basic-addon1" style="font-weight: bold;">Rp.</span>
-                                    <input type="number" name="" id="target" class="form-control"  required placeholder="Target" aria-describedby="basic-addon1">
-                                </div>
+                        <div class="form-group row">
+                            <label for="namaoutlet" class="col-sm-2 col-form-label">Nama</label>
+                            <div class="col-sm-10">
+                                <input type="text" readonly class="form-control-plaintext" id="namaoutlet" value="ZD01 BLOK M">
                             </div>
                         </div>
+
+                        <div class="form-group row">
+                            <label for="products" class="col-sm-2 col-form-label">Products</label>
+                            <div class="col-sm-10">
+                                <input type="text" readonly class="form-control-plaintext" id="products" value="PLAY ZONE">
+                            </div>
+                        </div>
+                    
+                        <div class="form-group row">
+                            <label for="omzet" class="col-sm-2 col-form-label">Omzet</label>
+                            <div class="col-sm-10">
+                                <input type="text" readonly class="form-control-plaintext" id="omzet" value="Rp.500,000,000">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="bebanpenjualan" class="col-sm-2 col-form-label">Total B.Penjualan</label>
+                            <div class="input-group col-sm-10">
+                                <span class="input-group-addon" id="basic-addon1" style="font-weight: bold;">Rp.</span>
+                                <input type="number" name="" id="bebanpenjualan" class="form-control"  required placeholder="Beban Penjualan" aria-describedby="basic-addon1">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="bebanumum" class="col-sm-2 col-form-label">Total B.Umum & Administrasi</label>
+                            <div class="input-group col-sm-10">
+                                <span class="input-group-addon" id="basic-addon1" style="font-weight: bold;">Rp.</span>
+                                <input type="number" name="" id="bebanumum" class="form-control"  required placeholder="Beban Umum & Administrasi" aria-describedby="basic-addon1">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="penghasilanlain" class="col-sm-2 col-form-label">Penghasilan (BEBAN) Lain</label>
+                            <div class="input-group col-sm-10">
+                                <span class="input-group-addon" id="basic-addon1" style="font-weight: bold;">Rp.</span>
+                                <input type="number" name="" id="penghasilanlain" class="form-control"  required placeholder="Penghasilan (BEBAN) Lain" aria-describedby="basic-addon1">
+                            </div>
+                        </div>
+
                         <div class="row">
                             <div class="col-md-12" style="text-align: end;">
                                 <a href="" type="submit" class="btn btn-primary btn-fill"  data-dismiss="modal" style="padding: 5px 15px;">
@@ -1509,7 +1257,7 @@
 
                     <div class="row">
                         <div class="form-group col-md-12">
-                            <label for="outlet" class="col-sm-2 col-form-label">Outlets</label>
+                            <label for="outlet" class="col-sm-2 col-form-label">Nama</label>
                             <div class="col-sm-10" style="padding-left: 10px;">
                                 <select class="selectpicker" title="Pilih Outlets" id="outlet">
                                     <option>ZD01 BLOK M</option>
@@ -1531,66 +1279,14 @@
                     </div>
                   
                  
-                    <div class="row">
-                        <div class="form-group col-md-6">
-                            <label for="provinsi" class="col-sm-4 col-form-label">Provinsi Outlet</label>
-                            <div class="col-sm-8">
-                                <select class="selectpicker" title="Pilih Provinsi" id="provinsi">
-                                    <option>Nanggroe Aceh Darussalam</option>
-                                    <option>Sumatera Utara</option>
-                                    <option>Sumatera Barat</option>
-                                    <option>Riau</option>
-                                    <option>Jambi</option>
-                                    <option>Sumatera Selatan</option>
-                                    <option>Bengkulu</option>
-                                    <option>Lampung</option>
-                                    <option>Kepulauan Bangka Belitung</option>
-                                    <option>Kepulauan Riau</option>
-                                    <option>DKI Jakarta</option>
-                                    <option>Jawa Barat</option>
-                                    <option>Jawa Tengah</option>
-                                    <option>DI Yogyakarta</option>
-                                    <option>Jawa Timur</option>
-                                    <option>Banten</option>
-                                    <option>Bali</option>
-                                    <option>Nusa Tenggara Barat</option>
-                                    <option>Nusa Tenggara Timur</option>
-                                    <option>Kalimantan Barat</option>
-                                    <option>Kalimantan Tengah</option>
-                                    <option>Kalimantan Selatan</option>
-                                    <option>Kalimantan Timur</option>
-                                    <option>Kalimantan Utara</option>
-                                    <option>Sulawesi Utara</option>
-                                    <option>Sulawesi Tengah</option>
-                                    <option>Sulawesi Selatan</option>
-                                    <option>Sulawesi Tenggara</option>
-                                    <option>Gorontalo</option>
-                                    <option>Sulawesi Barat</option>
-                                    <option>Maluku</option>
-                                    <option>Maluku Utara</option>
-                                    <option>Papua</option>
-                                    <option>Papua Barat</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="statuslisensi" class="col-sm-4 col-form-label">Status Licensi</label>
-                            <div class="col-sm-8">
-                                <select class="selectpicker" title="Pilih Status" id="statuslisensi">
-                                    <option>Aktif</option>
-                                    <option>Non Aktif</option>
-                                </select>
-                            </div>
-                        </div>
-                         
-                    </div>
+                    
                     <div class="row">
                         <div class="form-group col-md-6">
                             <label for="divisi" class="col-sm-4 col-form-label">Divisi</label>
                             <div class="col-sm-8">
                                 <select class="selectpicker" title="Pilih Divisi" id="divisi">
-                                    <option>RMS</option>
-                                    <option>IFS</option>
+                                    <option selected>RMS</option>
+                                    <option disabled>IFS</option>
                                 </select>
                             </div>
                         </div>
@@ -1609,25 +1305,25 @@
                     
                    <div class="row">
                         <div class="form-group col-md-6">
-                            <label for="dateopening" class="col-sm-4 col-form-label">Dari Tanggal</label>
+                            <label for="dateopening" class="col-sm-4 col-form-label">Tahun</label>
                             <div class="col-sm-8">
                                 <div class="input-group">
                                     <div class="input-group-addon">
                                         <span class="material-icons" style="vertical-align: middle;color: #848ccf;">event</span>
                                     </div>
-                                    <input placeholder="Dari Tanggal" type="text" class="form-control datepicker datepencarian" name="" autocomplete="off">
+                                    <input placeholder="Tahun" type="text" class="form-control datepicker dateprofitrmstahun" name="" autocomplete="off">
                                 </div>
                             </div>
                         </div>
 
                         <div class="form-group col-md-6">
-                            <label for="dateopening" class="col-sm-4 col-form-label">Sampai Tanggal</label>
+                            <label for="dateopening" class="col-sm-4 col-form-label">Bulan</label>
                             <div class="col-sm-8">
                                 <div class="input-group">
                                     <div class="input-group-addon">
                                         <span class="material-icons" style="vertical-align: middle;color: #848ccf;">event</span>
                                     </div>
-                                    <input placeholder="Sampai Tanggal" type="text" class="form-control datepicker datepencarian"  name="" autocomplete="off">
+                                    <input placeholder="Bulan" type="text" class="form-control datepicker dateprofitrmsbulan"  name="" autocomplete="off">
                                 </div>
                             </div>
                         </div>
@@ -1672,7 +1368,7 @@
 <script src="assets/js/highchart/highcharts-exporting.js"></script>
 <script src="assets/js/highchart/highcharts-export.js"></script>
 <script src="assets/js/highchart/highcharts-access.js"></script>
-<script src="assets/js/highchartscode/business.js"></script>
+<script src="assets/js/highchartscode/akuntingrms.js"></script>
 <script src="assets/js/bootstrap-select.min.js"></script>
 
 
@@ -1821,7 +1517,7 @@
 
 //========================================== MODAL PENCARIAN OUTLET ======================================== // 
 
-$('.pencarian').on('click', function () {
+$('.pencarianAkuntingRms').on('click', function () {
         // event.preventDefault();
         // const modalNamaPerusahaan   = $(this).parents('.singleSpesifikasi').find('.namaperusahaan').text();
         // const modalWilayahKerja     = $(this).parents('.singleSpesifikasi').find('.wilayahkerja').text();
@@ -1833,14 +1529,24 @@ $('.pencarian').on('click', function () {
         // $('#modal-spesifikasi .modal-body>.card-lokasi').text(modalLokasi);
         // $('#modal-spesifikasi .modal-body>.textarea>.card-desc').html(modalSpefikasi);
 
-        $('.datepencarian').datepicker({
-            format: "dd-MM-yyyy",
-            startView: "months"
+        $('.dateprofitrmstahun').datepicker({
+            format: "yyyy",
+            viewMode: "years", 
+            minViewMode: "years",
+            orientation: 'bottom'
+        });
+
+        $('.dateprofitrmsbulan').datepicker({
+            format: "MM",
+            viewMode: "months", 
+            minViewMode: "months",
+            orientation: 'bottom'
         });
 
 
         $('.form-control').val('');
-        $('.datepencarian').datepicker('refresh');
+        $('.dateprofitrmstahun').datepicker('refresh');
+        $('.dateprofitrmsbulan').datepicker('refresh');
         $('.selectpicker').selectpicker('refresh');
         $("#modal-pencarian").scrollTop(0);
         $('#modal-pencarian').modal();
@@ -1851,7 +1557,7 @@ $('.pencarian').on('click', function () {
 
  //========================================== MODAL CREATE TARGET ======================================== // 
 
-        $('.showspesifikasi').on('click', function (event) {
+        $('.createProfit').on('click', function (event) {
         // event.preventDefault();
         // const modalNamaPerusahaan   = $(this).parents('.singleSpesifikasi').find('.namaperusahaan').text();
         // const modalWilayahKerja     = $(this).parents('.singleSpesifikasi').find('.wilayahkerja').text();
@@ -1865,8 +1571,8 @@ $('.pencarian').on('click', function () {
     
         $('.form-control').val('');
         $('#datetarget').datepicker('refresh');
-        $("#modal-spesifikasi").scrollTop(0);
-        $('#modal-spesifikasi').modal();
+        $("#modal-createProfit").scrollTop(0);
+        $('#modal-createProfit').modal();
         });
 //======================================================================================================== // 
 
