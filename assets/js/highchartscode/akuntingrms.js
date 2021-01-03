@@ -1,5 +1,5 @@
 Highcharts.setOptions({
-    colors: ['#b8de6f','#9ba4b4']
+    colors: ['#b8de6f','#f56a79']
 });
   var Total = 0;
   var chart_rms = new Highcharts.chart({
@@ -10,7 +10,7 @@ Highcharts.setOptions({
             plotBorderWidth: null,
             plotShadow: false,
             type: 'pie',
-            height: 220,
+            height: 200,
         },
         tooltip: {
             followTouchMove: true,
@@ -84,14 +84,14 @@ Highcharts.setOptions({
 });
 
 Highcharts.setOptions({
-    colors: ['#54e346', '#4baee3']
+    colors: ['#54e346', '#f56a79']
 });
 
 var chart_area = new Highcharts.chart({
         chart: {
             renderTo: 'area-akuntingRMS', 
             backgroundColor: null,
-            type: 'area' 
+            type: 'area',
         },
         xAxis: {
             categories: ['2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020'],
