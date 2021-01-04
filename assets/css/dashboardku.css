@@ -151,7 +151,7 @@
   background-image: url(../img/human/human-3.svg);
   background-position: calc(100% + 10rem) bottom;
   background-repeat: no-repeat;
-  background-size: auto 82%;
+  background-size: auto 70%;
   padding: 2px 15px;
   cursor: pointer;
   z-index: 6;
@@ -166,7 +166,7 @@
   background-image: url(../img/human/human-4.svg);
   background-position: calc(100% + 4.5rem) bottom;
   background-repeat: no-repeat;
-  background-size: auto 82%;
+  background-size: auto 70%;
   padding: 2px 15px;
   cursor: pointer;
   z-index: 6;
@@ -181,7 +181,7 @@
   background-image: url(../img/human/human-2.svg);
   background-position: calc(100% + 8.5rem) bottom;
   background-repeat: no-repeat;
-  background-size: auto 82%;
+  background-size: auto 70%;
   padding: 2px 15px;
   cursor: pointer;
   z-index: 6;
@@ -197,7 +197,37 @@
   background-image: url(../img/human/human-8.svg);
   background-position: calc(100% + 3rem) bottom;
   background-repeat: no-repeat;
-  background-size: auto 90%;
+  background-size: auto 70%;
+  padding: 2px 15px;
+  cursor: pointer;
+  z-index: 6;
+}
+
+.card-rmsifs {
+  display: inline-block;
+  width: 100%;
+  margin: 25px 0;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 10px;
+  background-image: url(../img/human/human-9.svg);
+  background-position: calc(100% + 3rem) bottom;
+  background-repeat: no-repeat;
+  background-size: auto 62%;
+  padding: 2px 15px;
+  cursor: pointer;
+  z-index: 6;
+}
+
+.card-akunting {
+  display: inline-block;
+  width: 100%;
+  margin: 25px 0;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 10px;
+  background-image: url(../img/human/akunting-3.svg);
+  background-position: calc(100% + 3rem) bottom;
+  background-repeat: no-repeat;
+  background-size: auto 41%;
   padding: 2px 15px;
   cursor: pointer;
   z-index: 6;
