@@ -727,7 +727,7 @@ var chart_line = new Highcharts.chart({
         });
 
     Highcharts.setOptions({
-		colors: ['#b8de6f','#888888']
+		colors: ['#b8de6f','#bbbbbb']
     });
     let dataCompareProducts = [
         [23934, 22503, 27177, 69658, 27031, 19931, 37133, 54175, 19931, 167133, 154175,20000], 
@@ -851,7 +851,7 @@ var chart_line = new Highcharts.chart({
    
 
     Highcharts.setOptions({
-		colors: ['#ffabe1','#888888']
+		colors: ['#ffabe1','#bbbbbb']
     });
 
     let dataKiddie = [
