@@ -1,10 +1,10 @@
 Highcharts.setOptions({
-    colors: ['#54e346','#bbbbbb']
+    colors: ['#4baee3','#bbbbbb']
 });
   var Total = 0;
-  var chart_rms = new Highcharts.chart({
+  var chart_ifs = new Highcharts.chart({
         chart: {
-            renderTo: 'chart-pie-akuntingrms',
+            renderTo: 'chart-pie-akuntingIFS',
             backgroundColor: null,
             plotBackgroundColor: null,
             plotBorderWidth: null,
@@ -84,12 +84,12 @@ Highcharts.setOptions({
 });
 
 Highcharts.setOptions({
-    colors: ['#54e346', '#bbbbbb']
+    colors: ['#4baee3', '#bbbbbb']
 });
 
 var chart_area = new Highcharts.chart({
         chart: {
-            renderTo: 'area-akuntingRMS', 
+            renderTo: 'area-akuntingIFS', 
             backgroundColor: null,
             type: 'area',
         },
