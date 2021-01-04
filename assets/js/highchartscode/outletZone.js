@@ -154,6 +154,7 @@ var chart_lineProduct = new Highcharts.chart({
         yAxis: {
             min:0,
             title: false, 
+            gridLineColor: null,
         },
         title: {
             text: 'Omset Years'
@@ -260,7 +261,8 @@ var chart_lineProduct = new Highcharts.chart({
        
         yAxis: {
             min:0,
-            title: false,   
+            title: false, 
+            gridLineColor: null,  
         },
         title: {
             text: 'Omset Months'

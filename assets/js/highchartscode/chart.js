@@ -371,6 +371,7 @@ var chart_line = new Highcharts.chart({
         yAxis: {
             min:0,
             title: false, 
+            gridLineColor: null, 
         },
         title: {
             text: 'Division'
@@ -473,6 +474,7 @@ var chart_line = new Highcharts.chart({
         yAxis: {
             min:0,
             title: false, 
+            gridLineColor: null, 
         },
         title: {
             text: 'Division'
@@ -575,6 +577,7 @@ var chart_line = new Highcharts.chart({
             yAxis: {
                 min:0,
                 title: false, 
+                gridLineColor: null,
             },
             title: {
                 text: 'Products'
@@ -680,6 +683,7 @@ var chart_line = new Highcharts.chart({
             yAxis: {
                 min:0,
                 title: false, 
+                gridLineColor: null,
             },
             title: {
                 text: 'Products'
@@ -790,7 +794,8 @@ var chart_line = new Highcharts.chart({
        
         yAxis: {
             min:0,
-            title: false,   
+            title: false,
+            gridLineColor: null,   
         },
         title: {
             text: 'Years & Months'

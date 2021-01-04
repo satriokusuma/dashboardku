@@ -130,6 +130,7 @@ var chart_area = new Highcharts.chart({
         yAxis: {
             min:0,
             title: false, 
+            gridLineColor: null,
         },
         title: {
             text: 'Division'
