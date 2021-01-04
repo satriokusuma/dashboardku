@@ -84,7 +84,10 @@ Highcharts.setOptions({
 });
 
 Highcharts.setOptions({
-    colors: ['#4baee3', '#bbbbbb']
+    colors: ['#4baee3', '#bbbbbb'],
+    lang: {
+        numericSymbols: ['K', ' Jt', 'M', 'T']
+    }
 });
 
 var chart_area = new Highcharts.chart({

@@ -325,7 +325,10 @@ var chart_kiddieland = new Highcharts.chart({
 });
 
 Highcharts.setOptions({
-    colors: ['#54e346', '#4baee3']
+    colors: ['#54e346', '#4baee3'],
+    lang: {
+        numericSymbols: ['K', ' Jt', 'M', 'T']
+    }
 });
 
 var chart_line = new Highcharts.chart({
@@ -424,7 +427,10 @@ var chart_line = new Highcharts.chart({
     });
 
 Highcharts.setOptions({
-    colors: ['#54e346', '#4baee3']
+    colors: ['#54e346', '#4baee3'],
+    lang: {
+        numericSymbols: ['K', ' Jt', 'M', 'T']
+    }
 });
 
 var chart_line = new Highcharts.chart({
@@ -523,7 +529,10 @@ var chart_line = new Highcharts.chart({
     });
 
     Highcharts.setOptions({
-        colors: ['#fdb827','#b8de6f','#ffabe1']
+        colors: ['#fdb827','#b8de6f','#ffabe1'],
+        lang: {
+            numericSymbols: ['K', ' Jt', 'M', 'T']
+        }
     });
     
     var chart_lineProduct = new Highcharts.chart({
@@ -625,7 +634,10 @@ var chart_line = new Highcharts.chart({
         });
 
     Highcharts.setOptions({
-        colors: ['#fdb827','#b8de6f','#ffabe1']
+        colors: ['#fdb827','#b8de6f','#ffabe1'],
+        lang: {
+            numericSymbols: ['K', ' Jt', 'M', 'T']
+        }
     });
     
     var chart_lineProduct = new Highcharts.chart({
@@ -727,7 +739,10 @@ var chart_line = new Highcharts.chart({
         });
 
     Highcharts.setOptions({
-		colors: ['#b8de6f','#bbbbbb']
+        colors: ['#b8de6f','#bbbbbb'],
+        lang: {
+            numericSymbols: ['K', ' Jt', 'M', 'T']
+        }
     });
     let dataCompareProducts = [
         [23934, 22503, 27177, 69658, 27031, 19931, 37133, 54175, 19931, 167133, 154175,20000], 
@@ -850,132 +865,4 @@ var chart_line = new Highcharts.chart({
 
    
 
-    Highcharts.setOptions({
-		colors: ['#ffabe1','#bbbbbb']
-    });
-
-    let dataKiddie = [
-        [23934, 22503, 27177, 69658, 27031, 19931, 37133, 54175, 19931, 167133, 154175,20000,100000], 
-        [24916, 24064, 29742, 79851, 32490, 30282, 38121, 40434, 219931, 187133, 195555,50000]
-    ];
-    function formatterKiddie(baseSeries) {
-        return Highcharts.numberFormat(this.y / dataKiddie[baseSeries][this.point.index] * 100, 0) + '%'
-    }
-
-    var chart_bar = new Highcharts.chart({
-        chart: {
-            renderTo: 'line-3',
-            type: 'bar',
-            backgroundColor: null,   
-        },
-        xAxis: {
-            categories:['ZD01 BLOK M', 'R67 KARAWANG', 'R101 LAMPUNG', 'R105 PARUNG', 'R70 MAKASAR', 'R34 DEPOK', 'R71 BTM', 'R72 TMII', 'R102 KEB LAMA', 'R21 BEKASI', 'R30 TANGGERANG','R40 Cengkareng'],
-            labels: {
-            style: {
-            fontSize: '12px',
-            color: '#43425D'
-            }
-            }, 
-            title: {
-                text: null
-            },
-            min: 0,
-            max:4,
-            scrollbar: {
-                enabled: true,
-                barBackgroundColor: '#dbdbdb',
-                barBorderRadius: 7,
-                barBorderWidth: 0,
-                buttonBackgroundColor: '#dbdbdb',
-                buttonBorderWidth: 0,
-                buttonArrowColor: 'black',
-                buttonBorderRadius: 7,
-                rifleColor: 'black',
-                trackBackgroundColor: '#ebebeb',
-                trackBorderWidth: 1,
-                trackBorderColor: 'silver',
-                trackBorderRadius: 7,
-                size: 8
-            },
-        },
-       
-        yAxis: {
-            min:0,
-            title: false,      
-        },
-        title: {
-            text: 'Omset & Target'
-        },
-        credits: {
-        enabled: false
-        },
-        tooltip: {
-            formatter: function () {
-            return '<b>' + this.x + '</b><br/>' +
-            '<b>'+ 'Total :' +'</b>'+' '+' ' +'<b>'+'Rp.' + this.y + '</b>'+'<br/>'
-            }
-        },
-        plotOptions: {
-            series: {
-                point: {}
-            },
-            bar: {
-                states: {
-                    hover: {
-                    color: '#4baee3',  
-                    }
-                },
-                cursor: 'pointer',
-                showInLegend: true,
-                borderWidth: 0.,
-                dataLabels: {
-                    enabled: true,
-                    style: {
-                        fontWeight: 'bold',
-                        fontSize:'12px',
-                        color:'#848ccf'
-                    } 
-                }
-            },
-        },
-
-        series:[
-            {
-            name:'Omset Sale',
-            data: dataKiddie[0],
-            dataLabels: {
-                align: 'left',
-                zIndex: 1,
-                formatter: function() {
-                  return formatterKiddie.call(this, 1);
-                }
-              }
-            },
-            {
-            name:'Target Sale',
-            data: dataKiddie[1],
-            dataLabels: {
-               enabled:false
-              }
-            }
-        ],
     
-        navigation: {
-            buttonOptions: {
-                verticalAlign: 'top',
-            }
-        },
-        exporting: {
-            sourceWidth: 1200,  
-            buttons: {
-                contextButton: {
-                    menuItems: ['downloadXLS','viewData','downloadPDF']
-                }
-            },
-            chartOptions: {
-                xAxis: [{
-                  categories:['ZD01 BLOK M', 'R67 KARAWANG', 'R101 LAMPUNG', 'R105 PARUNG', 'R70 MAKASAR', 'R34 DEPOK', 'R71 BTM', 'R72 TMII', 'R102 KEB LAMA', 'R21 BEKASI', 'R30 TANGGERANG','R40 Cengkareng'],
-                }]
-            }
-        }  
-    });
