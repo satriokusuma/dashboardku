@@ -1,5 +1,5 @@
 Highcharts.setOptions({
-    colors: ['#b8de6f','#f56a79']
+    colors: ['#b8de6f','#bbbbbb']
 });
   var Total = 0;
   var chart_rms = new Highcharts.chart({
@@ -84,7 +84,7 @@ Highcharts.setOptions({
 });
 
 Highcharts.setOptions({
-    colors: ['#54e346', '#f56a79']
+    colors: ['#54e346', '#bbbbbb']
 });
 
 var chart_area = new Highcharts.chart({
