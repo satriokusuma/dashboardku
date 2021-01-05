@@ -41,7 +41,7 @@ $(document).ready(function(){
 
     md.initSidebarsCheck();
 
-    if($('body').hasClass('sidebar-mini')){
+    if($('div').hasClass('sidebar-mini')){
         md.misc.sidebar_mini_active = true;
     }
 
@@ -185,7 +185,7 @@ md = {
             var $btn = $(this);
 
             if(md.misc.sidebar_mini_active == true){
-                $('body').removeClass('sidebar-mini');
+                $('div').removeClass('sidebar-mini');
                 md.misc.sidebar_mini_active = false;
 
                 if(isWindows){
@@ -203,7 +203,7 @@ md = {
                 }
 
                 setTimeout(function(){
-                    $('body').addClass('sidebar-mini');
+                    $('div').addClass('sidebar-mini');
 
                     $('.sidebar .collapse').css('height','auto');
                     md.misc.sidebar_mini_active = true;
