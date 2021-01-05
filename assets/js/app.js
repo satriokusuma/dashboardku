@@ -95,7 +95,14 @@ var date = new Date();
     var jam = date.getHours();
     var menit = date.getMinutes();
     var detik = date.getSeconds();
-    
+
+    if (jam < 10){
+        jam = "0" + jam
+        }
+    if (menit < 10){
+        menit = "0" + menit
+        }
+
     switch(hari) {
     case 0: hari = "Minggu"; break;
     case 1: hari = "Senin"; break;
