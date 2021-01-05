@@ -7351,8 +7351,8 @@ h2.title {
   }
 
   .sidebar-mini .sidebar .nav [data-toggle="collapse"]~div>ul>li>a {
-    padding: 10px 15px;
-    border-radius: 3px;
+    padding: 5px 10px;
+    border-radius: 5px;
   }
 
   .sidebar-mini .sidebar[data-active-color="purple"] .nav li.active>[data-toggle="collapse"] {
@@ -7411,7 +7411,7 @@ h2.title {
   }
 
   .sidebar-mini .sidebar .collapse .nav {
-    width: 130px;
+    width: 140px;
     height: auto;
     position: relative;
     margin: 5px 0;
