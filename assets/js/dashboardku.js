@@ -3,7 +3,7 @@
  (function(){
      isWindows = navigator.platform.indexOf('Win') > -1 ? true : false;
 
-     if (isWindows && !$('body').hasClass('sidebar-mini')){
+     if (isWindows && !$('div').hasClass('sidebar-mini')){
         // if we are on windows OS we activate the perfectScrollbar function
         $('.sidebar .sidebar-wrapper').perfectScrollbar();
 
@@ -34,7 +34,7 @@ $(document).ready(function(){
 
     $sidebar = $('.sidebar');
 
-    $.material.init();
+    // $.material.init();
 
     // We put modals out of wrapper to working properly
     $('.modal').appendTo("body");
@@ -199,7 +199,7 @@ md = {
                 });
 
                 if(isWindows){
-                    $('.sidebar .sidebar-wrapper, .main-panel').perfectScrollbar('destroy');
+                    $('.sidebar .sidebar-wrapper').perfectScrollbar('destroy');
                 }
 
                 setTimeout(function(){

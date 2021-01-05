@@ -7061,8 +7061,7 @@ h2.title {
 
 .sidebar .user,
 .off-canvas-sidebar .user {
-  padding-bottom: 20px;
-  margin: 20px auto 0;
+  padding: 20px 0;
   position: relative;
 }
 
@@ -7198,7 +7197,7 @@ h2.title {
   position: relative;
   float: right;
   overflow: auto;
-  width: calc(100% - 200px);
+  width: calc(100% - 80px);
   min-height: 100%;
   -webkit-transform: translate3d(0px, 0, 0);
   -moz-transform: translate3d(0px, 0, 0);
@@ -7298,6 +7297,7 @@ h2.title {
   .sidebar-mini [data-background-color="black"] .nav .collapse li:not(.active)>a,
   .sidebar-mini [data-background-color="black"] .user .collapse li:not(.active)>a {
     color: #3C4858;
+    font-size: 12px;
   }
 
   .sidebar-mini .sidebar {
@@ -7392,8 +7392,8 @@ h2.title {
   }
 
   .sidebar-mini .sidebar .info [data-toggle="collapse"]~div>ul>li>a {
-    padding: 10px 15px;
-    border-radius: 3px;
+    padding: 5px 10px;
+    border-radius: 5px;
   }
 
   .sidebar-mini .sidebar .user {
@@ -7411,7 +7411,7 @@ h2.title {
   }
 
   .sidebar-mini .sidebar .collapse .nav {
-    width: 180px;
+    width: 130px;
     height: auto;
     position: relative;
     margin: 5px 0;
