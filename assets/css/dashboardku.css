@@ -26,8 +26,8 @@
   margin: 25px 0;
   background-color: #848ccf;
   height: 220px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  border-radius: 6px;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .05), 0 3px 14px 3px rgba(0, 0, 0, .05), 0 8px 10px 1px rgba(0, 0, 0, .05);
+  border-radius: 10px;
 }
 
 
@@ -73,8 +73,8 @@
   position: relative;
   width: 100%;
   margin: 25px 0;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  border-radius: 6px;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .05), 0 3px 14px 3px rgba(0, 0, 0, .05), 0 8px 10px 1px rgba(0, 0, 0, .05);
+  border-radius: 10px;
   background-image: url(../img/human/human-10.svg);
   background-position: calc(100% + 0.5rem) bottom;
   background-repeat: no-repeat;
@@ -88,8 +88,8 @@
   position: relative;
   width: 100%;
   margin: 25px 0;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  border-radius: 6px;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .05), 0 3px 14px 3px rgba(0, 0, 0, .05), 0 8px 10px 1px rgba(0, 0, 0, .05);
+  border-radius: 10px;
   background-image: url(../img/human/human-11.svg);
   background-position: calc(100% + 0.5rem) bottom;
   background-repeat: no-repeat;
@@ -103,8 +103,8 @@
   position: relative;
   width: 100%;
   margin: 25px 0;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  border-radius: 6px;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .05), 0 3px 14px 3px rgba(0, 0, 0, .05), 0 8px 10px 1px rgba(0, 0, 0, .05);
+  border-radius: 10px;
   background-image: url(../img/human/fastfood.svg);
   background-position: calc(100% + 4rem) bottom;
   background-repeat: no-repeat;
@@ -118,8 +118,8 @@
   position: relative;
   width: 100%;
   margin: 25px 0;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  border-radius: 6px;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .05), 0 3px 14px 3px rgba(0, 0, 0, .05), 0 8px 10px 1px rgba(0, 0, 0, .05);
+  border-radius: 10px;
   background-image: url(../img/human/arcade-2.svg);
   background-position: calc(100% + 5rem) bottom;
   background-repeat: no-repeat;
@@ -146,7 +146,7 @@
   display: inline-block;
   width: 100%;
   margin: 25px 0;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .05), 0 3px 14px 3px rgba(0, 0, 0, .05), 0 8px 10px 1px rgba(0, 0, 0, .05);
   border-radius: 10px;
   background-image: url(../img/human/human-3.svg);
   background-position: calc(100% + 10rem) bottom;
@@ -161,7 +161,7 @@
   display: inline-block;
   width: 100%;
   margin: 25px 0;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .05), 0 3px 14px 3px rgba(0, 0, 0, .05), 0 8px 10px 1px rgba(0, 0, 0, .05);
   border-radius: 10px;
   background-image: url(../img/human/human-4.svg);
   background-position: calc(100% + 4rem) bottom;
@@ -176,7 +176,7 @@
   display: inline-block;
   width: 100%;
   margin: 25px 0;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .05), 0 3px 14px 3px rgba(0, 0, 0, .05), 0 8px 10px 1px rgba(0, 0, 0, .05);
   border-radius: 10px;
   background-image: url(../img/human/human-2.svg);
   background-position: calc(100% + 8.5rem) bottom;
@@ -192,7 +192,7 @@
   display: inline-block;
   width: 100%;
   margin: 25px 0;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .05), 0 3px 14px 3px rgba(0, 0, 0, .05), 0 8px 10px 1px rgba(0, 0, 0, .05);
   border-radius: 10px;
   background-image: url(../img/human/human-8.svg);
   background-position: calc(100% + 3rem) bottom;
@@ -207,7 +207,7 @@
   display: inline-block;
   width: 100%;
   margin: 25px 0;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .05), 0 3px 14px 3px rgba(0, 0, 0, .05), 0 8px 10px 1px rgba(0, 0, 0, .05);
   border-radius: 10px;
   background-image: url(../img/human/human-9.svg);
   background-position: calc(100% + 3rem) bottom;
@@ -222,7 +222,7 @@
   display: inline-block;
   width: 100%;
   margin: 25px 0;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .05), 0 3px 14px 3px rgba(0, 0, 0, .05), 0 8px 10px 1px rgba(0, 0, 0, .05);
   border-radius: 10px;
   background-image: url(../img/human/human-10.svg);
   background-position: calc(100% + 1rem) bottom;
@@ -237,7 +237,7 @@
   display: inline-block;
   width: 100%;
   margin: 25px 0;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .05), 0 3px 14px 3px rgba(0, 0, 0, .05), 0 8px 10px 1px rgba(0, 0, 0, .05);
   border-radius: 10px;
   background-image: url(../img/human/human-10.svg);
   background-position: calc(100% + 1rem) bottom;
@@ -252,7 +252,7 @@
   display: inline-block;
   width: 100%;
   margin: 25px 0;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .05), 0 3px 14px 3px rgba(0, 0, 0, .05), 0 8px 10px 1px rgba(0, 0, 0, .05);
   border-radius: 10px;
   background-image: url(../img/human/human-11.svg);
   background-position: calc(100% + 3rem) bottom;
@@ -267,7 +267,7 @@
   display: inline-block;
   width: 100%;
   margin: 25px 0;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .05), 0 3px 14px 3px rgba(0, 0, 0, .05), 0 8px 10px 1px rgba(0, 0, 0, .05);
   border-radius: 10px;
   background-image: url(../img/human/human-11.svg);
   background-position: calc(100% + 5rem) bottom;
@@ -282,7 +282,7 @@
   display: inline-block;
   width: 100%;
   margin: 25px 0;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .05), 0 3px 14px 3px rgba(0, 0, 0, .05), 0 8px 10px 1px rgba(0, 0, 0, .05);
   border-radius: 10px;
   background-image: url(../img/human/akunting-3.svg);
   background-position: calc(100% + 3rem) bottom;
@@ -297,7 +297,7 @@
   display: inline-block;
   width: 100%;
   margin: 25px 0;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .05), 0 3px 14px 3px rgba(0, 0, 0, .05), 0 8px 10px 1px rgba(0, 0, 0, .05);
   border-radius: 10px;
   background-image: url(../img/human/arcade-2.svg);
   background-position: calc(100% + 5rem) bottom;
@@ -312,7 +312,7 @@
   display: inline-block;
   width: 100%;
   margin: 25px 0;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .05), 0 3px 14px 3px rgba(0, 0, 0, .05), 0 8px 10px 1px rgba(0, 0, 0, .05);
   border-radius: 10px;
   background-image: url(../img/human/fastfood.svg);
   background-position: calc(100% + 5rem) bottom;
@@ -328,7 +328,7 @@
   display: inline-block;
   width: 100%;
   margin: 25px 0;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .05), 0 3px 14px 3px rgba(0, 0, 0, .05), 0 8px 10px 1px rgba(0, 0, 0, .05);
   border-radius: 10px;
   background-image: url(../img/human/human-12.svg);
   background-position: calc(100% + 2rem) center;
@@ -343,7 +343,7 @@
   display: inline-block;
   width: 100%;
   margin: 25px 0;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .05), 0 3px 14px 3px rgba(0, 0, 0, .05), 0 8px 10px 1px rgba(0, 0, 0, .05);
   border-radius: 10px;
   background-image: url(../img/human/human-13.svg);
   background-position: calc(100% + 2rem) center;
@@ -358,7 +358,7 @@
   display: inline-block;
   width: 100%;
   margin: 25px 0;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .05), 0 3px 14px 3px rgba(0, 0, 0, .05), 0 8px 10px 1px rgba(0, 0, 0, .05);
   border-radius: 10px;
   background-image: url(../img/human/human-12.svg);
   background-position: calc(100% + 2rem) center;
@@ -373,7 +373,7 @@
   display: inline-block;
   width: 100%;
   margin: 25px 0;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .05), 0 3px 14px 3px rgba(0, 0, 0, .05), 0 8px 10px 1px rgba(0, 0, 0, .05);
   border-radius: 10px;
   background-image: url(../img/human/human-13.svg);
   background-position: calc(100% + 2rem) center;
@@ -402,7 +402,7 @@
   display: inline-block;
   width: 100%;
   margin: 25px 0;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .05), 0 3px 14px 3px rgba(0, 0, 0, .05), 0 8px 10px 1px rgba(0, 0, 0, .05);
   border-radius: 10px;
   padding: 2px 15px;
   cursor: pointer;
@@ -420,7 +420,7 @@
   display: inline-block;
   width: 100%;
   margin: 25px 0;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .05), 0 3px 14px 3px rgba(0, 0, 0, .05), 0 8px 10px 1px rgba(0, 0, 0, .05);
   border-radius: 10px;
   background-image: url(../img/human/human-3.svg);
   background-position: calc(100% + 11.5rem) bottom;
@@ -503,8 +503,8 @@
   position: relative;
   width: 100%;
   margin: 25px 0;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  border-radius: 6px;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .05), 0 3px 14px 3px rgba(0, 0, 0, .05), 0 8px 10px 1px rgba(0, 0, 0, .05);
+  border-radius: 10px;
   background-size: 100% 100%;
   background-repeat: no-repeat;
   height: 220px;
