@@ -787,6 +787,57 @@
 
                     <div class="row">
                         <div class="form-group col-md-12">
+                            <label for="bagianbarang" class="col-sm-2 col-form-label">Bagian Barang</label>
+                            <div class="col-sm-10">
+                                <select class="selectpicker" title="Pilih Bagian Barang">
+                                    <option>AKUNTING</option>
+                                    <option>MD</option>
+                                    <option>OPERASIONAL</option>
+                                    <option>PROYEK</option>
+                                    <option>PROMOSI</option>
+                                    <option>KIDDIE LAND</option>
+                                    <option>IT</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div id="multibarang" >
+                            <div class="groupbarang">
+                                <div class="form-group col-md-12">
+                                    <div class="col-md-5" style="padding-left: 0;">
+                                        <label for="namabarang" class="col-sm-5 col-form-label">Nama Barang</label>
+                                        <div class="col-sm-7">
+                                            <select class="selectpicker" title="Pilih">
+                                                <option>PC SERVER</option>
+                                                <option>PC KASIR</option>
+                                                <option>PC OFFICE</option>
+                                                <option>MONITOR OFFICE</option>
+                                                <option>MONITOR KASIR</option>
+                                                <option>KEYBOARD</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5" style="padding-left: 0;margin-top: 10px;">
+                                        <label for="qty" class="col-sm-3 col-form-label">Jumlah</label>
+                                        <div class="col-sm-9">
+                                            <input type="number" class="form-control" id="qty">
+                                            <p id="" class="form-text text-muted">Untuk Permintaan Uang silahkan input Nominal</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <button type="button" id="btnTambah" class="btn btn-sm btn-fill btn-primary">Tambah</button>
+                                        <button type="button" class="btn btn-sm btn-fill btn-danger btnHapus">Hapus</button>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group col-md-12">
                             <label for="kondisi" class="col-sm-2 col-form-label">Kondisi</label>
                             <div class="col-sm-10">
                                 <select class="selectpicker" title="Pilih Kondisi">
@@ -1091,6 +1142,7 @@
 <script src="assets/js/bootstrap-datepicker.js"></script>
 <script src="assets/js/bootstrap-select.min.js"></script>
 <script src="assets/js/jasny-bootstrap.min.js"></script>
+<script src="assets/js/multifield.js"></script>
 
 
 <script>
@@ -1239,11 +1291,20 @@
           $('#modal-kirim-pp').modal();
    
           });
-        
-  
-      });
+//==================================================================================================== // 
+//================================================= TAMBAH BARANG ===========================================//
 
-//=============================================  ======================================================= // 
+        $('#multibarang').multifield({
+            section: '.groupbarang',
+            btnAdd:'#btnTambah',
+            btnRemove:'.btnHapus',
+        });
+
+//======================================================================================================== //       
+  
+    });
+
+
 
   </script>
   
