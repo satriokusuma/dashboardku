@@ -2,7 +2,7 @@ Highcharts.setOptions({
     colors: ['#54e346', '#4baee3']
 });
   var Total = 0;
-  var chart_fnb = new Highcharts.chart({
+  var chart_pie_zone = new Highcharts.chart({
         chart: {
             renderTo: 'chart-pie-zone',
             backgroundColor: null,
@@ -94,7 +94,7 @@ let dataZone = [
 function formatterZone(baseSeries) {
     return Highcharts.numberFormat(this.y / dataZone[baseSeries][this.point.index] * 100,0) + '%'
 }
-var chart_bar = new Highcharts.chart({
+var chart_bar_zone = new Highcharts.chart({
     chart: {
         renderTo: 'line-zone2000',
         type: 'bar',

@@ -2,9 +2,9 @@ Highcharts.setOptions({
     colors: ['#b8de6f', '#4baee3']
 });
   var Total = 0;
-  var chart_fnb = new Highcharts.chart({
+  var chart_pie_playzone = new Highcharts.chart({
         chart: {
-            renderTo: 'chart-pie-zone',
+            renderTo: 'chart-pie-playzone',
             backgroundColor: null,
             plotBackgroundColor: null,
             plotBorderWidth: null,
@@ -94,9 +94,9 @@ let dataZone = [
 function formatterZone(baseSeries) {
     return Highcharts.numberFormat(this.y / dataZone[baseSeries][this.point.index] * 100,0) + '%'
 }
-var chart_bar = new Highcharts.chart({
+var chart_bar_playzone = new Highcharts.chart({
     chart: {
-        renderTo: 'line-zone2000',
+        renderTo: 'line-playzone',
         type: 'bar',
         backgroundColor: null,
         // height: 300,   

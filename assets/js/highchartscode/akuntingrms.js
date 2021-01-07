@@ -2,7 +2,7 @@ Highcharts.setOptions({
     colors: ['#54e346','#bbbbbb']
 });
   var Total = 0;
-  var chart_rms = new Highcharts.chart({
+  var chart_akuntingRms = new Highcharts.chart({
         chart: {
             renderTo: 'chart-pie-akuntingrms',
             backgroundColor: null,
@@ -90,7 +90,7 @@ Highcharts.setOptions({
     }
 });
 
-var chart_area = new Highcharts.chart({
+var chart_areaAkuntingRms = new Highcharts.chart({
         chart: {
             renderTo: 'area-akuntingRMS', 
             backgroundColor: null,

@@ -5,7 +5,7 @@ Highcharts.setOptions({
     }
 });
 
-var chart_lineProduct = new Highcharts.chart({
+var chart_lineModalZone = new Highcharts.chart({
         chart: {
             renderTo: 'line-outletModalZone2000', 
             backgroundColor: null,
@@ -114,9 +114,9 @@ Highcharts.setOptions({
     }
 });
 
-var chart_lineProduct = new Highcharts.chart({
+var chart_area_targetOutletZone = new Highcharts.chart({
         chart: {
-            renderTo: 'line-outletYears', 
+            renderTo: 'line-targetYearsZone', 
             backgroundColor: null,
             type: 'area'
         },
@@ -220,9 +220,9 @@ var chart_lineProduct = new Highcharts.chart({
     function formatterZone(baseSeries) {
         return Highcharts.numberFormat(this.y / dataZone[baseSeries][this.point.index] * 100,0) + '%'
     }
-    var chart_bar = new Highcharts.chart({
+    var chart_bar_targetOutletZone = new Highcharts.chart({
         chart: {
-            renderTo: 'line-outletMonth',
+            renderTo: 'line-targetMonthZone',
             type: 'bar',
             backgroundColor: null,   
         },

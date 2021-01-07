@@ -5,7 +5,7 @@ Highcharts.setOptions({
     }
 });
 
-var chart_areaOmzetDiv = new Highcharts.chart({
+var chart_areaOmzetDivHome = new Highcharts.chart({
         chart: {
             renderTo: 'area-omzetDiv', 
             backgroundColor: null,
@@ -108,7 +108,7 @@ var chart_areaOmzetDiv = new Highcharts.chart({
         }
     });
     
-    var chart_areaOmzetProducts = new Highcharts.chart({
+    var chart_areaOmzetProductsHome = new Highcharts.chart({
             chart: {
                 renderTo: 'area-omzetproduct', 
                 backgroundColor: null,

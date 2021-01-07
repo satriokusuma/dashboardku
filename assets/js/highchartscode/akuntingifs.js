@@ -2,7 +2,7 @@ Highcharts.setOptions({
     colors: ['#4baee3','#bbbbbb']
 });
   var Total = 0;
-  var chart_ifs = new Highcharts.chart({
+  var chart_akuntingifs = new Highcharts.chart({
         chart: {
             renderTo: 'chart-pie-akuntingIFS',
             backgroundColor: null,
@@ -90,7 +90,7 @@ Highcharts.setOptions({
     }
 });
 
-var chart_area = new Highcharts.chart({
+var chart_areaAkuntingIfs = new Highcharts.chart({
         chart: {
             renderTo: 'area-akuntingIFS', 
             backgroundColor: null,

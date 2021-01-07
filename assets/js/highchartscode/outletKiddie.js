@@ -5,7 +5,7 @@ Highcharts.setOptions({
     }
 });
 
-var chart_lineProduct = new Highcharts.chart({
+var chart_lineModalKiddie = new Highcharts.chart({
         chart: {
             renderTo: 'line-outletModalKiddieland', 
             backgroundColor: null,
@@ -113,9 +113,9 @@ Highcharts.setOptions({
     }
 });
 
-var chart_lineProduct = new Highcharts.chart({
+var chart_area_targetOutletKiddie = new Highcharts.chart({
         chart: {
-            renderTo: 'line-outletYears', 
+            renderTo: 'line-targetYearsKiddie', 
             backgroundColor: null,
             type: 'area'
         },
@@ -212,16 +212,16 @@ var chart_lineProduct = new Highcharts.chart({
             numericSymbols: ['K', ' Jt', 'M', 'T']
         }
     });
-    let dataZone = [
+    let dataKiddie = [
         [23934, 22503, 27177, 69658, 27031, 19931, 37133, 54175, 19931, 167133, 154175,20000], 
         [24916, 24064, 29742, 79851, 32490, 30282, 38121, 40434, 219931, 187133, 195555,50000]
     ];
     function formatterZone(baseSeries) {
-        return Highcharts.numberFormat(this.y / dataZone[baseSeries][this.point.index] * 100,0) + '%'
+        return Highcharts.numberFormat(this.y / dataKiddie[baseSeries][this.point.index] * 100,0) + '%'
     }
-    var chart_bar = new Highcharts.chart({
+    var chart_bar_targetOutletKiddie = new Highcharts.chart({
         chart: {
-            renderTo: 'line-outletMonth',
+            renderTo: 'line-targetMonthKiddie',
             type: 'bar',
             backgroundColor: null,   
         },
@@ -300,7 +300,7 @@ var chart_lineProduct = new Highcharts.chart({
         series:[
             {
             name:'Omset Sale',
-            data: dataZone[0],
+            data: dataKiddie[0],
             dataLabels: {
                 align: 'left',
                 zIndex: 1,
@@ -311,7 +311,7 @@ var chart_lineProduct = new Highcharts.chart({
             },
             {
             name:'Target Sale',
-            data: dataZone[1],
+            data: dataKiddie[1],
             dataLabels: {
                enabled:false
               }

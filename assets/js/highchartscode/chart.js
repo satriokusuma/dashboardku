@@ -2,7 +2,7 @@ Highcharts.setOptions({
     colors: ['#54e346', '#4baee3']
 });
   var Total = 0;
-  var chart_zone = new Highcharts.chart({
+  var chart_pie_profitdiv = new Highcharts.chart({
         chart: {
             renderTo: 'chart-pie-profitdiv',
             backgroundColor: null,
@@ -80,7 +80,7 @@ Highcharts.setOptions({
 
 
   var Total = 0;
-  var chart_playzone = new Highcharts.chart({
+  var chart_pie_omzetdiv = new Highcharts.chart({
         chart: {
             renderTo: 'chart-pie-omzetdiv',
             backgroundColor: null,
@@ -156,7 +156,7 @@ Highcharts.setOptions({
         colors: ['#fdb827','#b8de6f','#ffabe1']
     });
   var Total = 0;
-  var chart_kiddieland = new Highcharts.chart({
+  var chart_pie_profitproducts = new Highcharts.chart({
         chart: {
             renderTo: 'chart-pie-profitproducts',
             backgroundColor: null,
@@ -242,7 +242,7 @@ Highcharts.setOptions({
     colors: ['#fdb827','#b8de6f','#ffabe1']
 });
 var Total = 0;
-var chart_kiddieland = new Highcharts.chart({
+var chart_pie_omzetproducts = new Highcharts.chart({
     chart: {
         renderTo: 'chart-pie-omzetproducts',
         backgroundColor: null,
@@ -331,7 +331,7 @@ Highcharts.setOptions({
     }
 });
 
-var chart_line = new Highcharts.chart({
+var chart_lineProfitDiv = new Highcharts.chart({
         chart: {
             renderTo: 'line-profitDiv', 
             backgroundColor: null,
@@ -434,7 +434,7 @@ Highcharts.setOptions({
     }
 });
 
-var chart_line = new Highcharts.chart({
+var chart_lineOmzetDiv = new Highcharts.chart({
         chart: {
             renderTo: 'line-omzetDiv', 
             backgroundColor: null,
@@ -537,7 +537,7 @@ var chart_line = new Highcharts.chart({
         }
     });
     
-    var chart_lineProduct = new Highcharts.chart({
+    var chart_lineProfitProduct = new Highcharts.chart({
             chart: {
                 renderTo: 'line-profitProducts', 
                 backgroundColor: null,
@@ -643,7 +643,7 @@ var chart_line = new Highcharts.chart({
         }
     });
     
-    var chart_lineProduct = new Highcharts.chart({
+    var chart_lineOmzetProduct = new Highcharts.chart({
             chart: {
                 renderTo: 'line-omzetproduct', 
                 backgroundColor: null,
@@ -753,9 +753,9 @@ var chart_line = new Highcharts.chart({
         [21550, 21060, 25742, 59851, 12490, 10282, 28121, 30434, 219931, 187133, 15555,10000]
     ];
   
-    var chart_bar = new Highcharts.chart({
+    var chart_lineIncomeOutcome = new Highcharts.chart({
         chart: {
-            renderTo: 'line-Products',
+            renderTo: 'line-CompareProducts',
             type: 'bar',
             backgroundColor: null,   
         },
