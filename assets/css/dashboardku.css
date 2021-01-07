@@ -194,7 +194,7 @@
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .05), 0 3px 14px 3px rgba(0, 0, 0, .05), 0 8px 10px 1px rgba(0, 0, 0, .05);
   border-radius: 10px;
   background-image: url(../img/human/human-2.svg);
-  background-position: calc(100% + 8.5rem) bottom;
+  background-position: calc(100% + 6rem) bottom;
   background-repeat: no-repeat;
   background-size: auto 60%;
   padding: 2px 15px;
