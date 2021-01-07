@@ -278,6 +278,22 @@
   z-index: 6;
 }
 
+
+.card-playzone {
+  display: inline-block;
+  width: 100%;
+  margin: 25px 0;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .05), 0 3px 14px 3px rgba(0, 0, 0, .05), 0 8px 10px 1px rgba(0, 0, 0, .05);
+  border-radius: 10px;
+  background-image: url(../img/human/human-14.svg);
+  background-position: calc(100% + 4rem) center;
+  background-repeat: no-repeat;
+  background-size: auto 70%;
+  padding: 2px 15px;
+  cursor: pointer;
+  z-index: 6;
+}
+
 .card-akunting {
   display: inline-block;
   width: 100%;
