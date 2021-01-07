@@ -76,9 +76,9 @@
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .05), 0 3px 14px 3px rgba(0, 0, 0, .05), 0 8px 10px 1px rgba(0, 0, 0, .05);
   border-radius: 10px;
   background-image: url(../img/human/human-10.svg);
-  background-position: calc(100% + 0.5rem) bottom;
+  background-position: calc(100% + 1rem) bottom;
   background-repeat: no-repeat;
-  background-size: auto 90%;
+  background-size: auto 80%;
   padding: 2px 15px;
   height: 250px;
 }
@@ -91,9 +91,9 @@
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .05), 0 3px 14px 3px rgba(0, 0, 0, .05), 0 8px 10px 1px rgba(0, 0, 0, .05);
   border-radius: 10px;
   background-image: url(../img/human/human-11.svg);
-  background-position: calc(100% + 0.5rem) bottom;
+  background-position: calc(100% + 2rem) bottom;
   background-repeat: no-repeat;
-  background-size: auto 80%;
+  background-size: auto 65%;
   padding: 2px 15px;
   height: 250px;
 }
@@ -108,7 +108,7 @@
   background-image: url(../img/human/fastfood.svg);
   background-position: calc(100% + 4rem) bottom;
   background-repeat: no-repeat;
-  background-size: auto 50%;
+  background-size: auto 40%;
   padding: 2px 15px;
   height: 250px;
 }
@@ -121,9 +121,24 @@
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .05), 0 3px 14px 3px rgba(0, 0, 0, .05), 0 8px 10px 1px rgba(0, 0, 0, .05);
   border-radius: 10px;
   background-image: url(../img/human/arcade-2.svg);
-  background-position: calc(100% + 5rem) bottom;
+  background-position: calc(100% + 4rem) bottom;
   background-repeat: no-repeat;
-  background-size: auto 70%;
+  background-size: auto 50%;
+  padding: 2px 15px;
+  height: 250px;
+}
+
+.card-user-5 {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  margin: 25px 0;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .05), 0 3px 14px 3px rgba(0, 0, 0, .05), 0 8px 10px 1px rgba(0, 0, 0, .05);
+  border-radius: 10px;
+  background-image: url(../img/human/human-14.svg);
+  background-position: calc(100% + 4rem) bottom;
+  background-repeat: no-repeat;
+  background-size: auto 65%;
   padding: 2px 15px;
   height: 250px;
 }
@@ -646,9 +661,9 @@
 
 .list-item {
   color: #fff;
-  font-size: 14px;
+  font-size: 12px;
   letter-spacing: 1px;
-  font-weight: 300;
+  font-weight: 400;
   padding: 1px 0;
   position: relative;
   display: flex;
