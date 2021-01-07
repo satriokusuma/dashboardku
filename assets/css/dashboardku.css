@@ -7286,6 +7286,11 @@ h2.title {
     background: #fff;
   }
 
+  .sidebar-mini .nav .caret,
+  .off-canvas-sidebar .nav .caret {
+    display: none;
+  }
+
   .sidebar-mini .visible-on-sidebar-regular {
     display: none !important;
   }
@@ -7335,6 +7340,10 @@ h2.title {
 
   .sidebar-mini .sidebar .nav li>a {
     margin: 5px 10px;
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .sidebar-mini .sidebar .nav li>a:before,
@@ -7343,11 +7352,12 @@ h2.title {
   }
 
   .sidebar-mini .sidebar .nav p {
-    display: none;
+    font-size: 11px;
   }
 
   .sidebar-mini .sidebar .nav i {
     float: none;
+    margin-right: 0;
   }
 
   .sidebar-mini .sidebar .nav [data-toggle="collapse"]~div>ul>li>a {
