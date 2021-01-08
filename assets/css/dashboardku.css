@@ -365,7 +365,7 @@
   background-position: calc(100% + 2rem) center;
   background-repeat: no-repeat;
   background-size: auto 80%;
-  padding: 2px 15px;
+  padding: 20px 15px;
   cursor: pointer;
   z-index: 6;
 }
@@ -380,7 +380,7 @@
   background-position: calc(100% + 2rem) center;
   background-repeat: no-repeat;
   background-size: auto 80%;
-  padding: 2px 15px;
+  padding: 20px 15px;
   cursor: pointer;
   z-index: 6;
 }
