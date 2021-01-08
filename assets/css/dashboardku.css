@@ -426,7 +426,7 @@
   background-position: calc(100% + 2rem) bottom;
   background-repeat: no-repeat;
   background-size: auto 90%;
-  padding: 2px 15px;
+  padding: 20px 15px;
   cursor: pointer;
   z-index: 6;
 }
