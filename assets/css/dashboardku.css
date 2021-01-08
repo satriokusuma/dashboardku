@@ -38,7 +38,7 @@
 }
 
 .card-weather img {
-  width: 100%;
+  width: 90%;
   height: 50%;
   object-fit: fill;
   vertical-align: middle;
