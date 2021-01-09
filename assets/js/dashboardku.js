@@ -34,7 +34,7 @@ $(document).ready(function(){
 
     $sidebar = $('.sidebar');
 
-    // $.material.init();
+    $.dashboardku.init();
 
     // We put modals out of wrapper to working properly
     $('.modal').appendTo("body");
