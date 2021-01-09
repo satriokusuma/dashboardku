@@ -3,6 +3,8 @@
 } */
 
 
+
+
 .col-form-label {
   padding-top: calc(.375rem + 1px);
   padding-bottom: calc(.375rem + 1px);
@@ -11,7 +13,10 @@
   line-height: 1.5;
 }
 
-
+.toggle-password,
+.toggle-password-2 {
+  cursor: pointer;
+}
 
 .img-logo {
   width: 50px;
@@ -315,10 +320,25 @@
   margin: 25px 0;
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .05), 0 3px 14px 3px rgba(0, 0, 0, .05), 0 8px 10px 1px rgba(0, 0, 0, .05);
   border-radius: 10px;
-  background-image: url(../img/human/akunting-3.svg);
+  background-image: url(../img/human/human-16.svg);
+  background-position: calc(100% + 2rem) bottom;
+  background-repeat: no-repeat;
+  background-size: auto 70%;
+  padding: 2px 15px;
+  cursor: pointer;
+  z-index: 6;
+}
+
+.card-karyawan {
+  display: inline-block;
+  width: 100%;
+  margin: 25px 0;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .05), 0 3px 14px 3px rgba(0, 0, 0, .05), 0 8px 10px 1px rgba(0, 0, 0, .05);
+  border-radius: 10px;
+  background-image: url(../img/human/human-17.svg);
   background-position: calc(100% + 3rem) bottom;
   background-repeat: no-repeat;
-  background-size: auto 41%;
+  background-size: auto 70%;
   padding: 2px 15px;
   cursor: pointer;
   z-index: 6;
