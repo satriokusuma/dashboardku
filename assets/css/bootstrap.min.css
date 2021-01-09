@@ -5431,6 +5431,13 @@ textarea.input-group-sm>.input-group-btn>.btn {
     line-height: 20px
 }
 
+@media only screen and (max-width: 992px) {
+    .navbar-brand {
+        font-size: 14px;
+
+    }
+}
+
 .navbar-brand:focus,
 .navbar-brand:hover {
     text-decoration: none
