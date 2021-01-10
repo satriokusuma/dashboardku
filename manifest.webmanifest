@@ -1,0 +1,57 @@
+{
+    "short_name": "DashboardTechno",
+    "name": "DashboardTechno",
+    "description": "Dashboard Management",
+    "icons": [
+        {
+        "src": "assets/img/logo/ms-icon-310.png",
+        "type": "image/png",
+        "sizes": "512x512"
+        },
+      {
+        "src": "assets/img/logo/android-icon-192.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "assets/img/logo/android-icon-96.png",
+        "type": "image/png",
+        "sizes": "96x96"
+      },
+      {
+        "src": "assets/img/logo/apple-icon-144.png",
+        "type": "image/png",
+        "sizes": "144x144"
+      },
+      {
+        "src": "assets/img/logo/apple-icon-152.png",
+        "type": "image/png",
+        "sizes": "152x152"
+      },
+      {
+        "src": "assets/img/logo/apple-icon-180.png",
+        "type": "image/png",
+        "sizes": "180x180"
+      },
+      {
+        "src": "assets/img/logo/maskable_icon.png",
+        "sizes": "196x196",
+        "type": "image/png",
+        "purpose": "any maskable"
+      }
+    ],
+    "start_url": "/index.html",
+    "background_color": "#eff8ff",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#848ccf",
+    "shortcuts": [
+      {
+        "name": "DashboardTechno",
+        "short_name": "DashboardTechno",
+        "description": "Dashboard Management",
+        "url": "/home.html",
+        "icons": [{ "src": "assets/img/logo/android-icon-192.png", "sizes": "192x192" }]
+      }
+    ]
+  }

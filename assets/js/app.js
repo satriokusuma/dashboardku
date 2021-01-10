@@ -130,3 +130,8 @@ var date = new Date();
     var tampilWaktu =jam + ":" + menit ;
     document.getElementById("datetime").innerHTML = tampilTanggal;
     document.getElementById("time").innerHTML = tampilWaktu;
+
+    $('body').tooltip({
+        selector: '[data-toggle="tooltip"]',
+        placement:'top'
+    });
